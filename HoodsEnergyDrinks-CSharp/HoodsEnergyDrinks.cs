@@ -54,11 +54,6 @@ public class HoodsEnergyDrinks(
         //logger.Success($"test 3: {blue.loot_multipliers["ration_supply_crate"]}"); // test use case
         //logger.Success($"test drink info: {drinkInfo.drinks["monster_green"].desc}");
 
-
-
-
-
-
         logger.Success("More energy drinks have been added to the server!");
         return Task.CompletedTask;
     }

@@ -5,7 +5,7 @@ namespace HoodsEnergyDrinks_CSharp;
 
 public class DrinkInfo
 {
-    public Dictionary<string, DrinkProps>? drinks { get; set; }
+    public required Dictionary<string, DrinkProps> drinks { get; set; }
 }
 
 public class DrinkProps

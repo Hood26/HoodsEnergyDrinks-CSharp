@@ -10,7 +10,29 @@
     <!-- The two lines below will set the output path for the binaries -->
     <OutputPath>bin\$(Configuration)\$(ProjectName)\$(AssemblyName)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <ServerModDir Condition = " $(ServerModDir) == '' ">C:\SPT 4.0\SPT\user\mods\HoodsEnergyDrinks</ServerModDir>
   </PropertyGroup>
+  <Target Name="CopyToServer" AfterTargets="PostBuildEvent">
+
+
+        <ItemGroup>
+            <OutputDLL Include="$(ProjectDir)$(OutDir)$(TargetName).dll" />
+            <WebAssets Include="$(ProjectDir)wwwroot\**\*.*" />
+        </ItemGroup>
+
+
+        <!-- Copies the output dll -->
+        <Copy 
+                SourceFiles="@(OutputDLL);" 
+                DestinationFolder="$(ServerModDir)\" 
+        />
+        <!-- Copy the wwwroot folder -->
+        <Copy
+                SourceFiles="@(WebAssets)"
+                DestinationFolder="$(ServerModDir)\TarkovTools\wwwroot\%(RecursiveDir)"
+        />
+        
+    </Target>
   <ItemGroup>
     <PackageReference Include="SPTarkov.Common" Version="4.0.1" />
     <PackageReference Include="SPTarkov.DI" Version="4.0.1" />
