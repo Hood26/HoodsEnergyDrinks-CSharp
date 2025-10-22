@@ -48,14 +48,8 @@ public class HoodsEnergyDrinks(
         var configPath = Path.GetFullPath(Path.Combine(pathToMod, "config"));
         var config = modHelper.GetJsonDataFromFile<ModConfig>(configPath, "config.jsonc");
         //logger.Success($"Here is result: {config.alternate_flea_price}"); // test use case
-
-
-
-
-
-
-
-        //logger.Success(test.config);
+        //var blue = config.drinks["monster_blue"];
+        //logger.Success($"test 3: {blue.loot_multipliers["ration_supply_crate"]}"); // test use case
         logger.Success("More energy drinks have been added to the server!");
         return Task.CompletedTask;
     }
