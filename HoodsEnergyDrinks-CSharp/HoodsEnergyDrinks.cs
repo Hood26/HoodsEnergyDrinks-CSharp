@@ -10,6 +10,7 @@ using SPTarkov.Server.Core.Servers;
 using SPTarkov.Server.Core.Services;
 using SPTarkov.Server.Core.Utils;
 using SPTarkov.Server.Core.Utils.Json;
+using SPTarkov.Server.Core.Models.Eft.Dialog;
 
 namespace HoodsEnergyDrinks_CSharp;
 
@@ -47,15 +48,17 @@ public class HoodsEnergyDrinks(
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
         var configPath = Path.GetFullPath(Path.Combine(pathToMod, "config"));
         var config = modHelper.GetJsonDataFromFile<ModConfig>(configPath, "config.jsonc");
+        var drinkInfo = modHelper.GetJsonDataFromFile<DrinkInfo>(pathToMod, "DrinkInfo.json");
         //logger.Success($"Here is result: {config.alternate_flea_price}"); // test use case
+        //var blue = config.drinks["monster_blue"];
+        //logger.Success($"test 3: {blue.loot_multipliers["ration_supply_crate"]}"); // test use case
+        //logger.Success($"test drink info: {drinkInfo.drinks["monster_green"].desc}");
 
 
 
 
 
 
-
-        //logger.Success(test.config);
         logger.Success("More energy drinks have been added to the server!");
         return Task.CompletedTask;
     }
