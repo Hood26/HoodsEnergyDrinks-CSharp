@@ -18,7 +18,7 @@ class ItemCreator
         this.config = config;
         this.drinkInfo = drinkInfo;
     }
-    public void BuildItems(DatabaseServer db, CustomItemService customItem, ModHelper modHelper)
+    public void BuildItems(DatabaseServer db, CustomItemService customItemService, ModHelper modHelper)
     {
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
         var buffInfo = modHelper.GetJsonDataFromFile<EnergyDrinkBuffs>(pathToMod, "Buffs.json");
@@ -68,7 +68,7 @@ class ItemCreator
                     }
                 }
             };
-            customItem.CreateItemFromClone(newItem);
+            customItemService.CreateItemFromClone(newItem);
         }
     }
 }

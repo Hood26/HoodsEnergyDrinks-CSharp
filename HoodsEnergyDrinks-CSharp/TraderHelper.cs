@@ -1,6 +1,5 @@
 using SPTarkov.Server.Core.Models.Enums;
-using SPTarkov.Server.Core.Models.Spt.Server;
-using SPTarkov.Server.Core.Utils.Logger;
+using SPTarkov.Server.Core.Models.Utils;
 
 namespace HoodsEnergyDrinks_CSharp;
 
@@ -11,7 +10,7 @@ class TraderHelper
         string traderId,
         ModConfig config,
         DrinkInfo info,
-        SptLogger<TraderHelper> logger)
+        ISptLogger<HoodsEnergyDrinks> logger)
     {
         foreach (KeyValuePair<string, DrinkProps> drink in info.drinks)
         {

@@ -11,6 +11,7 @@ using SPTarkov.Server.Core.Services;
 using SPTarkov.Server.Core.Utils;
 using SPTarkov.Server.Core.Utils.Json;
 using SPTarkov.Server.Core.Models.Eft.Dialog;
+using SPTarkov.Server.Core.Services.Mod;
 
 namespace HoodsEnergyDrinks_CSharp;
 
@@ -35,8 +36,10 @@ public record ModMetadata : AbstractModMetadata
 public class HoodsEnergyDrinks(
     ISptLogger<HoodsEnergyDrinks> logger,
     ConfigServer configServer,
+    CustomItemService customItemService,
     ModHelper modHelper,
     DatabaseService databaseService,
+    DatabaseServer db,
     JsonUtil jsonUtil,
     FluentTraderAssortCreator fluentAssortCreator
     ) 
@@ -49,10 +52,15 @@ public class HoodsEnergyDrinks(
         var configPath = Path.GetFullPath(Path.Combine(pathToMod, "config"));
         var config = modHelper.GetJsonDataFromFile<ModConfig>(configPath, "config.jsonc");
         var drinkInfo = modHelper.GetJsonDataFromFile<DrinkInfo>(pathToMod, "DrinkInfo.json");
-        //logger.Success($"Here is result: {config.alternate_flea_price}"); // test use case
-        //var blue = config.drinks["monster_blue"];
-        //logger.Success($"test 3: {blue.loot_multipliers["ration_supply_crate"]}"); // test use case
         //logger.Success($"test drink info: {drinkInfo.drinks["monster_green"].desc}");
+
+        var itemCreate = new ItemCreator(config, drinkInfo);
+        itemCreate.BuildItems(db, customItemService, modHelper);
+        var traderHelper = new TraderHelper();
+        var assortCreator = new FluentTraderAssortCreator(databaseService, logger);
+        traderHelper.addSingleItemsToTrader(assortCreator, "54cb57776803fa99248b456e", config, drinkInfo, logger);
+
+
 
         logger.Success("More energy drinks have been added to the server!");
         return Task.CompletedTask;

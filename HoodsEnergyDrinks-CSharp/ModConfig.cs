@@ -9,7 +9,7 @@ public class ModConfig
     public int alternate_trader_price { get; set; } = 0;
     public int alternate_flea_price { get; set; } = 0;
     public int alternate_handbook_price { get; set; } = 0;
-    public required Dictionary<string, DrinkConfig>? drinks { get; set; }
+    public required Dictionary<string, DrinkConfig> drinks { get; set; }
 }
 
 public class DrinkConfig

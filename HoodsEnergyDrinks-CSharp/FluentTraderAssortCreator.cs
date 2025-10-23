@@ -13,7 +13,7 @@ namespace HoodsEnergyDrinks_CSharp;
 [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
 public class FluentTraderAssortCreator(
     DatabaseService databaseService,
-    ISptLogger<FluentTraderAssortCreator> logger)
+    ISptLogger<HoodsEnergyDrinks> logger)
 {
     private readonly List<Item> _itemsToSell = [];
     private readonly Dictionary<string, List<List<BarterScheme>>> _barterScheme = new();
