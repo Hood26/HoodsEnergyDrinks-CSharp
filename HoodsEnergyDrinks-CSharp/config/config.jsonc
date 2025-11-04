@@ -1,14 +1,43 @@
 {
-  // Grouped configuration for HoodsEnergyDrinks mod
-  // Top-level settings
+  // Mod configuration for HoodsEnergyDrinks
+  // ======================================
+  // ======================================
+  // enable_alternate_buffs: if true, all drinks will use a shared, toned-down buff set with unified pricing specified directly below this statement.
+  // all other individual energy drink configs will still work, other than the trader price, flea price, and handbook price specified directly below.
   "enable_alternate_buffs": false,
   "alternate_trader_price": 20000,
   "alternate_flea_price": 25000,
   "alternate_handbook_price": 20000,
 
-  // Per-drink settings are grouped under "drinks"
+  /*
+    Loot / spawn rate notes (important):
+
+    - This mod changes spawn rates by scaling the vanilla (Hot Rod Energy Drink) relative weight for an item
+      inside a given loot pool (container/map static loot). The config uses a per-drink "loot_multipliers"
+      system that multiplies the vanilla relative weight for each specified loot container.
+
+    - Conceptual formula per pool entry:
+        newWeight = vanillaWeight * multiplier
+
+      The item's final chance inside that pool is then:
+        chance = newWeight / sum(all newWeights in the same pool)
+
+    - Examples (loot_multipliers):
+      * multiplier = 1.0  -> Same exact spawn weight as a hot rod energy drink for that specific loot container.
+      * multiplier = 0.5  -> half as likely to spawn compared to hot rod energy drink for that specific loot container.
+      * multiplier = 2.0  -> twice as likely to spawn compared to hot rod energy drink for that specific loot container.
+      * multiplier = 0.0  -> removed from spawning in that specific loot container.
+
+    - Important: these multipliers change RELATIVE weights inside a pool. Increasing one item's multiplier
+      increases its share of that pool but does not directly control absolute world spawn rate (container spawn
+      chance and other pool entries also affect absolute probability).
+
+    - "loose_loot_multiplier" is used for loose/open-world spawn weighting (apply same scaling concept).
+  */
+
   "drinks": {
     "monster_blue": {
+      // Settings for each energy drink can be changed from true, false or numbers.
       "enable": true,
       "effect_toggle": true,
       "sold_by_trader": true,
@@ -16,16 +45,17 @@
       "trader_price": 25000,
       "flea_price": 35000,
       "handbook_price": 30000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
+        // Read the Loot/spawn rates note above to understand what these numbers mean.
         "duffle_bag": 0.4,
         "dead_scav": 0.4,
         "jacket": 0.4,
         "ration_supply_crate": 0.4,
-        "ground_cache": 0.4,
-        "loose_loot": 0.4
-      }
+        "ground_cache": 0.4
+      },
+      "loose_loot_multiplier": 0.4
     },
 
     "monster_green": {
@@ -36,16 +66,16 @@
       "trader_price": 30000,
       "flea_price": 45000,
       "handbook_price": 40000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
         "duffle_bag": 0.35,
         "dead_scav": 0.35,
         "jacket": 0.35,
         "ration_supply_crate": 0.35,
-        "ground_cache": 0.35,
-        "loose_loot": 0.35
-      }
+        "ground_cache": 0.35
+      },
+      "loose_loot_multiplier": 0.35
     },
 
     "monster_white": {
@@ -56,16 +86,16 @@
       "trader_price": 30000,
       "flea_price": 45000,
       "handbook_price": 40000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
         "duffle_bag": 0.35,
         "dead_scav": 0.35,
         "jacket": 0.35,
         "ration_supply_crate": 0.35,
-        "ground_cache": 0.35,
-        "loose_loot": 0.35
-      }
+        "ground_cache": 0.35
+      },
+      "loose_loot_multiplier": 0.35
     },
 
     "monster_strawberry": {
@@ -76,16 +106,16 @@
       "trader_price": 35000,
       "flea_price": 50000,
       "handbook_price": 45000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
         "duffle_bag": 0.25,
         "dead_scav": 0.25,
         "jacket": 0.25,
         "ration_supply_crate": 0.25,
-        "ground_cache": 0.25,
-        "loose_loot": 0.25
-      }
+        "ground_cache": 0.25
+      },
+      "loose_loot_multiplier": 0.25
     },
 
     "ghost": {
@@ -96,16 +126,16 @@
       "trader_price": 45000,
       "flea_price": 60000,
       "handbook_price": 55000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
         "duffle_bag": 0.2,
         "dead_scav": 0.2,
         "jacket": 0.2,
         "ration_supply_crate": 0.2,
-        "ground_cache": 0.2,
-        "loose_loot": 0.2
-      }
+        "ground_cache": 0.2
+      },
+      "loose_loot_multiplier": 0.2
     },
 
     "nos": {
@@ -116,16 +146,16 @@
       "trader_price": 45000,
       "flea_price": 65000,
       "handbook_price": 60000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
         "duffle_bag": 0.2,
         "dead_scav": 0.2,
         "jacket": 0.2,
         "ration_supply_crate": 0.2,
-        "ground_cache": 0.2,
-        "loose_loot": 0.2
-      }
+        "ground_cache": 0.2
+      },
+      "loose_loot_multiplier": 0.2
     },
 
     "stalker": {
@@ -136,16 +166,16 @@
       "trader_price": 50000,
       "flea_price": 65000,
       "handbook_price": 60000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
         "duffle_bag": 0.15,
         "dead_scav": 0.15,
         "jacket": 0.15,
         "ration_supply_crate": 0.15,
-        "ground_cache": 0.15,
-        "loose_loot": 0.15
-      }
+        "ground_cache": 0.15
+      },
+      "loose_loot_multiplier": 0.15
     },
 
     "bang": {
@@ -156,16 +186,16 @@
       "trader_price": 65000,
       "flea_price": 75000,
       "handbook_price": 70000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
         "duffle_bag": 0.12,
         "dead_scav": 0.12,
         "jacket": 0.12,
         "ration_supply_crate": 0.12,
-        "ground_cache": 0.12,
-        "loose_loot": 0.12
-      }
+        "ground_cache": 0.12
+      },
+      "loose_loot_multiplier": 0.12
     },
 
     "ghost_swedish_fish": {
@@ -176,16 +206,16 @@
       "trader_price": 50000,
       "flea_price": 83000,
       "handbook_price": 70000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
         "duffle_bag": 0.12,
         "dead_scav": 0.12,
         "jacket": 0.12,
         "ration_supply_crate": 0.12,
-        "ground_cache": 0.12,
-        "loose_loot": 0.12
-      }
+        "ground_cache": 0.12
+      },
+      "loose_loot_multiplier": 0.12
     },
 
     "c4_starburst": {
@@ -196,16 +226,16 @@
       "trader_price": 65000,
       "flea_price": 75000,
       "handbook_price": 70000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
         "duffle_bag": 0.12,
         "dead_scav": 0.12,
         "jacket": 0.12,
         "ration_supply_crate": 0.12,
-        "ground_cache": 0.12,
-        "loose_loot": 0.12
-      }
+        "ground_cache": 0.12
+      },
+      "loose_loot_multiplier": 0.12
     },
 
     "starbucks": {
@@ -216,16 +246,16 @@
       "trader_price": 55000,
       "flea_price": 62500,
       "handbook_price": 57500,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
         "duffle_bag": 0.12,
         "dead_scav": 0.12,
         "jacket": 0.12,
         "ration_supply_crate": 0.12,
-        "ground_cache": 0.12,
-        "loose_loot": 0.12
-      }
+        "ground_cache": 0.12
+      },
+      "loose_loot_multiplier": 0.12
     },
 
     "monster_punch": {
@@ -236,16 +266,16 @@
       "trader_price": 65000,
       "flea_price": 85000,
       "handbook_price": 70000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
         "duffle_bag": 0.08,
         "dead_scav": 0.08,
         "jacket": 0.08,
         "ration_supply_crate": 0.08,
-        "ground_cache": 0.08,
-        "loose_loot": 0.08
-      }
+        "ground_cache": 0.08
+      },
+      "loose_loot_multiplier": 0.08
     },
 
     "rockstar": {
@@ -256,16 +286,16 @@
       "trader_price": 55000,
       "flea_price": 85000,
       "handbook_price": 80000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
         "duffle_bag": 0.08,
         "dead_scav": 0.08,
         "jacket": 0.08,
         "ration_supply_crate": 0.08,
-        "ground_cache": 0.08,
-        "loose_loot": 0.08
-      }
+        "ground_cache": 0.08
+      },
+      "loose_loot_multiplier": 0.08
     },
 
     "monster_doctor": {
@@ -276,16 +306,16 @@
       "trader_price": 120000,
       "flea_price": 130000,
       "handbook_price": 125000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
         "duffle_bag": 0.04,
         "dead_scav": 0.04,
         "jacket": 0.04,
         "ration_supply_crate": 0.04,
-        "ground_cache": 0.04,
-        "loose_loot": 0.04
-      }
+        "ground_cache": 0.04
+      },
+      "loose_loot_multiplier": 0.04
     },
 
     "monster_pacific_punch": {
@@ -296,16 +326,16 @@
       "trader_price": 90000,
       "flea_price": 120000,
       "handbook_price": 125000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
         "duffle_bag": 0.04,
         "dead_scav": 0.04,
         "jacket": 0.04,
         "ration_supply_crate": 0.04,
-        "ground_cache": 0.04,
-        "loose_loot": 0.04
-      }
+        "ground_cache": 0.04
+      },
+      "loose_loot_multiplier": 0.04
     },
 
     "ghost_peaches": {
@@ -316,16 +346,16 @@
       "trader_price": 90000,
       "flea_price": 115000,
       "handbook_price": 125000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
         "duffle_bag": 0.04,
         "dead_scav": 0.04,
         "jacket": 0.04,
         "ration_supply_crate": 0.04,
-        "ground_cache": 0.04,
-        "loose_loot": 0.04
-      }
+        "ground_cache": 0.04
+      },
+      "loose_loot_multiplier": 0.04
     },
 
     "monster_lemonade": {
@@ -336,16 +366,16 @@
       "trader_price": 125000,
       "flea_price": 160000,
       "handbook_price": 155000,
-      "stock": 2,
+      "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
         "duffle_bag": 0.02,
         "dead_scav": 0.02,
         "jacket": 0.02,
         "ration_supply_crate": 0.02,
-        "ground_cache": 0.02,
-        "loose_loot": 0.02
-      }
+        "ground_cache": 0.02
+      },
+      "loose_loot_multiplier": 0.02
     }
   }
 }

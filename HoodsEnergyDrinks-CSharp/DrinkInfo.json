@@ -1,5 +1,5 @@
 {
-   "drinks": {
+   "Props": {
         "monster_blue": {
             "_id": "66ccf66fc9162d12270bb160",
             "name": "Monster Original Lo-Carb Energy Drink",
@@ -70,13 +70,13 @@
             "_id": "66ccf66fc9162d12270bb180",
             "name": "Starbucks Double Shot Energy Drink",
             "shortName": "Starbucks",
-            "desc": "Enjoy your favorite chilled coffee drink on the go thanks to Starbucks bottled coffee drinks. All made with real Starbucks coffee, you can enjoy the flavor of your favorite café drinks at home and on the go. The perfect late afternoon pick-me-up, Starbucks bottled coffee drinks are great straight from the bottle or enjoyed over ice."
+            "desc": "Enjoy your favorite chilled coffee drink on the go thanks to Starbucks bottled coffee drinks. All made with real Starbucks coffee, you can enjoy the flavor of your favorite cafï¿½ drinks at home and on the go. The perfect late afternoon pick-me-up, Starbucks bottled coffee drinks are great straight from the bottle or enjoyed over ice."
         },
         "c4_starburst": {
             "_id": "66ccf66fc9162d12270bb181",
             "name": "C4 Starburst Energy Drink",
             "shortName": "C4",
-            "desc": "Unlock your best performance, power, and speed with C4 Performance Energy. Every can is packed with 200mg of caffeine and CarnoSyn Beta Alanine for explosive energy you can feel. Made with clinically studied ingredients, ZERO grams of sugar or artificial colors, and carrying the NSF Certified for Sport label, C4 Performance Energy® is the athletes choice for elevating performance."
+            "desc": "Unlock your best performance, power, and speed with C4 Performance Energy. Every can is packed with 200mg of caffeine and CarnoSyn Beta Alanine for explosive energy you can feel. Made with clinically studied ingredients, ZERO grams of sugar or artificial colors, and carrying the NSF Certified for Sport label, C4 Performance Energyï¿½ is the athletes choice for elevating performance."
         },
         "monster_pacific_punch": {
             "_id": "66ccf66fc9162d12270bb184",

@@ -1,5 +1,6 @@
-
+using SPTarkov.Server.Core.Exceptions.Items;
 using SPTarkov.Server.Core.Helpers;
+using SPTarkov.Server.Core.Models.Eft.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Spt.Mod;
 using SPTarkov.Server.Core.Servers;
@@ -10,13 +11,14 @@ namespace HoodsEnergyDrinks_CSharp;
 
 class ItemCreator
 {
+    public Loot loot = new Loot();
     private ModConfig config;
-    private DrinkInfo drinkInfo;
+    private Drink drinks;
 
-    public ItemCreator(ModConfig config, DrinkInfo drinkInfo)
+    public ItemCreator(ModConfig config, Drink drinks)
     {
         this.config = config;
-        this.drinkInfo = drinkInfo;
+        this.drinks = drinks;
     }
     public void BuildItems(DatabaseServer db, CustomItemService customItemService, ModHelper modHelper)
     {
@@ -25,7 +27,7 @@ class ItemCreator
         var tableData = db.GetTables();
         tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs["alternate_buffs"] = buffInfo.buffs["alternate_buffs"];
 
-        foreach (KeyValuePair<string, DrinkProps> drink in drinkInfo.drinks)
+        foreach (KeyValuePair<string, DrinkProps> drink in drinks.Props)
         {
             tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[drink.Key] = config.drinks[drink.Key].effect_toggle ? buffInfo.buffs[drink.Key] : [];
 
@@ -45,18 +47,19 @@ class ItemCreator
                         Rcid = ""
                     },
                     DiscardLimit = -1,
-                    Weight = -0.6,
+                    Weight = 0.6,
                     FoodUseTime = 5,
                     StimulatorBuffs = config.enable_alternate_buffs ? "alternate_buffs" : drink.Key,
-                    EffectsHealth = { },
-                    EffectsDamage = { }
+                    EffectsHealth = new Dictionary<SPTarkov.Server.Core.Models.Enums.HealthFactor, EffectsHealthProperties>(),
+                    EffectsDamage = new Dictionary<SPTarkov.Server.Core.Models.Enums.DamageEffectType, EffectsDamageProperties>(),
                 },
                 ParentId = "5448e8d64bdc2dce718b4568",
                 NewId = drink.Value._id,
                 FleaPriceRoubles = config.enable_alternate_buffs ? config.alternate_flea_price : config.drinks[drink.Key].flea_price,
                 HandbookPriceRoubles = config.enable_alternate_buffs ? config.alternate_handbook_price : config.drinks[drink.Key].handbook_price,
                 HandbookParentId = "5b47574386f77428ca22b335",
-                Locales = new Dictionary<string, LocaleDetails> {
+                Locales = new Dictionary<string, LocaleDetails>
+                {
                     {
                          "en",
                          new LocaleDetails
@@ -68,7 +71,10 @@ class ItemCreator
                     }
                 }
             };
+            this.loot.StaticLoot[drink.Value._id] = new StaticLoot { Weights = new(config.drinks[drink.Key].loot_multipliers) };
+            this.loot.LooseLoot[drink.Value._id] = config.drinks[drink.Key].loose_loot_multiplier;
             customItemService.CreateItemFromClone(newItem);
+
         }
     }
 }

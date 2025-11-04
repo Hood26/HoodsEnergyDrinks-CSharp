@@ -21,7 +21,8 @@ public class DrinkConfig
     public int trader_price { get; set; }
     public int flea_price { get; set; }
     public int handbook_price { get; set; }
-    public int stock { get; set; }
+    public int trader_stock { get; set; }
     public int loyalty_level { get; set; }
-    public Dictionary<string, double>? loot_multipliers { get; set; }
+    public Dictionary<string, float>? loot_multipliers { get; set; }
+    public float loose_loot_multiplier { get; set; }
 }

@@ -1,11 +1,8 @@
-using System.Text.Json;
-using System.Text.Json.Serialization;
-
 namespace HoodsEnergyDrinks_CSharp;
 
-public class DrinkInfo
+public class Drink
 {
-    public required Dictionary<string, DrinkProps> drinks { get; set; }
+    public required Dictionary<string, DrinkProps> Props { get; set; }
 }
 
 public class DrinkProps
