@@ -128,6 +128,116 @@
         "Value": 0
       }
     ],
+    "ghost_blue_raspberry": [
+      {
+        "AbsoluteValue": true,
+        "BuffType": "EnergyRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 120,
+        "SkillName": "",
+        "Value": 0.5
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HydrationRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 120,
+        "SkillName": "",
+        "Value": 0.3
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "StaminaRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 400,
+        "SkillName": "",
+        "Value": 0.2
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "MaxStamina",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 400,
+        "SkillName": "",
+        "Value": 5
+      },
+      {
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 400,
+        "AbsoluteValue": true,
+        "SkillName": "StressResistance",
+        "Value": 5
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 400,
+        "SkillName": "Perception",
+        "Value": 5
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 400,
+        "SkillName": "Intellect",
+        "Value": 5
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 400,
+        "SkillName": "Attention",
+        "Value": 5
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 400,
+        "SkillName": "Search",
+        "Value": 5
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 400,
+        "Duration": 120,
+        "SkillName": "Health",
+        "Value": -5
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "EnergyRate",
+        "Chance": 1,
+        "Delay": 400,
+        "Duration": 50,
+        "SkillName": "",
+        "Value": -0.5
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HandsTremor",
+        "Chance": 1,
+        "Delay": 400,
+        "Duration": 60,
+        "SkillName": "",
+        "Value": 0
+      }
+    ],
     "arizona_green_tea": [
       {
         "AbsoluteValue": true,
@@ -1044,7 +1154,7 @@
         "Value": 0
       }
     ],
-    "ghost": [
+    "ghost_strawbango": [
       {
         "AbsoluteValue": true,
         "BuffType": "EnergyRate",

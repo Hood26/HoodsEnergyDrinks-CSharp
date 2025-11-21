@@ -1,5 +1,11 @@
 {
    "Items": {
+        "ghost_blue_raspberry": {
+            "_id": "66ccf66fc9162d12270bb155",
+            "name": "Ghost Blue Raspberry Energy Drink",
+            "shortName": "Test",
+            "desc": "Test"
+        },
         "monster_guava": {
             "_id": "66ccf66fc9162d12270bb156",
             "name": "Monster Ultra Vice Guava",
@@ -54,11 +60,11 @@
             "shortName": "NOS",
             "desc": "Fuel Up. Fire Up. 100 mile an hour power. Thundering from top gear to no fear, the super-charged take charge. It's time to strap in, or sit it out. How Hard Will You Drive? High Performance Energy."
         },
-        "ghost": {
+        "ghost_strawbango": {
             "_id": "66ccf66fc9162d12270bb174",
-            "name": "Ghost Strawbango Margarita Energy Drink",
+            "name": "Ghost Strawbango Energy Drink",
             "shortName": "Ghost",
-            "desc": "Ghost Energy is the fully transparent, fully loaded energy drink we have all been waiting for. Our legendary energy drink features no sugar, no artificial colors, and authentic Strawbango Margarita flavor. It contains 200mg of Natural Caffeine from coffee beans, which has been found anecdotally to deliver a smooth, feel-good energy with less jitters and no crash when compared to other forms of caffeine."
+            "desc": "Ghost Energy is the fully transparent, fully loaded energy drink we have all been waiting for. Our legendary energy drink features no sugar, no artificial colors, and authentic Strawbango flavor. It contains 200mg of Natural Caffeine from coffee beans, which has been found anecdotally to deliver a smooth, feel-good energy with less jitters and no crash when compared to other forms of caffeine."
         },
         "ghost_swedish_fish": {
             "_id": "66ccf66fc9162d12270bb183",
