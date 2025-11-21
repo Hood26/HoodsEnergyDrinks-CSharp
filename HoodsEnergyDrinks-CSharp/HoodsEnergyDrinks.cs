@@ -24,7 +24,7 @@ public record ModMetadata : AbstractModMetadata
     public override string Author { get; init; } = "Hood";
     public override List<string>? Contributors { get; init; }
     public override SemanticVersioning.Version Version { get; init; } = new("1.1.0");
-    public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.3");
+    public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.0");
 
 
     public override List<string>? Incompatibilities { get; init; }
@@ -64,14 +64,13 @@ public class HoodsEnergyDrinks(
         var configPath = System.IO.Path.GetFullPath(System.IO.Path.Combine(pathToMod, "config"));
         var config = modHelper.GetJsonDataFromFile<ModConfig>(configPath, "config.jsonc");
         var drinks = modHelper.GetJsonDataFromFile<Drink>(pathToMod, "drinkInfo.json");
-        //logger.Success($"test drink info: {drink.drinks["monster_green"].desc}");
         var tables = db.GetTables();
         var ragfairConfig = configServer.GetConfig<RagfairConfig>();
-        var traderHelper = new TraderHelper();
         var assortCreator = new FluentTraderAssortCreator(databaseService, logger);
+        var traderHelper = new TraderHelper(assortCreator, config, drinks, logger);
         var itemCreator = new ItemCreator(config, drinks);
         itemCreator.BuildItems(db, customItemService, modHelper);
-        traderHelper.addSingleItemsToTrader(assortCreator, "54cb57776803fa99248b456e", config, drinks, logger);
+        traderHelper.addSingleItemsToTrader("54cb57776803fa99248b456e");
 
         string[] maps = [
             "bigmap",      // customs
@@ -100,12 +99,12 @@ public class HoodsEnergyDrinks(
         {
             if (drink.Value.flea_banned)
             {
-                ragfairConfig.Dynamic.Blacklist.Custom.Add(drinks.Props[drink.Key]._id);
+                ragfairConfig.Dynamic.Blacklist.Custom.Add(drinks.Items[drink.Key]._id);
             }
         }
 
         // Add all energy drinks to all levels of Hall Of Fame
-        foreach (var drink in drinks.Props)
+        foreach (var drink in drinks.Items)
         {
             hallOfFameIds.ForEach((hall) =>
             {
@@ -123,7 +122,7 @@ public class HoodsEnergyDrinks(
         }
 
         /* Loose Loot Insertion
-        foreach (var drink in drinks.Props)
+        foreach (var drink in drinks.Items)
         {
             var lootComposedKey = drink.Value._id;
             foreach (var map in maps)
@@ -138,14 +137,14 @@ public class HoodsEnergyDrinks(
         */
 
         // Static Loot Insertion
-        foreach (var drink in drinks.Props)
+        foreach (var (name, props) in drinks.Items)
         {
             foreach (var map in maps)
             {
                 string mapName = tables.Locations.GetMappedKey(map);
                 Location location = tables.Locations.GetDictionary()[mapName];
                 var mapStaticLoot = location.StaticLoot.Value;
-                var staticLootProbabilities = itemCreator.loot.StaticLoot[drink.Value._id].Weights;
+                var staticLootProbabilities = itemCreator.loot.StaticLoot[props._id].Weights;
 
                 foreach (var (lootContainerString, probability) in staticLootProbabilities)
                 {
@@ -157,7 +156,7 @@ public class HoodsEnergyDrinks(
                         {
                             var newItem = new ItemDistribution
                             {
-                                Tpl = drink.Value._id,
+                                Tpl = props._id,
                                 RelativeProbability = MathF.Ceiling(probability * hot_rod_energy_prob)
                             };
 
@@ -171,7 +170,7 @@ public class HoodsEnergyDrinks(
                                 if (lazyLoadedStaticLoot == null) return lazyLoadedStaticLoot;
                                 if (!lazyLoadedStaticLoot.TryGetValue(lootContainer, out StaticLootDetails? details)) return lazyLoadedStaticLoot;
 
-                                logger.Info($"Adding item Tpl={newItem.Tpl} RelativeProbability={newItem.RelativeProbability} LootContainer = {getLootContainerString(lootContainer)} Map = {map}");
+                                //logger.Info($"Adding item Tpl={newItem.Tpl} RelativeProbability={newItem.RelativeProbability} LootContainer = {getLootContainerString(lootContainer)} Map = {map}");
                                 var updatedItemDistribution = details.ItemDistribution?.ToList() ?? new List<ItemDistribution>();
                                 updatedItemDistribution.Add(newItem);
                                 lazyLoadedStaticLoot[lootContainer].ItemDistribution = updatedItemDistribution;
@@ -181,7 +180,7 @@ public class HoodsEnergyDrinks(
                         }
                         catch
                         {
-                            logger.Error($"[Hoods Energy Drinks] Could not add {drink.Value._id} to container {getLootContainerString(lootContainer)} on map {map}");
+                            //logger.Error($"[Hoods Energy Drinks] Could not add {props._id} to container {getLootContainerString(lootContainer)} on map {map}");
                         }
                     }
                 }
@@ -211,15 +210,15 @@ public class HoodsEnergyDrinks(
             {
                 if (item.Tpl == _id)
                 {
-                    logger.Success("Found Item in Item Distribution");
-                    logger.Info($"Found Relative Probability = {item.RelativeProbability} In container = {getLootContainerString(lootContainer)}");
+                    //logger.Success("Found Item in Item Distribution");
+                    //logger.Info($"Found Relative Probability = {item.RelativeProbability} In container = {getLootContainerString(lootContainer)}");
                     return item.RelativeProbability ?? 0f;
                 }
             }
         }
 
         float defaultWeight = 500;
-        logger.Error($"Could Not Find Hot Rod Relative Probability in map = {map} lootContainer = {getLootContainerString(lootContainer)} Setting default weight value to {defaultWeight}");
+        //logger.Error($"Could Not Find Hot Rod Relative Probability in map = {map} lootContainer = {getLootContainerString(lootContainer)} Setting default weight value to {defaultWeight}");
         return defaultWeight;
     }
 

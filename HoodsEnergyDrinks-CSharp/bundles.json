@@ -2,6 +2,70 @@
 {
     "manifest": [
         {
+            "key": "assets/arizona_green_tea.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "assets/arizona_green_tea_container.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "assets/stalker_green.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "assets/stalker_green_container.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "assets/monster_orange_creamsicle.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "assets/monster_orange_creamsicle_container.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "assets/monster_guava.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "assets/monster_guava_container.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
             "key": "assets/monster_green.bundle",
             "dependencyKeys": [
                 "cubemaps",

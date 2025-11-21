@@ -36,6 +36,90 @@
   */
 
   "drinks": {
+    "stalker_green": {
+      // Settings for each energy drink can be changed from true, false or numbers.
+      "enable": true,
+      "effect_toggle": true,
+      "sold_by_trader": true,
+      "flea_banned": false,
+      "trader_price": 25000,
+      "flea_price": 35000,
+      "handbook_price": 30000,
+      "trader_stock": 2,
+      "loyalty_level": 1,
+      "loot_multipliers": {
+        // Read the Loot/spawn rates note above to understand what these numbers mean.
+        "duffle_bag": 0.4,
+        "dead_scav": 0.4,
+        "jacket": 0.4,
+        "ration_supply_crate": 0.4,
+        "ground_cache": 0.4
+      },
+      "loose_loot_multiplier": 0.4
+    },
+    "monster_orange_creamsicle": {
+      // Settings for each energy drink can be changed from true, false or numbers.
+      "enable": true,
+      "effect_toggle": true,
+      "sold_by_trader": true,
+      "flea_banned": false,
+      "trader_price": 25000,
+      "flea_price": 35000,
+      "handbook_price": 30000,
+      "trader_stock": 2,
+      "loyalty_level": 1,
+      "loot_multipliers": {
+        // Read the Loot/spawn rates note above to understand what these numbers mean.
+        "duffle_bag": 0.4,
+        "dead_scav": 0.4,
+        "jacket": 0.4,
+        "ration_supply_crate": 0.4,
+        "ground_cache": 0.4
+      },
+      "loose_loot_multiplier": 0.4
+    },
+    "monster_guava": {
+      // Settings for each energy drink can be changed from true, false or numbers.
+      "enable": true,
+      "effect_toggle": true,
+      "sold_by_trader": true,
+      "flea_banned": false,
+      "trader_price": 25000,
+      "flea_price": 35000,
+      "handbook_price": 30000,
+      "trader_stock": 2,
+      "loyalty_level": 1,
+      "loot_multipliers": {
+        // Read the Loot/spawn rates note above to understand what these numbers mean.
+        "duffle_bag": 0.4,
+        "dead_scav": 0.4,
+        "jacket": 0.4,
+        "ration_supply_crate": 0.4,
+        "ground_cache": 0.4
+      },
+      "loose_loot_multiplier": 0.4
+    },
+    "arizona_green_tea": {
+      // Settings for each energy drink can be changed from true, false or numbers.
+      "enable": true,
+      "effect_toggle": true,
+      "sold_by_trader": true,
+      "flea_banned": false,
+      "trader_price": 25000,
+      "flea_price": 35000,
+      "handbook_price": 30000,
+      "trader_stock": 2,
+      "loyalty_level": 1,
+      "loot_multipliers": {
+        // Read the Loot/spawn rates note above to understand what these numbers mean.
+        "duffle_bag": 0.4,
+        "dead_scav": 0.4,
+        "jacket": 0.4,
+        "ration_supply_crate": 0.4,
+        "ground_cache": 0.4
+      },
+      "loose_loot_multiplier": 0.4
+    },
     "monster_blue": {
       // Settings for each energy drink can be changed from true, false or numbers.
       "enable": true,
@@ -181,7 +265,7 @@
     "bang": {
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": false,
+      "sold_by_trader": true,
       "flea_banned": false,
       "trader_price": 65000,
       "flea_price": 75000,
@@ -201,7 +285,7 @@
     "ghost_swedish_fish": {
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": false,
+      "sold_by_trader": true,
       "flea_banned": false,
       "trader_price": 50000,
       "flea_price": 83000,
@@ -221,7 +305,7 @@
     "c4_starburst": {
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": false,
+      "sold_by_trader": true,
       "flea_banned": false,
       "trader_price": 65000,
       "flea_price": 75000,
@@ -241,7 +325,7 @@
     "starbucks": {
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": false,
+      "sold_by_trader": true,
       "flea_banned": false,
       "trader_price": 55000,
       "flea_price": 62500,
@@ -261,7 +345,7 @@
     "monster_punch": {
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": false,
+      "sold_by_trader": true,
       "flea_banned": false,
       "trader_price": 65000,
       "flea_price": 85000,
@@ -281,7 +365,7 @@
     "rockstar": {
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": false,
+      "sold_by_trader": true,
       "flea_banned": false,
       "trader_price": 55000,
       "flea_price": 85000,
@@ -301,7 +385,7 @@
     "monster_doctor": {
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": false,
+      "sold_by_trader": true,
       "flea_banned": true,
       "trader_price": 120000,
       "flea_price": 130000,
@@ -321,7 +405,7 @@
     "monster_pacific_punch": {
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": false,
+      "sold_by_trader": true,
       "flea_banned": true,
       "trader_price": 90000,
       "flea_price": 120000,
@@ -341,7 +425,7 @@
     "ghost_peaches": {
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": false,
+      "sold_by_trader": true,
       "flea_banned": true,
       "trader_price": 90000,
       "flea_price": 115000,
@@ -361,7 +445,7 @@
     "monster_lemonade": {
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": false,
+      "sold_by_trader": true,
       "flea_banned": true,
       "trader_price": 125000,
       "flea_price": 160000,

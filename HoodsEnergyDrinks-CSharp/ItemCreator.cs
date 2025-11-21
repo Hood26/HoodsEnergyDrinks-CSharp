@@ -27,9 +27,9 @@ class ItemCreator
         var tableData = db.GetTables();
         tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs["alternate_buffs"] = buffInfo.buffs["alternate_buffs"];
 
-        foreach (KeyValuePair<string, DrinkProps> drink in drinks.Props)
+        foreach (var (name, props) in drinks.Items)
         {
-            tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[drink.Key] = config.drinks[drink.Key].effect_toggle ? buffInfo.buffs[drink.Key] : [];
+            tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].effect_toggle ? buffInfo.buffs[name] : [];
 
             var newItem = new NewItemFromCloneDetails
             {
@@ -38,25 +38,25 @@ class ItemCreator
                 {
                     Prefab = new Prefab
                     {
-                        Path = $"assets/{drink.Key}.bundle",
+                        Path = $"assets/{name}.bundle",
                         Rcid = ""
                     },
                     UsePrefab = new Prefab
                     {
-                        Path = $"assets/{drink.Key}_container.bundle",
+                        Path = $"assets/{name}_container.bundle",
                         Rcid = ""
                     },
                     DiscardLimit = -1,
                     Weight = 0.6,
                     FoodUseTime = 5,
-                    StimulatorBuffs = config.enable_alternate_buffs ? "alternate_buffs" : drink.Key,
+                    StimulatorBuffs = config.enable_alternate_buffs ? "alternate_buffs" : name,
                     EffectsHealth = new Dictionary<SPTarkov.Server.Core.Models.Enums.HealthFactor, EffectsHealthProperties>(),
                     EffectsDamage = new Dictionary<SPTarkov.Server.Core.Models.Enums.DamageEffectType, EffectsDamageProperties>(),
                 },
                 ParentId = "5448e8d64bdc2dce718b4568",
-                NewId = drink.Value._id,
-                FleaPriceRoubles = config.enable_alternate_buffs ? config.alternate_flea_price : config.drinks[drink.Key].flea_price,
-                HandbookPriceRoubles = config.enable_alternate_buffs ? config.alternate_handbook_price : config.drinks[drink.Key].handbook_price,
+                NewId = props._id,
+                FleaPriceRoubles = config.enable_alternate_buffs ? config.alternate_flea_price : config.drinks[name].flea_price,
+                HandbookPriceRoubles = config.enable_alternate_buffs ? config.alternate_handbook_price : config.drinks[name].handbook_price,
                 HandbookParentId = "5b47574386f77428ca22b335",
                 Locales = new Dictionary<string, LocaleDetails>
                 {
@@ -64,15 +64,15 @@ class ItemCreator
                          "en",
                          new LocaleDetails
                          {
-                            Name = drink.Value.name,
-                            ShortName = drink.Value.shortName,
-                            Description = drink.Value.desc
+                            Name = props.name,
+                            ShortName = props.shortName,
+                            Description = props.desc
                          }
                     }
                 }
             };
-            this.loot.StaticLoot[drink.Value._id] = new StaticLoot { Weights = new(config.drinks[drink.Key].loot_multipliers) };
-            this.loot.LooseLoot[drink.Value._id] = config.drinks[drink.Key].loose_loot_multiplier;
+            this.loot.StaticLoot[props._id] = new StaticLoot { Weights = new(config.drinks[name].loot_multipliers) };
+            this.loot.LooseLoot[props._id] = config.drinks[name].loose_loot_multiplier;
             customItemService.CreateItemFromClone(newItem);
 
         }
