@@ -3,32 +3,32 @@
         "ghost_blue_raspberry": {
             "_id": "66ccf66fc9162d12270bb155",
             "name": "Ghost Blue Raspberry Energy Drink",
-            "shortName": "Test",
-            "desc": "Test"
+            "shortName": "Ghost",
+            "desc": "Ghost Energy is the fully transparent, fully loaded energy drink we have all been waiting for. Our legendary energy drink features no sugar, no artificial colors, and authentic Strawbango Margarita flavor. It contains 200mg of Natural Caffeine from coffee beans, which has been found anecdotally to deliver a smooth, feel-good energy with less jitters and no crash when compared to other forms of caffeine."
         },
         "monster_guava": {
             "_id": "66ccf66fc9162d12270bb156",
             "name": "Monster Ultra Vice Guava",
-            "shortName": "Test",
-            "desc": "Test"
+            "shortName": "Monster",
+            "desc": "Ripened guava flavor with Miami swagger. Ultra Vice Guava has zero sugar, low calories, and the Monster Energy blend to fuel your fire. Bold energy for those who never blend in. "
         },
         "stalker_green": {
             "_id": "66ccf66fc9162d12270bb157",
             "name": "Nonstop Stalker Green Energy Drink",
-            "shortName": "Test",
-            "desc": "Test"
+            "shortName": "Stalker",
+            "desc": "Rare energy drink originating from the Pripyat region. This is an excellent energy drink consisting of caffeine, taurine and a mixture of rejuvenating vitamins. Just the ticket when you're too tired to push forward!"
         },
         "monster_orange_creamsicle": {
             "_id": "66ccf66fc9162d12270bb158",
-            "name": "Monster Orange Creamsicle",
-            "shortName": "Test",
-            "desc": "Test"
+            "name": "Monster Orange Dreamsicle",
+            "shortName": "Monster",
+            "desc": "Drenched in our signature style, these cans pop with color and attitude—screaming Monster from every angle. Monster Energy Orange Dreamsicle features a wickedly creamy orange-vanilla ice cream blend that delivers a bold, sweet energy kick you'll love."
         },
         "arizona_green_tea": {
             "_id": "66ccf66fc9162d12270bb159",
             "name": "Arizona Green Tea",
-            "shortName": "Test",
-            "desc": "Test"
+            "shortName": "Arizona",
+            "desc": "Taste the tea that started it all, Arizona Tea has been brewing this exact iced tea since 1992! What’s their secret? Keeping it simple. This quality tea is a great-tasting and affordable bottled iced tea option for refrigerators everywhere. Arizona Tea is brewed from hand-selected premium tea leaves from all around the globe. Arizona Tea is available for bulk purchase in 16oz packs of 12. Select from five delicious and diverse Arizona Tea flavors that are sure to leave all tea-lovers tastebuds satisfied."
         },
         "monster_blue": {
             "_id": "66ccf66fc9162d12270bb160",
@@ -82,7 +82,7 @@
             "_id": "66ccf66fc9162d12270bb185",
             "name": "Original S.T.A.L.K.E.R. Energy Drink",
             "shortName": "Stalker",
-            "desc": "Rare energy drink originating from the Pripyat region. This is an excellent energy drink consisting of caffeine, taurine and a mixture of rejuvenating vitamins. Just the ticket when you're too tired to push forward!"
+            "desc": "Energy drink originating from the Pripyat region. This is an excellent energy drink consisting of caffeine, taurine and a mixture of rejuvenating vitamins. Just the ticket when you're too tired to push forward!"
         },
         "rockstar": {
             "_id": "66ccf66fc9162d12270bb182",

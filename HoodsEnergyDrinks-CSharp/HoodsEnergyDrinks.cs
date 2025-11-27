@@ -15,12 +15,15 @@ using Microsoft.VisualBasic;
 using SPTarkov.Server.Core.Models.Common;
 using System.ComponentModel.Design;
 using JetBrains.Annotations;
+using System.Collections.Concurrent;
+using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace HoodsEnergyDrinks_CSharp;
 
 public record ModMetadata : AbstractModMetadata
 {
-    public override string Name { get; init; } = "HoodsEnergyDrinks";
+    public override string Name { get; init; } = "Hoods Energy Drinks";
     public override string Author { get; init; } = "Hood";
     public override List<string>? Contributors { get; init; }
     public override SemanticVersioning.Version Version { get; init; } = new("1.1.0");
@@ -121,21 +124,151 @@ public class HoodsEnergyDrinks(
             });
         }
 
-        /* Loose Loot Insertion
-        foreach (var drink in drinks.Items)
+
+
+        // Loose Loot Insertion (preload loose loot for maps in parallel to reduce wall-clock time)
+        var startTime = Stopwatch.GetTimestamp();
+        logger.Success("[Hoods Energy Drinks] Injecting energy drinks into loose loot spawns...");
+
+        var mapLooseLoots = new ConcurrentDictionary<string, SPTarkov.Server.Core.Models.Eft.Common.LooseLoot?>();
+        var parallelOptions = new ParallelOptions { MaxDegreeOfParallelism = Math.Min(Environment.ProcessorCount, maps.Length) };
+
+        Parallel.ForEach(maps, parallelOptions, map =>
         {
-            var lootComposedKey = drink.Value._id;
+            string mapName = tables.Locations.GetMappedKey(map);
+            Location location = tables.Locations.GetDictionary()[mapName];
+            var loose = location.LooseLoot?.Value;
+            mapLooseLoots[map] = loose;
+        });
+
+        foreach (var map in maps)
+        {
+            var mapLooseLoot = mapLooseLoots[map];
+
+            foreach (var (name, props) in drinks.Items)
+            {
+                var lootComposedKeyString = props._id + "_composedkey";
+                var lootComposedKey = new ComposedKey { Key = lootComposedKeyString };
+                var lootNewId = new MongoId();
+            }
+        }
+
+        var diff = Stopwatch.GetElapsedTime(startTime);
+        logger.Info($"Loose Loot Algorithm Timer = {diff}");
+
+
+
+
+
+
+
+
+
+        /*
+            // Loose Loot Insertion
             foreach (var map in maps)
             {
                 string mapName = tables.Locations.GetMappedKey(map);
                 Location location = tables.Locations.GetDictionary()[mapName];
-                //logger.Success($"map =  {map}");
-                //logger.Success($"mapName =  {mapName}");
+                var mapLooseLoot = location.LooseLoot.Value;
 
-            }
-        }
-        */
+                foreach (var (name, props) in drinks.Items)
+                {
+                    var lootComposedKeyString = props._id + "_composedkey";
+                    var lootComposedKey = new ComposedKey { Key = lootComposedKeyString};
+                    var lootNewId = new MongoId();
+                    //logger.Info($"Map Name = {map}");
+                    //logger.Info("1");
+                    //logger.Info("2");
 
+                    //foreach (var point in mapLooseLoot.Spawnpoints)
+                    //{
+                        //foreach (var itm in point.Template.Items)
+                        //{
+                            //logger.Info($"item_tpl = {itm.Template}");
+                            //if (itm.Template == "5751496424597720a27126da")
+                            //{
+                                /*
+                                var originalItemComposedKey = itm.ComposedKey;
+                                double? originRelativeProb;
+                                foreach (var dist in point.ItemDistribution)
+                                {
+                                    if (dist.ComposedKey.Key == originalItemComposedKey)
+                                    {
+                                        originRelativeProb = dist.RelativeProbability;
+                                        var newItem = new SptLootItem
+                                        {
+                                            Id = lootNewId,
+                                            Template = props._id,
+                                            ComposedKey = lootComposedKeyString
+                                        };
+                                        var itemsList = point.Template.Items.ToList() ?? new List<SptLootItem>();
+                                        itemsList.Add(newItem);
+                                        point.Template.Items = itemsList;
+                                    }
+                                }
+
+
+                                var newLooseLootItemDistribution = new LooseLootItemDistribution
+                                {
+                                    ComposedKey = lootComposedKey,
+                                    RelativeProbability = 9999999999
+                                };
+                                var itemDistribution = point.ItemDistribution.ToList() ?? new List<LooseLootItemDistribution>();
+                                itemDistribution.Add(newLooseLootItemDistribution);
+                                point.ItemDistribution = itemDistribution;
+
+                                // Transformer
+                                location.LooseLoot.AddTransformer(lazyLoadedLooseLoot =>
+                                {
+                                    if (lazyLoadedLooseLoot == null) return lazyLoadedLooseLoot;
+
+                                    foreach (var point in lazyLoadedLooseLoot.Spawnpoints)
+                                    {
+                                        foreach (var itm in point.Template.Items)
+                                        {
+                                            if (itm.Template == "5751496424597720a27126da")
+                                            {
+                                                var originalItemComposedKey = itm.ComposedKey;
+                                                double? originRelativeProb;
+                                                foreach (var dist in point.ItemDistribution)
+                                                {
+                                                    if (dist.ComposedKey.Key == originalItemComposedKey)
+                                                    {
+                                                        originRelativeProb = dist.RelativeProbability;
+                                                        var newItem = new SptLootItem
+                                                        {
+                                                            Id = lootNewId,
+                                                            Template = props._id,
+                                                            ComposedKey = lootComposedKeyString
+                                                        };
+                                                        var itemsList = point.Template.Items.ToList() ?? new List<SptLootItem>();
+                                                        itemsList.Add(newItem);
+                                                        point.Template.Items = itemsList;
+                                                    }
+                                                }
+
+                                                var newLooseLootItemDistribution = new LooseLootItemDistribution
+                                                {
+                                                    ComposedKey = lootComposedKey,
+                                                    RelativeProbability = 9999999999
+                                                };
+                                                var itemDistribution = point.ItemDistribution.ToList() ?? new List<LooseLootItemDistribution>();
+                                                itemDistribution.Add(newLooseLootItemDistribution);
+                                                point.ItemDistribution = itemDistribution;
+                                            }
+                                        }
+                                    }
+                                    return lazyLoadedLooseLoot;
+                                });
+                                */
+        //}
+        //}
+        //}
+        //}
+        //}
+
+        var startTime2 = Stopwatch.GetTimestamp();
         // Static Loot Insertion
         foreach (var (name, props) in drinks.Items)
         {
@@ -188,9 +321,10 @@ public class HoodsEnergyDrinks(
             }
             //break;
         }
+        var diff2 = Stopwatch.GetElapsedTime(startTime2);
+        logger.Info($"Static Loot Algorithm Timer = {diff2}");
 
-
-        logger.Success("[Hoods Energy Drinks] Energy Drinks successfully added to server!");
+        logger.Success("[Hoods Energy Drinks] Successfully added to server!");
         return Task.CompletedTask;
     }
 
@@ -217,7 +351,7 @@ public class HoodsEnergyDrinks(
             }
         }
 
-        float defaultWeight = 500;
+        float defaultWeight = 400;
         //logger.Error($"Could Not Find Hot Rod Relative Probability in map = {map} lootContainer = {getLootContainerString(lootContainer)} Setting default weight value to {defaultWeight}");
         return defaultWeight;
     }

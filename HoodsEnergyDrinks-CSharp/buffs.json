@@ -6,7 +6,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -15,9 +15,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -134,99 +134,36 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 5,
         "SkillName": "",
-        "Value": 0.5
+        "Value": 10
       },
       {
         "AbsoluteValue": true,
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
+        "Duration": 5,
+        "SkillName": "",
+        "Value": 10
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
         "Duration": 120,
-        "SkillName": "",
-        "Value": 0.3
-      },
-      {
-        "AbsoluteValue": true,
-        "BuffType": "StaminaRate",
-        "Chance": 1,
-        "Delay": 0,
-        "Duration": 400,
-        "SkillName": "",
-        "Value": 0.2
-      },
-      {
-        "AbsoluteValue": true,
-        "BuffType": "MaxStamina",
-        "Chance": 1,
-        "Delay": 0,
-        "Duration": 400,
-        "SkillName": "",
-        "Value": 5
-      },
-      {
-        "BuffType": "SkillRate",
-        "Chance": 1,
-        "Delay": 0,
-        "Duration": 400,
-        "AbsoluteValue": true,
-        "SkillName": "StressResistance",
-        "Value": 5
-      },
-      {
-        "AbsoluteValue": true,
-        "BuffType": "SkillRate",
-        "Chance": 1,
-        "Delay": 0,
-        "Duration": 400,
-        "SkillName": "Perception",
-        "Value": 5
-      },
-      {
-        "AbsoluteValue": true,
-        "BuffType": "SkillRate",
-        "Chance": 1,
-        "Delay": 0,
-        "Duration": 400,
-        "SkillName": "Intellect",
-        "Value": 5
-      },
-      {
-        "AbsoluteValue": true,
-        "BuffType": "SkillRate",
-        "Chance": 1,
-        "Delay": 0,
-        "Duration": 400,
-        "SkillName": "Attention",
-        "Value": 5
-      },
-      {
-        "AbsoluteValue": true,
-        "BuffType": "SkillRate",
-        "Chance": 1,
-        "Delay": 0,
-        "Duration": 400,
-        "SkillName": "Search",
-        "Value": 5
-      },
-      {
-        "AbsoluteValue": true,
-        "BuffType": "SkillRate",
-        "Chance": 1,
-        "Delay": 400,
-        "Duration": 120,
-        "SkillName": "Health",
-        "Value": -5
+        "SkillName": "Metabolism",
+        "Value": -25
       },
       {
         "AbsoluteValue": true,
         "BuffType": "EnergyRate",
         "Chance": 1,
-        "Delay": 400,
-        "Duration": 50,
+        "Delay": 6,
+        "Duration": 60,
         "SkillName": "",
-        "Value": -0.5
+        "Value": -2.5
       },
       {
         "AbsoluteValue": true,
@@ -244,7 +181,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -253,9 +190,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -354,7 +291,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -363,9 +300,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -464,7 +401,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -473,9 +410,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -574,7 +511,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -583,9 +520,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -684,7 +621,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -693,9 +630,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -794,7 +731,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -803,9 +740,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -886,7 +823,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -895,9 +832,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -1014,7 +951,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -1023,9 +960,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -1160,7 +1097,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -1169,9 +1106,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -1288,7 +1225,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -1297,9 +1234,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -1416,7 +1353,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -1425,9 +1362,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -1562,7 +1499,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -1571,9 +1508,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -1663,7 +1600,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -1672,9 +1609,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -1800,7 +1737,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -1809,9 +1746,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -1946,7 +1883,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -1955,9 +1892,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -2074,7 +2011,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -2083,9 +2020,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -2220,7 +2157,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -2229,9 +2166,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -2402,7 +2339,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -2411,9 +2348,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.4
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -2530,7 +2467,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -2539,9 +2476,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -2685,7 +2622,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -2694,9 +2631,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
@@ -2786,7 +2723,7 @@
         "BuffType": "EnergyRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
         "Value": 0.5
       },
@@ -2795,9 +2732,9 @@
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 120,
+        "Duration": 60,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.5
       },
       {
         "AbsoluteValue": true,
