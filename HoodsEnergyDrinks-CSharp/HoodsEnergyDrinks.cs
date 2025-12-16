@@ -15,21 +15,6 @@ using SPTarkov.Server.Core.Models.Common;
 
 namespace HoodsEnergyDrinks_CSharp;
 
-public record ModMetadata : AbstractModMetadata
-{
-    public override string Name { get; init; } = "Hoods Energy Drinks";
-    public override string Author { get; init; } = "Hood";
-    public override List<string>? Contributors { get; init; }
-    public override SemanticVersioning.Version Version { get; init; } = new("1.1.0");
-    public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.0");
-    public override List<string>? Incompatibilities { get; init; }
-    public override Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; }
-    public override string? Url { get; init; } = "https://github.com/Hood26/HoodsEnergyDrinks-CSharp/tree/master";
-    public override bool? IsBundleMod { get; init; } = true;
-    public override string? License { get; init; } = "MIT";
-    public override string ModGuid { get; init; } = "com.hood.moreenergydrinks";
-}
-
 [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
 public class HoodsEnergyDrinks(
     ISptLogger<HoodsEnergyDrinks> logger,
@@ -131,30 +116,39 @@ public class HoodsEnergyDrinks(
                     {
                         if (itm.Template == hotRodEnergyDrinkId)
                         {
-                            foreach (var (name, props) in drinks.Items)
-                            {
-                                var lootComposedKeyString = props._id + "_composedkey";
-                                var lootComposedKey = new ComposedKey { Key = lootComposedKeyString };
-                                var lootNewId = new MongoId();
+                            foreach (var dist in point.ItemDistribution) {
+                                if(dist.ComposedKey.Key == itm.ComposedKey) {
+                                    double? originalProbability = dist.RelativeProbability;
 
-                                var newItem = new SptLootItem
-                                {
-                                    Id = lootNewId,
-                                    Template = props._id,
-                                    ComposedKey = lootComposedKeyString
-                                };
-                                var itemsList = point.Template.Items.ToList() ?? new List<SptLootItem>();
-                                itemsList.Add(newItem);
-                                point.Template.Items = itemsList;
+                                    //var origin = point.ItemDistribution
+                                    foreach (var (name, props) in drinks.Items)
+                                    {
+                                        if (!config.drinks[name].enable) continue;
 
-                                var newLooseLootItemDistribution = new LooseLootItemDistribution
-                                {
-                                    ComposedKey = lootComposedKey,
-                                    RelativeProbability = 9999999999
-                                };
-                                var itemDistribution = point.ItemDistribution?.ToList() ?? new List<LooseLootItemDistribution>();
-                                itemDistribution.Add(newLooseLootItemDistribution);
-                                point.ItemDistribution = itemDistribution;
+                                        var lootComposedKeyString = props._id + "_composedkey";
+                                        var lootComposedKey = new ComposedKey { Key = lootComposedKeyString };
+                                        var lootNewId = new MongoId();
+
+                                        var newItem = new SptLootItem
+                                        {
+                                            Id = lootNewId,
+                                            Template = props._id,
+                                            ComposedKey = lootComposedKeyString
+                                        };
+                                        var itemsList = point.Template.Items.ToList() ?? new List<SptLootItem>();
+                                        itemsList.Add(newItem);
+                                        point.Template.Items = itemsList;
+
+                                        var newLooseLootItemDistribution = new LooseLootItemDistribution
+                                        {
+                                            ComposedKey = lootComposedKey,
+                                            RelativeProbability = originalProbability * config.drinks[name].loose_loot_multiplier
+                                        };
+                                        var itemDistribution = point.ItemDistribution?.ToList() ?? new List<LooseLootItemDistribution>();
+                                        itemDistribution.Add(newLooseLootItemDistribution);
+                                        point.ItemDistribution = itemDistribution;
+                                    }
+                                }
                             }
                         }
                     }
@@ -169,6 +163,8 @@ public class HoodsEnergyDrinks(
 
                 foreach (var (name, props) in drinks.Items)
                 {
+                    if (!config.drinks[name].enable) continue;
+
                     var staticLootProbabilities = itemCreator.loot.StaticLoot[props._id].Weights;
 
                     foreach (var (lootContainerString, probability) in staticLootProbabilities)
@@ -198,7 +194,7 @@ public class HoodsEnergyDrinks(
                 return lazyLoadedStaticLoot;
             });
         }
-        
+
         logger.Success("[Hoods Energy Drinks] Successfully added to server!");
         return Task.CompletedTask;
     }

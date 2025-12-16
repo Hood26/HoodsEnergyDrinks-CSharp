@@ -1,3 +1,5 @@
+// Some File I can write my ideas down for balancing changes
+
 slight < minor < better < major < Overpowered
 1-2    < 5     < 10-15  < 20-30 < 30+
 need:
@@ -24,234 +26,82 @@ Idea: Nerf the overall use time to maybe 300-600 seconds
 
 Therapist List:
     LL1
-    - Monter Blue
+    - Monter Blue (looting)
     LL2
-    - Monter Green
-    - Monster White
+    - Monter Green (movement)
+    - Monster White (combat)
     LL3
-    - Monster Strawberry
-    - Ghost Strawbango
+    - Monster Strawberry (heal)
+    - Ghost Blue Raspberry (looting)
     LL4
-    - Monster Ultra Guava Ice
-    - 
+    - Nos Energy Drink (fast run)
+    - Monster Ultra Vice Guava (combat)
+    - Green Stalker Energy Drink (looting? blue & green combined)
 
 
 
 Energy Drink List: (Standardised)
-    - Monster Blue: (lvl 1 Common) 25k trader, 35k flea
+
+    Need To Do:...
+        - Remove stress resistance from all previous buffs
+        - stress resistance is now only on a few energy drinks
+
+
+    Energy Drinks:
+    - Monster Blue: (lvl 2 Uncommon) 25k trader, 35k flea
         - +3 scavenging skills 300 sec (.2 + 5)
-    - Monster Green: (lvl 1 Common) 30k, 40k
+    - Monster Green: (lvl 2 Uncommon) 30k, 40k
         - +3 movement skills 300 sec (.4 + 10)
-    - Monster White: (lvl 1 Common) 30k, 45k
-        - +2 skills blue and green 400 sec (.3 + 10)
+    - Monster White: (lvl 2 Uncommon) 30k, 45k
+        - +3 combat & mag drills, 5% weight reduction 300 sec (.2 + 10)
     - Monster Strawberry: (lvl 2 Uncommon) 40k, 50k
         - +.4 health regen, +1 strength & endurance, +3 health and surgery, 400 sec (.2 + 5)
-    - Monster Orange Creamsicle: (lvl 2 Uncommon) 45k, 55k
-        - +3 blue skills, +3 green skills and 10% weight reduction 400 sec (.2 + 10)
+    - Monster Orange Dreamsicle: (lvl 2 Uncommon) 45k, 55k
+        - +3 covert movement, +3 search, 10% weight reduction 400 sec (.2 + 10)
     - Monster Ultra Vice Guava: (lvl 2 Uncommon) 50k, 60k
-        - 3% reduced damage taken, +3 combat skills, +3 mag drills 400 sec (.3 + 10)
-    - Monster Punch: (lvl 3 Rare) 80k, 100k 
-        - +.4 health regen, +5 aim drills & mag drills, +5 strength & endurance 600 sec (0.4 + 15)
+        - 1% reduced damage taken, +3 combat skills, +3 mag drills 400 sec (.3 + 10)
+    - Monster Pipeline Punch: (lvl 3 Rare) 80k, 100k 
+        - +.2 health regen, +5 aim drills & mag drills, +3 Light & Heavy Vests 600 sec (0.3 + 15)
     - Monster Pacific Punch: (lvl 4 Ultra-Rare) 100k, 120k (Flea-Banned)
         - +10 green skills, -5% reduced damage taken, +10 aim drill & mag drills, 600 sec (.6 + 20)
     - Monster The Doctory: (lvl 4 Ultra-Rare) 120k, 180k (Flea-Banned)
-        - +.6 health regen, -10% reduced damage taken, +10 health skills, 600 sec
+        - +5 geen skills +.6 health regen, -10% reduced damage taken, +10 Health, +10 Surgery, 600 sec
     - Monster Aussie-Lemonade: (lvl 4 Ultra-Rare) 140k, 200k (Flea-Banned)
-        - Provide +20 to all skills, -15% reduced damage, 0.6 health regen, -30% reduced weight, has a 20% chance to kill the user on use, 800 sec (2.0 + 30)
+        - Provide +20 to all skills, -15% reduced damage, 0.6 health regen, -30% reduced weight, has a 10% chance to kill the user on use, 800 sec (2.0 + 30)
 
-    - Ghost Strawbango: (lvl 2 Uncommon) 45k, 55k
-        - +3 skills blue +15% weight reduction, 600 sec (.2 + 10)
     - Ghost Blue Raspberry: (lvl 2 Uncommon) 45k, 55k
-        - +3 skills green +15% weight reduction, 600 sec (.2 + 10)
-    - Ghost Peaches: (lvl 3 Rare) 60k, 80k
-        - +5 blue skills  +25% weight reduction, 600 sec (.4 + 10)
+        - +3 covert movement, +3 search +15% weight reduction, 400 sec (.2 + 10)
+    - Ghost Strawbango: (lvl 2 Uncommon) 45k, 55k
+        - +3 skills green, +15% weight reduction, 400 sec (.4 + 10)
+    - Ghost Peaches: (lvl 3 Rare) 70k, 80k
+        - +5 covert movement, +5 Search, +30% weight reduction, 600 sec (.4 + 15)
     - Ghost Swedish Fish: (lvl 4 Ultra-Rare) 80k, 100k (Flea-Banned)
-        - +10 green skills, +10 blue skills  +30% weight reduction, 800 sec (.6 + 20)
+        - +10 green skills, +10 covert movement, +10 Search, +30% weight reduction, 800 sec (.6 + 20)
 
 
-    - Stalker Original Energy: (lvl 2 Uncommon) 40k, 50k
-        - +3 blue skills 600 sec (0.4 + 10) 
-    - Stalker Green Energy: (lvl 2 Uncommon) 50k, 60k
-        - +3 green skills 600 sec (0.8 + 20) 
+    - Starbucks Double Shot Energy (lvl 1 Common) 25k, 35k (I like this price...)
+        - +1 green skills +1 stress resistance +1, mag drills 300 sec (0.2 + 10)
     - NOS Energy: (lvl 2 Uncommon) 45k 55k
-        - +5 green skills, -5% weight reduction 400 sec (0.6 + 30)
+        - +5 green skills, +10% weight reduction 400 sec (0.65 + 20)
+    - Stalker Green Energy: (lvl 3 Rare) 50k, 60k
+        - +3 green +3 scavenging +10% weight reduction  400 sec (0.4 + 15) 
     - Rockstar Energy: (lvl 3 Rare) 80k 90k
-        - +5 greens skills, 5% reduced damage taken, 600 sec (0.4 + 10)
+        - +5 greens skills, 3% reduced damage taken, 600 sec (0.4 + 15)
+    - Bang Rainbow Unicorn Energy: (lvl 3 Rare) 40k, 50k
+        - +5 stress resistance, +5 Vitality, +5 aim drills, +5 mag drills 600 sec (0.4 + 15)
+    - Stalker Original Energy: (lvl 4 Ultra-Rare) 40k, 50k
+        - +10 blue skills 600 sec (0.6 + 20) 
     - C4 Starburst Energy (lvl 4 Ultra-Rare) 100k, 120k (Flea-Banned)
-        - +15 green skills, +15 aim drill & mag drills, -15% weight reduction, 5% chance to kill(explode) on consumption 600 sec (1.0 + 20)
-
-    COMMONS
-    - Bang Rainbow Unicorn Energy: (lvl 1 Common) 40k, 50k
-        - +3 aim drills & mag drills, +3 armour skills, 300 sec 
-    - Arizona Green Tea Energy (lvl 1 Common) 40k, 50k
-        - +3 blue skills, +10% weight reduction 300 sec (.2 + 5)
-    - Starbucks Double Shot Energy (lvl 1 Common) 40k, 50k
-        - +3 green skills, +3 aim drill & mag drills 300 sec (.4 + 10)
+        - +15 green skills, +15 aim drill & mag drills, +30% weight reduction, 5% chance to kill(explode) on consumption 600 sec (1.0 + 25)
 
 
 
-
-
-
-
-
-Energy Drink List: (Alternative Fun Buffs Version)
-    - Monster Blue: (lvl 1 Common) 25k trader, 35k flea
-        - +5 scavenging skills 300 sec (.2 + 5)
-    - Monster Green: (lvl 2 Common) 30k, 45k
-        - +5 movement skills 300 sec (.4 + 10)
-    - Monster White: (lvl 2 Common) 30k, 45k
-        - +3 skills blue and green 300 sec (.3 + 10)
-    - Monster Strawberry: (lvl 3 Uncommon) 40k, 50k
-        - +.4 health regen, +3 strength & endurance, +5 health & armour skills, 400 sec (.2 + 5)
-    - Monster Orange Creamsicle (lvl 3 Uncommon) 45k, 55k
-        - +10 green skills and 10% weight reduction 400 sec (.3 + 10)
-    - Monster Ultra Vice Guava (lvl 3 Uncommon) 50k, 60k
-        - 5% reduced damage taken, +10 combat skills 400 sec (.3 + 10)
-    - Monster Punch (lvl 4 Rare) 80k, 100k (Flea-Banned)
-        - +.4 health regen, +10 aim drills & mag drills, +10 strenght & endurance, +10 health & armour skills, 600 sec (0.4 + 15)
-    - Monster Pacific Punch (lvl 5 Ultra-Rare) 120k, 180k (Flea-Banned)
-        - -15% reduced damage taken, +20 aim drill & mag drills, +10 green skills 600sec (.6 + 20)
-    - Monster Aussie-Lemonade (lvl 5 Ultra-Rare) 140k, 200k (Flea-Banned) ????????????????????????
-        - Provides +50 levels to all skils, -15% reduced damage, 0.6 health regen, -30% reduced weight,  has a 10% chance to kill the user on use, -0.5 health after 30 minutes, lasts 30 minutes (2.0 + 30)
-
-    - Ghost Strawbango (lvl 3 Uncommon) 45k, 55k
-        - +5 skills blue +15% weight reduction, 600 sec (.2 + 10)
-    - Ghost Blue Raspberry (lvl 3 Uncommon) 45k, 55k
-        - +5 skills green +15% weight reduction, 600 sec (.2 + 10)
-    - Ghost Peaches (lvl 4 Rare) 60k, 80k
-        - +10 blue skills  +25% weight reduction, 600 sec (.4 + 20)
-    - Ghost Swedish Fish (lvl 5 Ultra-Rare) 100k, 120k (Flea-Banned)
-        - +20 blue skills  +35% weight reduction, 600 sec (.6 + 20)
-
-
-
-
-
-
-
-
-
-
-
-
-TRADERS: (50 seconds -1 energy)
-blue monster lvl 1 25k 35k
- - +5 scavenging skills 400 sec (.2 + 5)
-green monster lvl 2 30k 45k
- - +5 movement skills 400 sec (.4 + 10)
-white monster lvl 2 30k 45k
- - +3 skills blue and green 600 sec (.3 + 10)
-strawberry lvl 3 35k 45k
- - +.4 health regen, +3 strength & endurance, +5 health & armour skills, 600 sec (.2 + 5)
-nos lvl 3 45k 55k
- - +10 skills green 600 sec (.6 + 20)
-ghost strawbango lvl 3 45k 55k
- - +10 skills blue + 15% weight reduction, 600 sec (.2 + 10)
-stalker lvl 4 50k 70k
- - +10 skills white monster, 10% weight reduction 800sec (.4 + 10)
-
-
-FLEA MARKET (60 seconds -1 energy)
-starbucks 62.5k
- - +5 all stats, +.01 health regen, -2% damage taken, -2% weight reduction 600sec (0.4 + 10)
-bang (flea) 70k (combat buffs, weight reduction)
- - +10 skills green, +10 aim drill & mag drills, 5% weight reduction, +800sec (0.4 + 15)
-c4 starburst (flea) 70k
- - +15 green skills, 600 sec (1.0 + 20)
-ghost swedish fish (flea) 75k
- - + 15 skills blue + 25% weight reduction, 800sec (0.4 + 10)
-monster punch (flea) 85k
- - +.4 health regen, +10 aim drills & mag drills, +10 strenght & endurance, +10 health & armour skills, 800 sec (0.4 + 15)
-rockstar lvl 4 80k (combat buffs, reduced damage)
- - 5% reduced damage taken, +10 aim drill & mag drills, +10 greens skills, 800 sec (0.4 + 10)
-
-FLEA MARKET BANNED (60 seconds -1.5 energy)
-Ghost Peaches:
-   - +20 skills green, -35% weight reduction, +20 blue monster 800 sec (1.0 + 30)
-monster doctor 115k
- - -10% reduced damage taken, very good passive healing, 600sec (0.6 + 20)
-monster pacific punch 115k
- - -15% reduced damage taken, +20 aim drill & mag drills, +10 green skills, +0.5 stamina recovery, +20 max stamina, 600sec (0.6 + 20)
-monster aussie lemonade 130k
- - Provides +30 levels to all skils, -10% reduced damage, 0.3 health regen, - 10% reduced weight,  has a 10% chance to kill the user on use, -0.5 health after 30 minutes, lasts 30 minutes (2.0 + 30)
- - overpowered craziness, 800sec
-
-
-
-
-
-
-
-
-
-energy drink ideas:
-  - probably a more juiced up white monster, long lasting minor-better stats
-
-ideas
-    - Major rebalance idea: (less overpowered and short drinks -> minor advantages and long-lasting)
-      - decrease the effect values of all energy drink
-      - increase duration to 500sec minimum - 1200sec max
-      - decrease price of all energy drinks
-    - Green monster like, but very long lasting, with devastating energy loss after.
-
-Ghost Swedish Fish (mix of everything)
-    - like the strawbango ghost, but longer lasting and better effects. Much more expensive
-Monster Pacific Punch (better strawberry monster)
-    - better Health regeneration, better increases to stamina, 
-Stalker (the ultimate looting, stamina drink for cheap)
-    - maybe 10% weight reduction, minor-better stamina. long lasting 500sec?
-    - probably just stamina like original effects in the stalker games
-    - Maybe a more juiced up blue monster with a little more stamina gain, long-lasting. Tier III?
-
-Tier I:
-Blue Monster (trader 25k, 35k flea) 
-    - (400sec) Earliest Energy Drink. minor increases to scavenging and alertness. Slight increases to stamina
-    - +0.1 stam recov, +2 Max stam, +10 stress resis, percep, intel, atten, search
-    - -10 health (120sec)
-
-
-Tier II:
-White Monster (trader 35k, 45k flea) 
-    - (500sec) Slightly increases stamina, scavenging, and alertness.
-Green Monster (30k, 40k flea) 
-    - (300sec) Minor increases to stamina, minor stress resis
-Strawberry Monster (45k 60k flea) 
-    - (300sec) Minor Health regeneration, Slight increases to stamina
-Ghost Strawbango (45k 60k flea) 
-    - (400sec) Major weight limit, better stammina, better covert movement, minor stress resis
-
-
-Tier III:
-NOS (55k 70k flea) 
-    - NEW (300sec) better green monster, less duration
-    - (240sec) (Probably change this to: major-overpowered short burst stamina) Major stamina, slight stress resis
-Punch Monster (80k) 
-    - (400sec) Major Scavenging and alertness. Better Stamina Stamina. Minor Health regeneration.
-Bang (100k) 
-    - (300sec) Major reduced damage taken, better stamina, better stress resis
-C4 Starburst (70k) 
-    - (500sec) major scavenging and alertness, better stamina
-Rockstar (115k) (600sec) 
-    - (Probably change this to: better long lasting stamina. its too OP rn) major stamina, slight stress resis
-starbucks (110k) (500sec) 
-    - (kinda the same as rockstar, maybe something different: long lasting scavenging and alerntness, and minor stamina?)better stamina, better stress & perception
-
-Tier IV:
-Doctor Monstor (130k) BANNED!!!!!!!!!!!!!!
-    - (400sec) better health-regen, major health skills, 5% reduced damage taken, better stamina
-
-Tier V:
-Aussie Lemonade Monster (150k) BANNED!!!!!!!!!!!!!!
-    - (...sec) overpowered reduced damage taken, major stamina, stress resis, better health regen
-
-
-Stims:
-SJ6 (105k) (240sec)
- - overpowered stamina, no Strength
-propital (33k) (300sec)
- - +1 heal regen per sec, remove pain, major health skills
-SJ1 (35k) (180sec)
- - major stamina, strength, stress resis
-L1 (20k) (120sec)
- - +10 endurance, +20 strength, +30 Max Stamina
+    Common Regular Drinks:
+    - Arizona Green Tea Energy (lvl 1 Common) 30k, 40k
+        - +1 Metabolism, +5% weight reduction 300 sec (+40 hydration NO DEBUFFS)
+    - Arizona Watermelon (lvl 1 Common) 25k, 35k
+        - +1 Health, +5% weight reduction 300sec (+40 hydration NO DEBUFFS)
+    - Arizona Mucho Mango (lvl 1 Common) 25k, 35k
+        - +1 Search skills, +5% weight reduction 300sec (+40 hydration NO DEBUFFS)
+    - another common idea..................
+        - +1 health, +5% weight reduction 300sec (+40 hydration NO DEBUFFS)

@@ -1,5 +1,17 @@
 {
    "Items": {
+        "arizona_mucho_mango": {
+            "_id": "66ccf66fc9162d12270bb153",
+            "name": "Arizona Mucho Mango",
+            "shortName": "Arizona",
+            "desc": "Put a tropical twist on your beverage picks by sipping on this Mucho Mango Juice Cocktail crafted with vitamin C."
+        },
+        "arizona_watermelon": {
+            "_id": "66ccf66fc9162d12270bb154",
+            "name": "Arizona Watermelon",
+            "shortName": "Arizona",
+            "desc": "Inspire a summertime mood with this watermelon-flavored juice that includes immune-boosting vitamin C."
+        },
         "ghost_blue_raspberry": {
             "_id": "66ccf66fc9162d12270bb155",
             "name": "Ghost Blue Raspberry Energy Drink",
