@@ -1,107 +1,60 @@
 // Some File I can write my ideas down for balancing changes
 
-slight < minor < better < major < Overpowered
-1-2    < 5     < 10-15  < 20-30 < 30+
-need:
-+mag drills
-+aim drills
-+surgery
-
-Idea: Nerf the overall use time to maybe 300-600 seconds
-      Common energy drinks give +1-3 of a skill or two: combat skills, magazine loading, surgery?, ...
-      Uncommon energy drinks have a Standardised set of skills that get better over higher rarities
-      Rare +5-10 of a skill set
-      Extremely rare: +10-20 a skill set and high unique skill: ie... reduced damage taken, health regen, weight reduction, ...
-
-
-  Energy = 60 * 1 = 60
-  Water  = 60 * .5 = 30
-
-  Lvl 25 Metabolism adds 25% reduced negative effects percentage and duration...
-
-  common energy     = 60 * -1.0 = -60
-  Uncommon energy   = 60 * -1.5 = -60
-  Rare energy       = 60 * -2.0 = -60
-  Ultra-Rare energy = 60 * -2.5 = -84 (actauly 36sec at lvl 25 metabolism)
-
-Therapist List:
-    LL1
-    - Monter Blue (looting)
-    LL2
-    - Monter Green (movement)
-    - Monster White (combat)
-    LL3
-    - Monster Strawberry (heal)
-    - Ghost Blue Raspberry (looting)
-    LL4
-    - Nos Energy Drink (fast run)
-    - Monster Ultra Vice Guava (combat)
-    - Green Stalker Energy Drink (looting? blue & green combined)
-
-
-
-Energy Drink List: (Standardised)
-
-    Need To Do:...
-        - Remove stress resistance from all previous buffs
-        - stress resistance is now only on a few energy drinks
-
-
-    Energy Drinks:
+Energy Drinks:
     - Monster Blue: (lvl 2 Uncommon) 25k trader, 35k flea
         - +3 scavenging skills 300 sec (.2 + 5)
     - Monster Green: (lvl 2 Uncommon) 30k, 40k
-        - +3 movement skills 300 sec (.4 + 10)
+        - +3 movement skills 300 sec (.3 + 10)
     - Monster White: (lvl 2 Uncommon) 30k, 45k
-        - +3 combat & mag drills, 5% weight reduction 300 sec (.2 + 10)
+        - +3 combat & mag drills, 5% weight reduction 300 sec (.2 + 5)
     - Monster Strawberry: (lvl 2 Uncommon) 40k, 50k
-        - +.4 health regen, +1 strength & endurance, +3 health and surgery, 400 sec (.2 + 5)
+        - +.4 health regen, +1 strength & endurance, +3 Vitality and surgery, 400 sec (.2 + 5)
     - Monster Orange Dreamsicle: (lvl 2 Uncommon) 45k, 55k
-        - +3 covert movement, +3 search, 10% weight reduction 400 sec (.2 + 10)
+        - +3 charisma, +3 search, 10% weight reduction 400 sec (.2 + 10)
     - Monster Ultra Vice Guava: (lvl 2 Uncommon) 50k, 60k
-        - 1% reduced damage taken, +3 combat skills, +3 mag drills 400 sec (.3 + 10)
+        - 1% reduced damage taken, +3 combat skills, +3 mag drills 400 sec (.2 + 10)
     - Monster Pipeline Punch: (lvl 3 Rare) 80k, 100k 
-        - +.2 health regen, +5 aim drills & mag drills, +3 Light & Heavy Vests 600 sec (0.3 + 15)
+        - +.4 health regen, +5 aim drills & mag drills, +3 Light & Heavy Vests 400 sec (0.4 + 15)
     - Monster Pacific Punch: (lvl 4 Ultra-Rare) 100k, 120k (Flea-Banned)
-        - +10 green skills, -5% reduced damage taken, +10 aim drill & mag drills, 600 sec (.6 + 20)
+        - +10 green skills, -5% reduced damage taken, +10 aim drill & mag drills, 5% chance to die of heart failure after 600 sec (0.6 + 20)
     - Monster The Doctory: (lvl 4 Ultra-Rare) 120k, 180k (Flea-Banned)
-        - +5 geen skills +.6 health regen, -10% reduced damage taken, +10 Health, +10 Surgery, 600 sec
+        - +5 green skills +.6 health regen, -10% reduced damage taken, +10 Health, +10 Surgery, 5% chance to die of heart failure after 600 sec (0.4 + 15)
     - Monster Aussie-Lemonade: (lvl 4 Ultra-Rare) 140k, 200k (Flea-Banned)
-        - Provide +20 to all skills, -15% reduced damage, 0.6 health regen, -30% reduced weight, has a 10% chance to kill the user on use, 800 sec (2.0 + 30)
+        - Provide +20 to all skills, -15% reduced damage, 0.6 health regen, -30% reduced weight, has a 20% to die of heart failure after 600 sec (2.0 + 30)
 
+    - Ghost Grape-Cran Energy (lvl 1 Common) 25k, 35k
+        - +1 covert movement, +1 search +5% weight reduction, 300 sec (.2 + 5)
     - Ghost Blue Raspberry: (lvl 2 Uncommon) 45k, 55k
-        - +3 covert movement, +3 search +15% weight reduction, 400 sec (.2 + 10)
-    - Ghost Strawbango: (lvl 2 Uncommon) 45k, 55k
-        - +3 skills green, +15% weight reduction, 400 sec (.4 + 10)
+        - +3 covert movement, +3 search +10% weight reduction, 400 sec (.2 + 5)
+    - Ghost Strawbango: (lvl 2 Uncommon) 50k, 60k
+        - +3 covert movement, +3 skills green, +10% weight reduction, 400 sec (.4 + 10)
     - Ghost Peaches: (lvl 3 Rare) 70k, 80k
-        - +5 covert movement, +5 Search, +30% weight reduction, 600 sec (.4 + 15)
+        - +5 covert movement, +5 Search, +20% weight reduction, 600 sec (.4 + 15)
     - Ghost Swedish Fish: (lvl 4 Ultra-Rare) 80k, 100k (Flea-Banned)
-        - +10 green skills, +10 covert movement, +10 Search, +30% weight reduction, 800 sec (.6 + 20)
+        - +5 covert movement, +5 green skills, +5 Search, +30% weight reduction, 600 sec (.6 + 20)
+    - Ghost Raspberry Cream Energy (lvl 4 Ultra-Rare)
+        - +5 covert movement, +5 combat skills, +5 mag drills, +5 Light & Heavy Vests, +30% weight reduction, 600 sec (.6 + 20)
 
 
     - Starbucks Double Shot Energy (lvl 1 Common) 25k, 35k (I like this price...)
-        - +1 green skills +1 stress resistance +1, mag drills 300 sec (0.2 + 10)
+        - +1 green skills +1 stress resistance +1, mag drills 300 sec (0.3 + 5)
+    - Bang Purple Haze Energy (lvl 1 Common) 25k, 35k
+        - +1 stress resistance +1 blue +5% weight reduction 300 sec (0.2 + 5)
+    - Bang Rainbow Unicorn Energy: (lvl 1 Common) 25k, 35k
+        - +1 stress resistance, +1 Vitality, +1 aim drills, +1 mag drills 300 sec (0.2 + 5)
+    - Rockstar Sugar Free Energy (lvl 1 Common) 25k, 35k
+        - 0.2 health regen, +1 aim drill & mag drills, 400 sec (0.2 + 5)
+    - Stalker Original Energy: (lvl 1 Common) 30k, 40k
+        - +1 green, +1 scavenging 300 sec (0.3 + 10) 
     - NOS Energy: (lvl 2 Uncommon) 45k 55k
-        - +5 green skills, +10% weight reduction 400 sec (0.65 + 20)
+        - +5 green skills, +10% weight reduction 400 sec (0.6 + 15)
     - Stalker Green Energy: (lvl 3 Rare) 50k, 60k
-        - +3 green +3 scavenging +10% weight reduction  400 sec (0.4 + 15) 
+        - +3 green +3 scavenging +15% weight reduction  400 sec (0.4 + 15) 
     - Rockstar Energy: (lvl 3 Rare) 80k 90k
-        - +5 greens skills, 3% reduced damage taken, 600 sec (0.4 + 15)
-    - Bang Rainbow Unicorn Energy: (lvl 3 Rare) 40k, 50k
-        - +5 stress resistance, +5 Vitality, +5 aim drills, +5 mag drills 600 sec (0.4 + 15)
-    - Stalker Original Energy: (lvl 4 Ultra-Rare) 40k, 50k
-        - +10 blue skills 600 sec (0.6 + 20) 
+        - +5 greens skills, 3% reduced damage taken, 400 sec (0.4 + 15)
+    - C4 Jolly Rancher Energy (lvl 3 Rare)
+        - +.4 health regen, +5 Light & Heavy Vests, +5 Vitality and surgery 2% chance to die of heart failure after 400sec sec (0.4 + 15)
+    - C4 Skittle Energy (lvl 3 Rare)
+        - +5 blue skills, +25% weight reduction, 2% chance to die of heart failure after 400sec sec (0.4 + 15)
     - C4 Starburst Energy (lvl 4 Ultra-Rare) 100k, 120k (Flea-Banned)
-        - +15 green skills, +15 aim drill & mag drills, +30% weight reduction, 5% chance to kill(explode) on consumption 600 sec (1.0 + 25)
-
-
-
-    Common Regular Drinks:
-    - Arizona Green Tea Energy (lvl 1 Common) 30k, 40k
-        - +1 Metabolism, +5% weight reduction 300 sec (+40 hydration NO DEBUFFS)
-    - Arizona Watermelon (lvl 1 Common) 25k, 35k
-        - +1 Health, +5% weight reduction 300sec (+40 hydration NO DEBUFFS)
-    - Arizona Mucho Mango (lvl 1 Common) 25k, 35k
-        - +1 Search skills, +5% weight reduction 300sec (+40 hydration NO DEBUFFS)
-    - another common idea..................
-        - +1 health, +5% weight reduction 300sec (+40 hydration NO DEBUFFS)
+        - +10 green skills, +10 aim drill & mag drills, +20% weight reduction, 5% chance to die of heart failure after 600 sec (1.0 + 25)

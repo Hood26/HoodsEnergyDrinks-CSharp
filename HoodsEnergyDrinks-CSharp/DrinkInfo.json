@@ -1,5 +1,41 @@
 {
    "Items": {
+        "ghost_raspberry_cream": {
+            "_id": "66ccf66fc9162d12270bb147",
+            "name": "Ghost Raspberry Cream Energy Drink",
+            "shortName": "Ghost",
+            "desc": "Feel Good Energy: GHOST Energy is the fully transparent, fully loaded energy drink we've all been waiting for. Authentic Flavors. Zero Sugars.* No BS. Raspberry Cream flavor."
+        },
+        "ghost_grape": {
+            "_id": "66ccf66fc9162d12270bb148",
+            "name": "Ghost Welch's Grape-Cran Energy Drink",
+            "shortName": "Ghost",
+            "desc": "Bursting with notes of concord grape, this refreshing, nostalgic flavor will transport you back to your juicebox days."
+        },
+        "c4_jolly_rancher": {
+            "_id": "66ccf66fc9162d12270bb149",
+            "name": "C4 Jolly Rancher Energy Drink",
+            "shortName": "C4",
+            "desc": "Theres energy drinks…and then theres C4 Energy. C4 Energy's incredible flavor is made with no sugar, zero calories, no artificial flavors, and no compromise on taste. Featuring 200 MG of caffeine and proven ingredients like CarnoSyn Beta-Alanine and BetaPower Betaine, you are about to experience explosive energy, hydration, and endurance."
+        },
+        "rockstar_sugar_free": {
+            "_id": "66ccf66fc9162d12270bb150",
+            "name": "Rockstar Sugar Free Energy Drink",
+            "shortName": "Rockstar",
+            "desc": "Put in the work with Rockstar original sugar free energy drink, fully-charged with B-vitamins and formulated with guarana, taurine, and caffeine to help keep you going and stay focused* with invigorating taste. 75mg caffeine has been shown to help improve attention."
+        },
+        "c4_skittles": {
+            "_id": "66ccf66fc9162d12270bb151",
+            "name": "C4 Skittles Energy Drink",
+            "shortName": "C4",
+            "desc": "Unlock your best performance, power, and speed with C4 Performance Energy®. Every can is packed with 200mg of caffeine and CarnoSyn® Beta Alanine for explosive energy you can feel. Made with clinically studied ingredients, ZERO grams of sugar or artificial colors, and carrying the NSF Certified for Sport® label, C4 Performance Energy® is the athletes choice for elevating performance."
+        },
+        "bang_purple_haze": {
+            "_id": "66ccf66fc9162d12270bb152",
+            "name": "Bang Purple Haze Energy Drink",
+            "shortName": "Bang",
+            "desc": "Make no mistake...Bang is not your stereotypical high sugar, life-sucking soda masquerading as an energy drink! High sugar drinks spike blood sugar producing metabolic mayhem causing you to crash harder than a test dummy into a brick wall. Power up with Bang's potent brain and body-rocking fuel: Creatine, Caffeine and BCAAs (Branched Chain Amino Acids)."
+        },
         "arizona_mucho_mango": {
             "_id": "66ccf66fc9162d12270bb153",
             "name": "Arizona Mucho Mango",

@@ -35,6 +35,132 @@
   */
 
   "drinks": {
+    "ghost_raspberry_cream": {
+      // Settings for each energy drink can be changed from true, false or numbers.
+      "enable": true,
+      "effect_toggle": true,
+      "sold_by_trader": true,
+      "flea_banned": false,
+      "trader_price": 25000,
+      "flea_price": 35000,
+      "handbook_price": 30000,
+      "trader_stock": 2,
+      "loyalty_level": 1,
+      "loot_multipliers": {
+        // Read the Loot/spawn rates note above to understand what these numbers mean.
+        "duffle_bag": 0.4,
+        "dead_scav": 0.4,
+        "jacket": 0.4,
+        "ration_supply_crate": 0.4,
+        "ground_cache": 0.4
+      },
+      "loose_loot_multiplier": 0.4
+    },
+    "ghost_grape": {
+      // Settings for each energy drink can be changed from true, false or numbers.
+      "enable": true,
+      "effect_toggle": true,
+      "sold_by_trader": true,
+      "flea_banned": false,
+      "trader_price": 25000,
+      "flea_price": 35000,
+      "handbook_price": 30000,
+      "trader_stock": 2,
+      "loyalty_level": 1,
+      "loot_multipliers": {
+        // Read the Loot/spawn rates note above to understand what these numbers mean.
+        "duffle_bag": 0.4,
+        "dead_scav": 0.4,
+        "jacket": 0.4,
+        "ration_supply_crate": 0.4,
+        "ground_cache": 0.4
+      },
+      "loose_loot_multiplier": 0.4
+    },
+    "c4_jolly_rancher": {
+      // Settings for each energy drink can be changed from true, false or numbers.
+      "enable": true,
+      "effect_toggle": true,
+      "sold_by_trader": true,
+      "flea_banned": false,
+      "trader_price": 25000,
+      "flea_price": 35000,
+      "handbook_price": 30000,
+      "trader_stock": 2,
+      "loyalty_level": 1,
+      "loot_multipliers": {
+        // Read the Loot/spawn rates note above to understand what these numbers mean.
+        "duffle_bag": 0.4,
+        "dead_scav": 0.4,
+        "jacket": 0.4,
+        "ration_supply_crate": 0.4,
+        "ground_cache": 0.4
+      },
+      "loose_loot_multiplier": 0.4
+    },
+    "rockstar_sugar_free": {
+      // Settings for each energy drink can be changed from true, false or numbers.
+      "enable": true,
+      "effect_toggle": true,
+      "sold_by_trader": true,
+      "flea_banned": false,
+      "trader_price": 25000,
+      "flea_price": 35000,
+      "handbook_price": 30000,
+      "trader_stock": 2,
+      "loyalty_level": 1,
+      "loot_multipliers": {
+        // Read the Loot/spawn rates note above to understand what these numbers mean.
+        "duffle_bag": 0.4,
+        "dead_scav": 0.4,
+        "jacket": 0.4,
+        "ration_supply_crate": 0.4,
+        "ground_cache": 0.4
+      },
+      "loose_loot_multiplier": 0.4
+    },
+    "c4_skittles": {
+      // Settings for each energy drink can be changed from true, false or numbers.
+      "enable": true,
+      "effect_toggle": true,
+      "sold_by_trader": true,
+      "flea_banned": false,
+      "trader_price": 25000,
+      "flea_price": 35000,
+      "handbook_price": 30000,
+      "trader_stock": 2,
+      "loyalty_level": 1,
+      "loot_multipliers": {
+        // Read the Loot/spawn rates note above to understand what these numbers mean.
+        "duffle_bag": 0.4,
+        "dead_scav": 0.4,
+        "jacket": 0.4,
+        "ration_supply_crate": 0.4,
+        "ground_cache": 0.4
+      },
+      "loose_loot_multiplier": 0.4
+    },
+    "bang_purple_haze": {
+      // Settings for each energy drink can be changed from true, false or numbers.
+      "enable": true,
+      "effect_toggle": true,
+      "sold_by_trader": true,
+      "flea_banned": false,
+      "trader_price": 25000,
+      "flea_price": 35000,
+      "handbook_price": 30000,
+      "trader_stock": 2,
+      "loyalty_level": 1,
+      "loot_multipliers": {
+        // Read the Loot/spawn rates note above to understand what these numbers mean.
+        "duffle_bag": 0.4,
+        "dead_scav": 0.4,
+        "jacket": 0.4,
+        "ration_supply_crate": 0.4,
+        "ground_cache": 0.4
+      },
+      "loose_loot_multiplier": 0.4
+    },
     "arizona_mucho_mango": {
       // Settings for each energy drink can be changed from true, false or numbers.
       "enable": true,
