@@ -470,7 +470,7 @@
         "AbsoluteValue": true,
         "BuffType": "HealthRate",
         "Chance": 0.02,
-        "Delay": 0,
+        "Delay": 400,
         "Duration": 400,
         "SkillName": "",
         "Value": -999
@@ -690,7 +690,7 @@
         "AbsoluteValue": true,
         "BuffType": "HealthRate",
         "Chance": 0.02,
-        "Delay": 0,
+        "Delay": 400,
         "Duration": 400,
         "SkillName": "",
         "Value": -999
@@ -836,15 +836,6 @@
     "arizona_mucho_mango": [
       {
         "AbsoluteValue": true,
-        "BuffType": "EnergyRate",
-        "Chance": 1,
-        "Delay": 0,
-        "Duration": 60,
-        "SkillName": "",
-        "Value": 0.5
-      },
-      {
-        "AbsoluteValue": true,
         "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
@@ -877,19 +868,10 @@
         "Delay": 1,
         "Duration": 300,
         "SkillName": "",
-        "Value": 0.05
+        "Value": 0.02
       }
     ],
     "arizona_watermelon": [
-      {
-        "AbsoluteValue": true,
-        "BuffType": "EnergyRate",
-        "Chance": 1,
-        "Delay": 0,
-        "Duration": 60,
-        "SkillName": "",
-        "Value": 0.5
-      },
       {
         "AbsoluteValue": true,
         "BuffType": "HydrationRate",
@@ -916,6 +898,15 @@
         "Duration": 300,
         "SkillName": "Vitality",
         "Value": 1
+      },
+      {
+        "AbsoluteValue": false,
+        "BuffType": "WeightLimit",
+        "Chance": 1,
+        "Delay": 1,
+        "Duration": 300,
+        "SkillName": "",
+        "Value": 0.02
       }
     ],
     "ghost_blue_raspberry": [
@@ -942,7 +933,7 @@
         "BuffType": "StaminaRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 0.2
       },
@@ -951,7 +942,7 @@
         "BuffType": "MaxStamina",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 5
       },
@@ -960,7 +951,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "CovertMovement",
         "Value": 3
       },
@@ -969,7 +960,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "Search",
         "Value": 3
       },
@@ -978,7 +969,7 @@
         "BuffType": "WeightLimit",
         "Chance": 1,
         "Delay": 1,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 0.10
       },
@@ -986,7 +977,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 120,
         "SkillName": "Health",
         "Value": -3
@@ -995,7 +986,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 120,
         "SkillName": "Metabolism",
         "Value": -3
@@ -1004,7 +995,7 @@
         "AbsoluteValue": true,
         "BuffType": "EnergyRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 50,
         "SkillName": "",
         "Value": -1.5
@@ -1013,7 +1004,7 @@
         "AbsoluteValue": true,
         "BuffType": "HandsTremor",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 60,
         "SkillName": "",
         "Value": 0
@@ -1022,7 +1013,7 @@
     "arizona_green_tea": [
       {
         "AbsoluteValue": true,
-        "BuffType": "EnergyRate",
+        "BuffType": "HydrationRate",
         "Chance": 1,
         "Delay": 0,
         "Duration": 60,
@@ -1031,12 +1022,12 @@
       },
       {
         "AbsoluteValue": true,
-        "BuffType": "HydrationRate",
+        "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 60,
-        "SkillName": "",
-        "Value": 0.5
+        "Duration": 300,
+        "SkillName": "Health",
+        "Value": 1
       },
       {
         "AbsoluteValue": true,
@@ -1054,7 +1045,7 @@
         "Delay": 1,
         "Duration": 300,
         "SkillName": "",
-        "Value": 0.05
+        "Value": 0.02
       }
     ],
     "stalker_green": [
@@ -1228,8 +1219,17 @@
         "Chance": 1,
         "Delay": 0,
         "Duration": 300,
+        "SkillName": "Search",
+        "Value": 1
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 300,
         "SkillName": "Perception",
-        "Value": 3
+        "Value": 1
       },
       {
         "AbsoluteValue": true,
@@ -1238,16 +1238,7 @@
         "Delay": 0,
         "Duration": 300,
         "SkillName": "Attention",
-        "Value": 3
-      },
-      {
-        "AbsoluteValue": true,
-        "BuffType": "SkillRate",
-        "Chance": 1,
-        "Delay": 0,
-        "Duration": 300,
-        "SkillName": "Search",
-        "Value": 3
+        "Value": 1
       },
       {
         "AbsoluteValue": true,
@@ -1256,7 +1247,7 @@
         "Delay": 300,
         "Duration": 120,
         "SkillName": "Health",
-        "Value": -3
+        "Value": -1
       },
       {
         "AbsoluteValue": true,
@@ -1265,7 +1256,7 @@
         "Delay": 300,
         "Duration": 120,
         "SkillName": "Metabolism",
-        "Value": -3
+        "Value": -1
       },
       {
         "AbsoluteValue": true,
@@ -1274,7 +1265,7 @@
         "Delay": 300,
         "Duration": 50,
         "SkillName": "",
-        "Value": -1.5
+        "Value": -1.0
       },
       {
         "AbsoluteValue": true,
@@ -1312,7 +1303,7 @@
         "Delay": 0,
         "Duration": 300,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.2
       },
       {
         "AbsoluteValue": true,
@@ -1330,7 +1321,7 @@
         "Delay": 0,
         "Duration": 300,
         "SkillName": "Endurance",
-        "Value": 3
+        "Value": 1
       },
       {
         "AbsoluteValue": true,
@@ -1339,7 +1330,7 @@
         "Delay": 0,
         "Duration": 300,
         "SkillName": "Strength",
-        "Value": 3
+        "Value": 1
       },
       {
         "AbsoluteValue": true,
@@ -1348,7 +1339,7 @@
         "Delay": 300,
         "Duration": 120,
         "SkillName": "Health",
-        "Value": -3
+        "Value": -1
       },
       {
         "AbsoluteValue": true,
@@ -1357,7 +1348,7 @@
         "Delay": 300,
         "Duration": 120,
         "SkillName": "Metabolism",
-        "Value": -3
+        "Value": -1
       },
       {
         "AbsoluteValue": true,
@@ -1366,7 +1357,7 @@
         "Delay": 300,
         "Duration": 50,
         "SkillName": "",
-        "Value": -1.5
+        "Value": -1.0
       },
       {
         "AbsoluteValue": true,
@@ -1503,7 +1494,7 @@
         "BuffType": "StaminaRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 0.2
       },
@@ -1512,7 +1503,7 @@
         "BuffType": "MaxStamina",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 5
       },
@@ -1521,7 +1512,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "Endurance",
         "Value": 1
       },
@@ -1530,7 +1521,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "Strength",
         "Value": 1
       },
@@ -1539,7 +1530,7 @@
         "BuffType": "HealthRate",
         "Chance": 1,
         "Delay": 1,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 0.4
       },
@@ -1548,7 +1539,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "Vitality",
         "Value": 3
       },
@@ -1557,7 +1548,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "Surgery",
         "Value": 3
       },
@@ -1565,7 +1556,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 120,
         "SkillName": "Health",
         "Value": -3
@@ -1574,7 +1565,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 120,
         "SkillName": "Metabolism",
         "Value": -3
@@ -1583,7 +1574,7 @@
         "AbsoluteValue": true,
         "BuffType": "EnergyRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 50,
         "SkillName": "",
         "Value": -1.5
@@ -1592,7 +1583,7 @@
         "AbsoluteValue": true,
         "BuffType": "HandsTremor",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 60,
         "SkillName": "",
         "Value": 0
@@ -1622,7 +1613,7 @@
         "BuffType": "StaminaRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 0.2
       },
@@ -1631,7 +1622,7 @@
         "BuffType": "MaxStamina",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 10
       },
@@ -1640,7 +1631,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "Charisma",
         "Value": 3
       },
@@ -1649,7 +1640,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "Search",
         "Value": 3
       },
@@ -1658,7 +1649,7 @@
         "BuffType": "WeightLimit",
         "Chance": 1,
         "Delay": 1,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 0.1
       },
@@ -1666,7 +1657,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 120,
         "SkillName": "Health",
         "Value": -3
@@ -1675,7 +1666,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 120,
         "SkillName": "Metabolism",
         "Value": -3
@@ -1684,7 +1675,7 @@
         "AbsoluteValue": true,
         "BuffType": "EnergyRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 50,
         "SkillName": "",
         "Value": -1.5
@@ -1693,7 +1684,7 @@
         "AbsoluteValue": true,
         "BuffType": "HandsTremor",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 60,
         "SkillName": "",
         "Value": 0
@@ -1723,7 +1714,7 @@
         "BuffType": "StaminaRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 0.2
       },
@@ -1732,7 +1723,7 @@
         "BuffType": "MaxStamina",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 10
       },
@@ -1741,7 +1732,7 @@
         "BuffType": "DamageModifier",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": -0.01
       },
@@ -1750,7 +1741,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "AimDrills",
         "Value": 3
       },
@@ -1759,7 +1750,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "MagDrills",
         "Value": 3
       },
@@ -1767,7 +1758,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 120,
         "SkillName": "Health",
         "Value": -3
@@ -1776,7 +1767,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 120,
         "SkillName": "Metabolism",
         "Value": -3
@@ -1785,7 +1776,7 @@
         "AbsoluteValue": true,
         "BuffType": "EnergyRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 50,
         "SkillName": "",
         "Value": -1.5
@@ -1794,7 +1785,7 @@
         "AbsoluteValue": true,
         "BuffType": "HandsTremor",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 60,
         "SkillName": "",
         "Value": 0
@@ -1824,7 +1815,7 @@
         "BuffType": "StaminaRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 0.4
       },
@@ -1833,7 +1824,7 @@
         "BuffType": "MaxStamina",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 10
       },
@@ -1842,7 +1833,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "CovertMovement",
         "Value": 3
       },
@@ -1851,7 +1842,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "Endurance",
         "Value": 3
       },
@@ -1860,7 +1851,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "Strength",
         "Value": 3
       },
@@ -1869,7 +1860,7 @@
         "BuffType": "WeightLimit",
         "Chance": 1,
         "Delay": 1,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 0.10
       },
@@ -1877,7 +1868,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 120,
         "SkillName": "Health",
         "Value": -3
@@ -1886,7 +1877,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 120,
         "SkillName": "Metabolism",
         "Value": -3
@@ -1895,7 +1886,7 @@
         "AbsoluteValue": true,
         "BuffType": "EnergyRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 50,
         "SkillName": "",
         "Value": -1.5
@@ -1904,7 +1895,7 @@
         "AbsoluteValue": true,
         "BuffType": "HandsTremor",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 60,
         "SkillName": "",
         "Value": 0
@@ -2053,7 +2044,7 @@
         "BuffType": "StaminaRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 600,
+        "Duration": 400,
         "SkillName": "",
         "Value": 0.4
       },
@@ -2062,7 +2053,7 @@
         "BuffType": "MaxStamina",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 600,
+        "Duration": 400,
         "SkillName": "",
         "Value": 15
       },
@@ -2071,7 +2062,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 600,
+        "Duration": 400,
         "SkillName": "CovertMovement",
         "Value": 5
       },
@@ -2080,7 +2071,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 600,
+        "Duration": 400,
         "SkillName": "Search",
         "Value": 5
       },
@@ -2089,7 +2080,7 @@
         "BuffType": "WeightLimit",
         "Chance": 1,
         "Delay": 1,
-        "Duration": 600,
+        "Duration": 400,
         "SkillName": "",
         "Value": 0.20
       },
@@ -2097,7 +2088,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 600,
+        "Delay": 400,
         "Duration": 120,
         "SkillName": "Health",
         "Value": -5
@@ -2106,7 +2097,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 600,
+        "Delay": 400,
         "Duration": 120,
         "SkillName": "Metabolism",
         "Value": -5
@@ -2115,7 +2106,7 @@
         "AbsoluteValue": true,
         "BuffType": "EnergyRate",
         "Chance": 1,
-        "Delay": 600,
+        "Delay": 400,
         "Duration": 60,
         "SkillName": "",
         "Value": -2.0
@@ -2124,7 +2115,7 @@
         "AbsoluteValue": true,
         "BuffType": "HandsTremor",
         "Chance": 1,
-        "Delay": 600,
+        "Delay": 400,
         "Duration": 60,
         "SkillName": "",
         "Value": 0
@@ -2154,7 +2145,7 @@
         "BuffType": "StaminaRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 0.6
       },
@@ -2163,7 +2154,7 @@
         "BuffType": "MaxStamina",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 15
       },
@@ -2172,7 +2163,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "Endurance",
         "Value": 5
       },
@@ -2181,7 +2172,7 @@
         "BuffType": "SkillRate",
         "Chance": 1,
         "Delay": 0,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "Strength",
         "Value": 5
       },
@@ -2190,7 +2181,7 @@
         "BuffType": "WeightLimit",
         "Chance": 1,
         "Delay": 1,
-        "Duration": 400,
+        "Duration": 300,
         "SkillName": "",
         "Value": 0.10
       },
@@ -2198,7 +2189,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 120,
         "SkillName": "Health",
         "Value": -5
@@ -2207,7 +2198,7 @@
         "AbsoluteValue": true,
         "BuffType": "SkillRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 120,
         "SkillName": "Metabolism",
         "Value": -5
@@ -2216,7 +2207,7 @@
         "AbsoluteValue": true,
         "BuffType": "EnergyRate",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 50,
         "SkillName": "",
         "Value": -1.5
@@ -2225,7 +2216,7 @@
         "AbsoluteValue": true,
         "BuffType": "HandsTremor",
         "Chance": 1,
-        "Delay": 400,
+        "Delay": 300,
         "Duration": 60,
         "SkillName": "",
         "Value": 0
@@ -2865,7 +2856,7 @@
         "AbsoluteValue": true,
         "BuffType": "HealthRate",
         "Chance": 0.2,
-        "Delay": 0,
+        "Delay": 800,
         "Duration": 800,
         "SkillName": "",
         "Value": -999
@@ -3195,7 +3186,7 @@
         "AbsoluteValue": true,
         "BuffType": "HealthRate",
         "Chance": 0.05,
-        "Delay": 0,
+        "Delay": 600,
         "Duration": 600,
         "SkillName": "",
         "Value": -999
@@ -3323,7 +3314,7 @@
         "AbsoluteValue": true,
         "BuffType": "HealthRate",
         "Chance": 0.05,
-        "Delay": 0,
+        "Delay": 600,
         "Duration": 600,
         "SkillName": "",
         "Value": -999
