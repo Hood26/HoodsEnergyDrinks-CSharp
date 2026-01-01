@@ -142,7 +142,7 @@ public class HoodsEnergyDrinks(
                                         var newLooseLootItemDistribution = new LooseLootItemDistribution
                                         {
                                             ComposedKey = lootComposedKey,
-                                            RelativeProbability = MathF.Round((float)originalProbability * config.drinks[name].loose_loot_multiplier, 3)
+                                            RelativeProbability = originalProbability * config.drinks[name].loose_loot_multiplier
                                         };
                                         var itemDistribution = point.ItemDistribution?.ToList() ?? new List<LooseLootItemDistribution>();
                                         itemDistribution.Add(newLooseLootItemDistribution);
@@ -177,7 +177,7 @@ public class HoodsEnergyDrinks(
                                 var newItem = new ItemDistribution
                                 {
                                     Tpl = props._id,
-                                    RelativeProbability = MathF.Round(probability * hot_rod_energy_prob, 3)
+                                    RelativeProbability = probability * hot_rod_energy_prob
                                 };
 
                                 var list = lazyLoadedStaticLoot[lootContainer].ItemDistribution?.ToList() ?? new List<ItemDistribution>();

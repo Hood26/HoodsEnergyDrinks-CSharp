@@ -41,39 +41,39 @@
       "effect_toggle": true,
       "sold_by_trader": true,
       "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "trader_price": 20000,
+      "flea_price": 30000,
+      "handbook_price": 20000,
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.035,
-        "dead_scav": 0.035,
-        "jacket": 0.035,
-        "ration_supply_crate": 0.035,
-        "ground_cache": 0.035
+        "duffle_bag": 0.06,
+        "dead_scav": 0.06,
+        "jacket": 0.06,
+        "ration_supply_crate": 0.06,
+        "ground_cache": 0.06
       },
-      "loose_loot_multiplier": 0.035
+      "loose_loot_multiplier": 0.06
     },
     "monster_green": {
       "enable": true,
       "effect_toggle": true,
       "sold_by_trader": true,
       "flea_banned": false,
-      "trader_price": 30000,
-      "flea_price": 45000,
-      "handbook_price": 40000,
+      "trader_price": 25000,
+      "flea_price": 35000,
+      "handbook_price": 25000,
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
-        "duffle_bag": 0.035,
-        "dead_scav": 0.035,
-        "jacket": 0.035,
-        "ration_supply_crate": 0.035,
-        "ground_cache": 0.035
+        "duffle_bag": 0.06,
+        "dead_scav": 0.06,
+        "jacket": 0.06,
+        "ration_supply_crate": 0.06,
+        "ground_cache": 0.06
       },
-      "loose_loot_multiplier": 0.035
+      "loose_loot_multiplier": 0.06
     },
     "monster_white": {
       "enable": true,
@@ -81,18 +81,18 @@
       "sold_by_trader": true,
       "flea_banned": false,
       "trader_price": 30000,
-      "flea_price": 45000,
-      "handbook_price": 40000,
+      "flea_price": 40000,
+      "handbook_price": 30000,
       "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
-        "duffle_bag": 0.035,
-        "dead_scav": 0.035,
-        "jacket": 0.035,
-        "ration_supply_crate": 0.035,
-        "ground_cache": 0.035
+        "duffle_bag": 0.04,
+        "dead_scav": 0.04,
+        "jacket": 0.04,
+        "ration_supply_crate": 0.04,
+        "ground_cache": 0.04
       },
-      "loose_loot_multiplier": 0.035
+      "loose_loot_multiplier": 0.04
     },
 
     "monster_strawberry": {
@@ -100,19 +100,19 @@
       "effect_toggle": true,
       "sold_by_trader": true,
       "flea_banned": false,
-      "trader_price": 35000,
-      "flea_price": 50000,
-      "handbook_price": 45000,
+      "trader_price": 30000,
+      "flea_price": 40000,
+      "handbook_price": 35000,
       "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
-        "duffle_bag": 0.035,
-        "dead_scav": 0.035,
-        "jacket": 0.035,
-        "ration_supply_crate": 0.035,
-        "ground_cache": 0.035
+        "duffle_bag": 0.04,
+        "dead_scav": 0.04,
+        "jacket": 0.04,
+        "ration_supply_crate": 0.04,
+        "ground_cache": 0.04
       },
-      "loose_loot_multiplier": 0.035
+      "loose_loot_multiplier": 0.04
     },
     "monster_orange_creamsicle": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -120,20 +120,20 @@
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "trader_price": 35000,
+      "flea_price": 40000,
+      "handbook_price": 35000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.035,
-        "dead_scav": 0.035,
-        "jacket": 0.035,
-        "ration_supply_crate": 0.035,
-        "ground_cache": 0.035
+        "duffle_bag": 0.04,
+        "dead_scav": 0.04,
+        "jacket": 0.04,
+        "ration_supply_crate": 0.04,
+        "ground_cache": 0.04
       },
-      "loose_loot_multiplier": 0.035
+      "loose_loot_multiplier": 0.04
     },
     "monster_guava": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -141,29 +141,29 @@
       "effect_toggle": true,
       "sold_by_trader": true,
       "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "trader_price": 45000,
+      "flea_price": 55000,
+      "handbook_price": 45000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.035,
-        "dead_scav": 0.035,
-        "jacket": 0.035,
-        "ration_supply_crate": 0.035,
-        "ground_cache": 0.035
+        "duffle_bag": 0.04,
+        "dead_scav": 0.04,
+        "jacket": 0.04,
+        "ration_supply_crate": 0.04,
+        "ground_cache": 0.04
       },
-      "loose_loot_multiplier": 0.035
+      "loose_loot_multiplier": 0.04
     },
     "monster_punch": {
       "enable": true,
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 65000,
-      "flea_price": 85000,
-      "handbook_price": 70000,
+      "trader_price": 60000,
+      "flea_price": 70000,
+      "handbook_price": 60000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
@@ -180,11 +180,11 @@
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": true,
-      "trader_price": 90000,
+      "trader_price": 100000,
       "flea_price": 120000,
-      "handbook_price": 125000,
+      "handbook_price": 100000,
       "trader_stock": 2,
-      "loyalty_level": 4,
+      "loyalty_level": 2,
       "loot_multipliers": {
         "duffle_bag": 0.01,
         "dead_scav": 0.01,
@@ -200,8 +200,8 @@
       "sold_by_trader": false,
       "flea_banned": true,
       "trader_price": 120000,
-      "flea_price": 130000,
-      "handbook_price": 125000,
+      "flea_price": 160000,
+      "handbook_price": 120000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
@@ -218,19 +218,40 @@
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": true,
-      "trader_price": 125000,
-      "flea_price": 160000,
-      "handbook_price": 155000,
+      "trader_price": 200000,
+      "flea_price": 350000,
+      "handbook_price": 200000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.01,
-        "dead_scav": 0.01,
-        "jacket": 0.01,
-        "ration_supply_crate": 0.01,
-        "ground_cache": 0.01
+        "duffle_bag": 0.00777,
+        "dead_scav": 0.00777,
+        "jacket": 0.00777,
+        "ration_supply_crate": 0.00777,
+        "ground_cache": 0.00777
       },
-      "loose_loot_multiplier": 0.01
+      "loose_loot_multiplier": 0.00777
+    },
+    "ghost_blue_raspberry": {
+      // Settings for each energy drink can be changed from true, false or numbers.
+      "enable": true,
+      "effect_toggle": true,
+      "sold_by_trader": false,
+      "flea_banned": false,
+      "trader_price": 25000,
+      "flea_price": 30000,
+      "handbook_price": 25000,
+      "trader_stock": 2,
+      "loyalty_level": 2,
+      "loot_multipliers": {
+        // Read the Loot/spawn rates note above to understand what these numbers mean.
+        "duffle_bag": 0.06,
+        "dead_scav": 0.06,
+        "jacket": 0.06,
+        "ration_supply_crate": 0.06,
+        "ground_cache": 0.06
+      },
+      "loose_loot_multiplier": 0.06
     },
     "ghost_grape": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -238,69 +259,48 @@
       "effect_toggle": true,
       "sold_by_trader": true,
       "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
-      "trader_stock": 2,
-      "loyalty_level": 2,
-      "loot_multipliers": {
-        // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.05,
-        "dead_scav": 0.05,
-        "jacket": 0.05,
-        "ration_supply_crate": 0.05,
-        "ground_cache": 0.05
-      },
-      "loose_loot_multiplier": 0.05
-    },
-    "ghost_blue_raspberry": {
-      // Settings for each energy drink can be changed from true, false or numbers.
-      "enable": true,
-      "effect_toggle": true,
-      "sold_by_trader": true,
-      "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "trader_price": 35000,
+      "flea_price": 45000,
+      "handbook_price": 35000,
       "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.035,
-        "dead_scav": 0.035,
-        "jacket": 0.035,
-        "ration_supply_crate": 0.035,
-        "ground_cache": 0.035
+        "duffle_bag": 0.04,
+        "dead_scav": 0.04,
+        "jacket": 0.04,
+        "ration_supply_crate": 0.04,
+        "ground_cache": 0.04
       },
-      "loose_loot_multiplier": 0.035
+      "loose_loot_multiplier": 0.04
     },
     "ghost_strawbango": {
       "enable": true,
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 45000,
-      "flea_price": 60000,
-      "handbook_price": 55000,
+      "trader_price": 40000,
+      "flea_price": 50000,
+      "handbook_price": 40000,
       "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
-        "duffle_bag": 0.035,
-        "dead_scav": 0.035,
-        "jacket": 0.035,
-        "ration_supply_crate": 0.035,
-        "ground_cache": 0.035
+        "duffle_bag": 0.04,
+        "dead_scav": 0.04,
+        "jacket": 0.04,
+        "ration_supply_crate": 0.04,
+        "ground_cache": 0.04
       },
-      "loose_loot_multiplier": 0.035
+      "loose_loot_multiplier": 0.04
     },
     "ghost_peaches": {
       "enable": true,
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": true,
-      "trader_price": 90000,
-      "flea_price": 115000,
-      "handbook_price": 125000,
+      "trader_price": 65000,
+      "flea_price": 75000,
+      "handbook_price": 65000,
       "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
@@ -316,10 +316,10 @@
       "enable": true,
       "effect_toggle": true,
       "sold_by_trader": false,
-      "flea_banned": false,
-      "trader_price": 50000,
-      "flea_price": 83000,
-      "handbook_price": 70000,
+      "flea_banned": true,
+      "trader_price": 80000,
+      "flea_price": 90000,
+      "handbook_price": 80000,
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
@@ -336,10 +336,10 @@
       "enable": true,
       "effect_toggle": true,
       "sold_by_trader": false,
-      "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "flea_banned": true,
+      "trader_price": 85000,
+      "flea_price": 95000,
+      "handbook_price": 85000,
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
@@ -357,19 +357,19 @@
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 55000,
-      "flea_price": 62500,
-      "handbook_price": 57500,
+      "trader_price": 25000,
+      "flea_price": 30000,
+      "handbook_price": 25000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.05,
-        "dead_scav": 0.05,
-        "jacket": 0.05,
-        "ration_supply_crate": 0.05,
-        "ground_cache": 0.05
+        "duffle_bag": 0.06,
+        "dead_scav": 0.06,
+        "jacket": 0.06,
+        "ration_supply_crate": 0.06,
+        "ground_cache": 0.06
       },
-      "loose_loot_multiplier": 0.05
+      "loose_loot_multiplier": 0.06
     },
     "bang_purple_haze": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -378,76 +378,76 @@
       "sold_by_trader": false,
       "flea_banned": false,
       "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "flea_price": 30000,
+      "handbook_price": 25000,
       "trader_stock": 2,
-      "loyalty_level": 1,
+      "loyalty_level": 2,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.05,
-        "dead_scav": 0.05,
-        "jacket": 0.05,
-        "ration_supply_crate": 0.05,
-        "ground_cache": 0.05
+        "duffle_bag": 0.06,
+        "dead_scav": 0.06,
+        "jacket": 0.06,
+        "ration_supply_crate": 0.06,
+        "ground_cache": 0.06
       },
-      "loose_loot_multiplier": 0.05
+      "loose_loot_multiplier": 0.06
     },
     "bang": {
       "enable": true,
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 65000,
-      "flea_price": 75000,
-      "handbook_price": 70000,
+      "trader_price": 25000,
+      "flea_price": 30000,
+      "handbook_price": 25000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.05,
-        "dead_scav": 0.05,
-        "jacket": 0.05,
-        "ration_supply_crate": 0.05,
-        "ground_cache": 0.05
+        "duffle_bag": 0.06,
+        "dead_scav": 0.06,
+        "jacket": 0.06,
+        "ration_supply_crate": 0.06,
+        "ground_cache": 0.06
       },
-      "loose_loot_multiplier": 0.05
+      "loose_loot_multiplier": 0.06
     },
     "rockstar_sugar_free": {
       // Settings for each energy drink can be changed from true, false or numbers.
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": false,
+      "sold_by_trader": true,
       "flea_banned": false,
       "trader_price": 25000,
       "flea_price": 35000,
       "handbook_price": 30000,
       "trader_stock": 2,
-      "loyalty_level": 1,
+      "loyalty_level": 2,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.05,
-        "dead_scav": 0.05,
-        "jacket": 0.05,
-        "ration_supply_crate": 0.05,
-        "ground_cache": 0.05
+        "duffle_bag": 0.06,
+        "dead_scav": 0.06,
+        "jacket": 0.06,
+        "ration_supply_crate": 0.06,
+        "ground_cache": 0.06
       },
-      "loose_loot_multiplier": 0.05
+      "loose_loot_multiplier": 0.06
     },
     "stalker": {
       "enable": true,
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 50000,
-      "flea_price": 65000,
-      "handbook_price": 60000,
+      "trader_price": 30000,
+      "flea_price": 40000,
+      "handbook_price": 30000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.05,
-        "dead_scav": 0.05,
-        "jacket": 0.05,
-        "ration_supply_crate": 0.05,
-        "ground_cache": 0.05
+        "duffle_bag": 0.06,
+        "dead_scav": 0.06,
+        "jacket": 0.06,
+        "ration_supply_crate": 0.06,
+        "ground_cache": 0.06
       },
       "loose_loot_multiplier": 0.001
     },
@@ -456,19 +456,19 @@
       "effect_toggle": true,
       "sold_by_trader": true,
       "flea_banned": false,
-      "trader_price": 45000,
-      "flea_price": 65000,
-      "handbook_price": 60000,
+      "trader_price": 40000,
+      "flea_price": 50000,
+      "handbook_price": 40000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.035,
-        "dead_scav": 0.035,
-        "jacket": 0.035,
-        "ration_supply_crate": 0.035,
-        "ground_cache": 0.035
+        "duffle_bag": 0.04,
+        "dead_scav": 0.04,
+        "jacket": 0.04,
+        "ration_supply_crate": 0.04,
+        "ground_cache": 0.04
       },
-      "loose_loot_multiplier": 0.035
+      "loose_loot_multiplier": 0.04
     },
     "stalker_green": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -476,9 +476,9 @@
       "effect_toggle": true,
       "sold_by_trader": true,
       "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "trader_price": 55000,
+      "flea_price": 65000,
+      "handbook_price": 55000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
@@ -496,9 +496,9 @@
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 55000,
-      "flea_price": 85000,
-      "handbook_price": 80000,
+      "trader_price": 60000,
+      "flea_price": 70000,
+      "handbook_price": 60000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
@@ -516,9 +516,9 @@
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "trader_price": 65000,
+      "flea_price": 75000,
+      "handbook_price": 65000,
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
@@ -537,9 +537,9 @@
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "trader_price": 65000,
+      "flea_price": 75000,
+      "handbook_price": 65000,
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
@@ -557,9 +557,9 @@
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 65000,
-      "flea_price": 75000,
-      "handbook_price": 70000,
+      "trader_price": 90000,
+      "flea_price": 100000,
+      "handbook_price": 90000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
@@ -577,20 +577,20 @@
       "effect_toggle": true,
       "sold_by_trader": true,
       "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "trader_price": 15000,
+      "flea_price": 20000,
+      "handbook_price": 15000,
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.05,
-        "dead_scav": 0.05,
-        "jacket": 0.05,
-        "ration_supply_crate": 0.05,
-        "ground_cache": 0.05
+        "duffle_bag": 0.06,
+        "dead_scav": 0.06,
+        "jacket": 0.06,
+        "ration_supply_crate": 0.06,
+        "ground_cache": 0.06
       },
-      "loose_loot_multiplier": 0.05
+      "loose_loot_multiplier": 0.06
     },
     "arizona_watermelon": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -598,20 +598,20 @@
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "trader_price": 15000,
+      "flea_price": 20000,
+      "handbook_price": 15000,
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.05,
-        "dead_scav": 0.05,
-        "jacket": 0.05,
-        "ration_supply_crate": 0.05,
-        "ground_cache": 0.05
+        "duffle_bag": 0.06,
+        "dead_scav": 0.06,
+        "jacket": 0.06,
+        "ration_supply_crate": 0.06,
+        "ground_cache": 0.06
       },
-      "loose_loot_multiplier": 0.05
+      "loose_loot_multiplier": 0.06
     },
     "arizona_mucho_mango": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -619,20 +619,20 @@
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "trader_price": 15000,
+      "flea_price": 20000,
+      "handbook_price": 15000,
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.05,
-        "dead_scav": 0.05,
-        "jacket": 0.05,
-        "ration_supply_crate": 0.05,
-        "ground_cache": 0.05
+        "duffle_bag": 0.06,
+        "dead_scav": 0.06,
+        "jacket": 0.06,
+        "ration_supply_crate": 0.06,
+        "ground_cache": 0.06
       },
-      "loose_loot_multiplier": 0.05
+      "loose_loot_multiplier": 0.06
     }
   }
 }

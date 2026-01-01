@@ -13,8 +13,8 @@
             "desc": "The Original Green Monster Energy Drink is Tarkov's most scavenged and desired energy drink. Scavs and PMCs alike horde this beverage for both for its taste and affects, which help keep their energy and stamina up longer during raids."
         },
         "ghost_grape": {
-            "_id": "694c6d5568b849f7bb05b7ab",
-            "name": "Ghost Welch's Grape-Cran Energy Drink [Common]",
+            "_id": "694c6d5568b849f7bb05b7b8",
+            "name": "Ghost Welch's Grape-Cran Energy Drink [Uncommon]",
             "shortName": "Ghost",
             "desc": "Bursting with notes of concord grape, this refreshing, nostalgic flavor will transport you back to your juicebox days."
         },
@@ -85,14 +85,14 @@
             "desc": "Drenched in our signature style, these cans pop with color and attitude—screaming Monster from every angle. Monster Energy Orange Dreamsicle features a wickedly creamy orange-vanilla ice cream blend that delivers a bold, sweet energy kick you'll love."
         },
         "monster_guava": {
-            "_id": "694c6d5568b849f7bb05b7b7",
+            "_id": "694c6d5568b849f7bb05b7ba",
             "name": "Monster Ultra Vice Guava [Uncommon]",
             "shortName": "Monster",
             "desc": "Ripened guava flavor with Miami swagger. Ultra Vice Guava has zero sugar, low calories, and the Monster Energy blend to fuel your fire. Bold energy for those who never blend in. "
         },
         "ghost_blue_raspberry": {
-            "_id": "694c6d5568b849f7bb05b7b8",
-            "name": "Ghost Blue Raspberry Energy Drink [Uncommon]",
+            "_id": "694c6d5568b849f7bb05b7ab",
+            "name": "Ghost Blue Raspberry Energy Drink [Common]",
             "shortName": "Ghost",
             "desc": "Ghost Energy is the fully transparent, fully loaded energy drink we have all been waiting for. Our legendary energy drink features no sugar, no artificial colors, and authentic Blue Raspberry flavor. It contains 200mg of Natural Caffeine from coffee beans, which has been found anecdotally to deliver a smooth, feel-good energy with less jitters and no crash when compared to other forms of caffeine."
         },
@@ -103,7 +103,7 @@
             "desc": "Ghost Energy is the fully transparent, fully loaded energy drink we have all been waiting for. Our legendary energy drink features no sugar, no artificial colors, and authentic Strawbango flavor. It contains 200mg of Natural Caffeine from coffee beans, which has been found anecdotally to deliver a smooth, feel-good energy with less jitters and no crash when compared to other forms of caffeine."
         },
         "nos": {
-            "_id": "694c6d5568b849f7bb05b7ba",
+            "_id": "694c6d5568b849f7bb05b7b7",
             "name": "NOS Original Energy Drink [Uncommon]",
             "shortName": "NOS",
             "desc": "Fuel Up. Fire Up. 100 mile an hour power. Thundering from top gear to no fear, the super-charged take charge. It's time to strap in, or sit it out. How Hard Will You Drive? High Performance Energy."
