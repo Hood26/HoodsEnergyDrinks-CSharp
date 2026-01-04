@@ -49,14 +49,14 @@ class ItemCreator
                     DiscardLimit = -1,
                     Weight = 0.6,
                     FoodUseTime = 5,
-                    StimulatorBuffs = config.enable_alternate_buffs ? "alternate_buffs" : name,
+                    StimulatorBuffs = name,
                     EffectsHealth = new Dictionary<SPTarkov.Server.Core.Models.Enums.HealthFactor, EffectsHealthProperties>(),
                     EffectsDamage = new Dictionary<SPTarkov.Server.Core.Models.Enums.DamageEffectType, EffectsDamageProperties>(),
                 },
                 ParentId = "5448e8d64bdc2dce718b4568",
                 NewId = props._id,
-                FleaPriceRoubles = config.enable_alternate_buffs ? config.alternate_flea_price : config.drinks[name].flea_price,
-                HandbookPriceRoubles = config.enable_alternate_buffs ? config.alternate_handbook_price : config.drinks[name].handbook_price,
+                FleaPriceRoubles = config.drinks[name].flea_price,
+                HandbookPriceRoubles = config.drinks[name].handbook_price,
                 HandbookParentId = "5b47574386f77428ca22b335",
                 Locales = new Dictionary<string, LocaleDetails>
                 {

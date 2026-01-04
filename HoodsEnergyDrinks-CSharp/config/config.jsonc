@@ -1,59 +1,55 @@
 {
   // Mod configuration for HoodsEnergyDrinks
   // ======================================
-  // enable_alternate_buffs: if true, all drinks will use a shared, toned-down buff set with unified pricing specified directly below this statement.
-  // all other individual energy drink configs will still work, other than the trader price, flea price, and handbook price specified directly below.
-  "enable_alternate_buffs": false,
-  "alternate_trader_price": 20000,
-  "alternate_flea_price": 25000,
-  "alternate_handbook_price": 20000,
-
-  /*
-    Loot / spawn rate notes (important):
-
-    - This mod changes spawn rates by scaling the vanilla (Hot Rod Energy Drink) relative weight for an item
-      inside a given loot pool (container/map static loot). The config uses a per-drink "loot_multipliers"
-      system that multiplies the vanilla relative weight for each specified loot container.
-
-    - Conceptual formula per pool entry:
-        newWeight = vanillaWeight * multiplier
-
-      The item's final chance inside that pool is then:
-        chance = newWeight / sum(all newWeights in the same pool)
-
-    - Examples (loot_multipliers):
-      * multiplier = 1.0  -> Same exact spawn weight as a hot rod energy drink for that specific loot container.
-      * multiplier = 0.5  -> half as likely to spawn compared to hot rod energy drink for that specific loot container.
-      * multiplier = 2.0  -> twice as likely to spawn compared to hot rod energy drink for that specific loot container.
-      * multiplier = 0.0  -> removed from spawning in that specific loot container.
-
-    - Important: these multipliers change RELATIVE weights inside a pool. Increasing one item's multiplier
-      increases its share of that pool but does not directly control absolute world spawn rate (container spawn
-      chance and other pool entries also affect absolute probability).
-
-    - "loose_loot_multiplier" is used for loose/open-world spawn weighting (apply same scaling concept).
-  */
+  // Any true/false, integers, or floats can be changed and will be set on SPT server restart.
 
   "drinks": {
     "monster_blue": {
-      // Settings for each energy drink can be changed from true, false or numbers.
+      // Setting to enable or disable the energy drink
       "enable": true,
+      // Toggles whether the energy drink will provide a buff
       "effect_toggle": true,
+      // Toggles if therapist will sell the energy driny
       "sold_by_trader": true,
+      // Determines if energy drink is banned from being bought and sold on the flea-market
       "flea_banned": false,
+      // Determines the price Therapist sells the drink for
       "trader_price": 20000,
+      // Determines the flea-market price of the drink
       "flea_price": 30000,
+      // Determines how much the energy can be sold for when quick selling to a trader like Therapist
       "handbook_price": 20000,
+      // Determines how many energy drinks can be bought from Therapist per restock timer
       "trader_stock": 2,
+      // Determines what loyalty level Therapist sells the energy drink at
       "loyalty_level": 1,
+      // Determines the spawn weights for the energy drink in specified static loot containers.
+      // Each number in loot_multipliers is used as a coefficient and multiplied by the hot rod energy drink spawn weight for each loot container or loose loot location to determine the energy drinks spawn rate.
+      //
+      // Formula: energy drink spawn weight = hot rod spawn weight * loot_multiplier
+      //
+      // Example:
+      //   - duffle_bag: 1.0
+      //       - In this case the blue monster will have the same spawn chance as a hot rod energy drink
+      // Example:
+      //   - duffle_bag: 0.5
+      //       - In this case the blue monster will have half the spawn chance as a hot rod energy drink
+      // Example:
+      //   - duffle_bag: 0.0
+      //       - In this case the blue monster will never spawn in a duffle bag
+      //
+      // Note: I've made the multipliers for every drink very small as there are 30 energy drinks added to the loot pool
+      //       and all the multiplers added together make up a little over the same spawn chance as a normal hot rod energy drink
+      //       so you'll probably find around 1 hot rod for every energy drink you find in this mod. 
       "loot_multipliers": {
-        // Read the Loot/spawn rates note above to understand what these numbers mean.
         "duffle_bag": 0.06,
         "dead_scav": 0.06,
         "jacket": 0.06,
         "ration_supply_crate": 0.06,
         "ground_cache": 0.06
       },
+      // Determines the spawn weight for the energy drink in loose loot spawn locations.
+      // This uses the same principle as the above loot_multipliers.
       "loose_loot_multiplier": 0.06
     },
     "monster_green": {
@@ -80,19 +76,19 @@
       "effect_toggle": true,
       "sold_by_trader": true,
       "flea_banned": false,
-      "trader_price": 30000,
-      "flea_price": 40000,
-      "handbook_price": 30000,
+      "trader_price": 25000,
+      "flea_price": 35000,
+      "handbook_price": 25000,
       "trader_stock": 2,
-      "loyalty_level": 3,
+      "loyalty_level": 2,
       "loot_multipliers": {
-        "duffle_bag": 0.04,
-        "dead_scav": 0.04,
-        "jacket": 0.04,
-        "ration_supply_crate": 0.04,
-        "ground_cache": 0.04
+        "duffle_bag": 0.06,
+        "dead_scav": 0.06,
+        "jacket": 0.06,
+        "ration_supply_crate": 0.06,
+        "ground_cache": 0.06
       },
-      "loose_loot_multiplier": 0.04
+      "loose_loot_multiplier": 0.06
     },
 
     "monster_strawberry": {
@@ -102,7 +98,7 @@
       "flea_banned": false,
       "trader_price": 30000,
       "flea_price": 40000,
-      "handbook_price": 35000,
+      "handbook_price": 30000,
       "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
@@ -142,19 +138,19 @@
       "sold_by_trader": true,
       "flea_banned": false,
       "trader_price": 45000,
-      "flea_price": 55000,
+      "flea_price": 60000,
       "handbook_price": 45000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.04,
-        "dead_scav": 0.04,
-        "jacket": 0.04,
-        "ration_supply_crate": 0.04,
-        "ground_cache": 0.04
+        "duffle_bag": 0.02,
+        "dead_scav": 0.02,
+        "jacket": 0.02,
+        "ration_supply_crate": 0.02,
+        "ground_cache": 0.02
       },
-      "loose_loot_multiplier": 0.04
+      "loose_loot_multiplier": 0.02
     },
     "monster_punch": {
       "enable": true,
@@ -236,10 +232,10 @@
       // Settings for each energy drink can be changed from true, false or numbers.
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": false,
+      "sold_by_trader": true,
       "flea_banned": false,
       "trader_price": 25000,
-      "flea_price": 30000,
+      "flea_price": 35000,
       "handbook_price": 25000,
       "trader_stock": 2,
       "loyalty_level": 2,
@@ -280,7 +276,7 @@
       "sold_by_trader": false,
       "flea_banned": false,
       "trader_price": 40000,
-      "flea_price": 50000,
+      "flea_price": 55000,
       "handbook_price": 40000,
       "trader_stock": 2,
       "loyalty_level": 3,
@@ -297,9 +293,9 @@
       "enable": true,
       "effect_toggle": true,
       "sold_by_trader": false,
-      "flea_banned": true,
+      "flea_banned": false,
       "trader_price": 65000,
-      "flea_price": 75000,
+      "flea_price": 80000,
       "handbook_price": 65000,
       "trader_stock": 2,
       "loyalty_level": 3,
@@ -319,7 +315,7 @@
       "flea_banned": true,
       "trader_price": 80000,
       "flea_price": 90000,
-      "handbook_price": 80000,
+      "handbook_price": 90000,
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
@@ -339,7 +335,7 @@
       "flea_banned": true,
       "trader_price": 85000,
       "flea_price": 95000,
-      "handbook_price": 85000,
+      "handbook_price": 95000,
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
@@ -378,7 +374,7 @@
       "sold_by_trader": false,
       "flea_banned": false,
       "trader_price": 25000,
-      "flea_price": 30000,
+      "flea_price": 35000,
       "handbook_price": 25000,
       "trader_stock": 2,
       "loyalty_level": 2,
@@ -398,7 +394,7 @@
       "sold_by_trader": false,
       "flea_banned": false,
       "trader_price": 25000,
-      "flea_price": 30000,
+      "flea_price": 35000,
       "handbook_price": 25000,
       "trader_stock": 2,
       "loyalty_level": 4,
@@ -415,31 +411,31 @@
       // Settings for each energy drink can be changed from true, false or numbers.
       "enable": true,
       "effect_toggle": true,
-      "sold_by_trader": true,
+      "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 25000,
-      "flea_price": 35000,
-      "handbook_price": 30000,
+      "trader_price": 35000,
+      "flea_price": 40000,
+      "handbook_price": 35000,
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.04,
+        "dead_scav": 0.04,
+        "jacket": 0.04,
+        "ration_supply_crate": 0.04,
+        "ground_cache": 0.04
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.04
     },
     "stalker": {
       "enable": true,
       "effect_toggle": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 30000,
-      "flea_price": 40000,
-      "handbook_price": 30000,
+      "trader_price": 35000,
+      "flea_price": 50000,
+      "handbook_price": 35000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
@@ -449,7 +445,7 @@
         "ration_supply_crate": 0.06,
         "ground_cache": 0.06
       },
-      "loose_loot_multiplier": 0.001
+      "loose_loot_multiplier": 0.06
     },
     "nos": {
       "enable": true,
@@ -460,7 +456,7 @@
       "flea_price": 50000,
       "handbook_price": 40000,
       "trader_stock": 2,
-      "loyalty_level": 4,
+      "loyalty_level": 3,
       "loot_multipliers": {
         "duffle_bag": 0.04,
         "dead_scav": 0.04,
@@ -476,9 +472,9 @@
       "effect_toggle": true,
       "sold_by_trader": true,
       "flea_banned": false,
-      "trader_price": 55000,
+      "trader_price": 50000,
       "flea_price": 65000,
-      "handbook_price": 55000,
+      "handbook_price": 50000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
@@ -538,7 +534,7 @@
       "sold_by_trader": false,
       "flea_banned": false,
       "trader_price": 65000,
-      "flea_price": 75000,
+      "flea_price": 80000,
       "handbook_price": 65000,
       "trader_stock": 2,
       "loyalty_level": 1,
@@ -556,7 +552,7 @@
       "enable": true,
       "effect_toggle": true,
       "sold_by_trader": false,
-      "flea_banned": false,
+      "flea_banned": true,
       "trader_price": 90000,
       "flea_price": 100000,
       "handbook_price": 90000,
