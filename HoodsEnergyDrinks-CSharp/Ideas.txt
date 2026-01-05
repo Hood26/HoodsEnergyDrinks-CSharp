@@ -95,7 +95,7 @@ Energy Drink List:
     - NOS Energy: (Uncommon) 40k 45k
         - +3 strength & endurance,, +10% weight reduction 300 sec (0.6 + 20)
     - Stalker Green Energy: (Rare) 55k, 65k
-        - +3 strength & endurance, +3 scavenging +10% weight reduction  400 sec (0.4 + 15) 
+        - +3 strength & endurance, +3 scavenging +15% weight reduction  400 sec (0.4 + 15) 
     - Rockstar Energy: (Rare) 60k 70k
         - +5 strength & endurance, 3% reduced damage taken, 400 sec (0.6 + 20)
     - C4 Jolly Rancher Energy (Rare) 65k 75k
