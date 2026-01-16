@@ -19,7 +19,7 @@ class TraderHelper(FluentTraderAssortCreator assortCreator, ModConfig config, Dr
                 assortCreator.CreateSingleAssortItem(props._id)
                     .AddUnlimitedStackCount()
                     .AddBuyRestriction(config.drinks[name].trader_stock)
-                    .AddMoneyCost(Money.ROUBLES, config.enable_alternate_buffs ? config.alternate_trader_price : config.drinks[name].trader_price)
+                    .AddMoneyCost(Money.ROUBLES, config.drinks[name].trader_price)
                     .AddLoyaltyLevel(config.drinks[name].loyalty_level)
                     .Export(traderId);
             }

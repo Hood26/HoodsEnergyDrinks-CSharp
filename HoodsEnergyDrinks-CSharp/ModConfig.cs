@@ -5,10 +5,7 @@ namespace HoodsEnergyDrinks_CSharp;
 
 public class ModConfig
 {
-    public bool enable_alternate_buffs { get; set; } = false;
-    public int alternate_trader_price { get; set; } = 0;
-    public int alternate_flea_price { get; set; } = 0;
-    public int alternate_handbook_price { get; set; } = 0;
+    public required bool instant_energy_and_hydration { get; set; }
     public required Dictionary<string, DrinkConfig> drinks { get; set; }
 }
 

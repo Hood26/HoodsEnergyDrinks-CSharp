@@ -1,11 +1,14 @@
+using Microsoft.VisualBasic;
 using SPTarkov.Server.Core.Exceptions.Items;
 using SPTarkov.Server.Core.Helpers;
 using SPTarkov.Server.Core.Models.Eft.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
+using SPTarkov.Server.Core.Models.Enums;
 using SPTarkov.Server.Core.Models.Spt.Mod;
 using SPTarkov.Server.Core.Servers;
 using SPTarkov.Server.Core.Services.Mod;
 using System.Reflection;
+using System.Xml.Serialization;
 
 namespace HoodsEnergyDrinks_CSharp;
 
@@ -25,11 +28,19 @@ class ItemCreator
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
         var buffInfo = modHelper.GetJsonDataFromFile<EnergyDrinkBuffs>(pathToMod, "Buffs.json");
         var tableData = db.GetTables();
-        tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs["alternate_buffs"] = buffInfo.buffs["alternate_buffs"];
 
         foreach (var (name, props) in drinks.Items)
         {
-            tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].effect_toggle ? buffInfo.buffs[name] : [];
+
+            if(config.instant_energy_and_hydration) 
+            {
+                tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].effect_toggle ? removeEnergyHydration(buffInfo, name) : [];
+            }
+            else 
+            {
+                tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].effect_toggle ? buffInfo.buffs[name] : [];
+            }
+
 
             var newItem = new NewItemFromCloneDetails
             {
@@ -50,8 +61,8 @@ class ItemCreator
                     Weight = 0.6,
                     FoodUseTime = 5,
                     StimulatorBuffs = name,
-                    EffectsHealth = new Dictionary<SPTarkov.Server.Core.Models.Enums.HealthFactor, EffectsHealthProperties>(),
-                    EffectsDamage = new Dictionary<SPTarkov.Server.Core.Models.Enums.DamageEffectType, EffectsDamageProperties>(),
+                    EffectsHealth = config.instant_energy_and_hydration ? setInstantEnergyHydration(buffInfo, name) : [],
+                    EffectsDamage = [],
                 },
                 ParentId = "5448e8d64bdc2dce718b4568",
                 NewId = props._id,
@@ -76,5 +87,27 @@ class ItemCreator
             customItemService.CreateItemFromClone(newItem);
 
         }
+    }
+
+    public Dictionary<HealthFactor, EffectsHealthProperties>? setInstantEnergyHydration(EnergyDrinkBuffs buffInfo, string name)
+    {
+        buffInfo.buffs.TryGetValue(name, out var buff);
+        var list = buff.ToList();
+
+        var effectsHealth = new Dictionary<HealthFactor, EffectsHealthProperties>
+        {
+            [HealthFactor.Energy] = new EffectsHealthProperties { Value = list[0].Duration * list[0].Value },
+            [HealthFactor.Hydration] = new EffectsHealthProperties { Value = list[1].Duration * list[1].Value }
+        };
+
+        return effectsHealth;
+    }
+
+    public List<Buff> removeEnergyHydration(EnergyDrinkBuffs buffInfo, string name) 
+    {
+        buffInfo.buffs.TryGetValue(name, out var buff);
+        var list = buff.ToList();
+        list.RemoveRange(0, 2);
+        return list;
     }
 }
