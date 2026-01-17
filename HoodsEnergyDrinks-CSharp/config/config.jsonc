@@ -4,8 +4,8 @@
   // Any true/false, integers, or floats can be changed and will be set on SPT server restart.
 
 
-  // Determines whether energy and hydration buffs will be instant upon drinking and energy drink
-  "instant_energy_and_hydration": true,
+  // Determines whether energy and hydration gains will become instant upon drinking and energy drink instead of over 60 seconds for most drinks
+  "instant_energy_and_hydration": false,
 
   "drinks": {
     "monster_blue": {

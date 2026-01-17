@@ -1,5 +1,3 @@
-using Microsoft.VisualBasic;
-using SPTarkov.Server.Core.Exceptions.Items;
 using SPTarkov.Server.Core.Helpers;
 using SPTarkov.Server.Core.Models.Eft.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
@@ -8,8 +6,6 @@ using SPTarkov.Server.Core.Models.Spt.Mod;
 using SPTarkov.Server.Core.Servers;
 using SPTarkov.Server.Core.Services.Mod;
 using System.Reflection;
-using System.Xml.Serialization;
-
 namespace HoodsEnergyDrinks_CSharp;
 
 class ItemCreator
