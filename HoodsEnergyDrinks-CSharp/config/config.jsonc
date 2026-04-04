@@ -4,7 +4,8 @@
   // Any true/false, integers, or floats can be changed and will be set on SPT server restart.
 
 
-  // Determines whether energy and hydration gains will become instant upon drinking and energy drink instead of over 60 seconds for most drinks
+  // Determines whether energy and hydration gains will apply instantly like most foods in Tarkov instead of 30 seconds.
+  //   - default is false, I made it this way as the SPT Realism mod applies this to all foods and I like this change.
   "instant_energy_and_hydration": false,
 
   "drinks": {
@@ -44,7 +45,6 @@
       //
       // Note: I've made the multipliers for every drink very small as there are 30 energy drinks added to the loot pool
       //       and all the multiplers added together make up a little over the same spawn chance as a normal hot rod energy drink
-      //       so you'll probably find around 1 hot rod for every energy drink you find in this mod. 
       "loot_multipliers": {
         "duffle_bag": 0.06,
         "dead_scav": 0.06,
@@ -52,7 +52,7 @@
         "ration_supply_crate": 0.06,
         "ground_cache": 0.06
       },
-      // Determines the spawn weight for the energy drink in loose loot spawn locations.
+      // Determines the spawn weight for the energy drink in loose loot spawn locations. i.e. like food loot that spawns on shelfs and tables
       // This uses the same principle as the above loot_multipliers.
       "loose_loot_multiplier": 0.06
     },

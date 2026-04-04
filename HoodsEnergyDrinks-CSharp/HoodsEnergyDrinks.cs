@@ -41,7 +41,7 @@ public class HoodsEnergyDrinks(
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
         var configPath = System.IO.Path.GetFullPath(System.IO.Path.Combine(pathToMod, "config"));
         var config = modHelper.GetJsonDataFromFile<ModConfig>(configPath, "config.jsonc");
-        var drinks = modHelper.GetJsonDataFromFile<Drink>(pathToMod, "drinkInfo.json");
+        var drinks = modHelper.GetJsonDataFromFile<Drink>(pathToMod, "DrinkInfo.json");
         var tables = db.GetTables();
         var ragfairConfig = configServer.GetConfig<RagfairConfig>();
         var assortCreator = new FluentTraderAssortCreator(databaseService, logger);
