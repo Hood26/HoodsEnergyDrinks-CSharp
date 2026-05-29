@@ -1240,7 +1240,7 @@
         "Delay": 0,
         "Duration": 300,
         "SkillName": "",
-        "Value": 0.3
+        "Value": 0.25
       },
       {
         "AbsoluteValue": true,
@@ -1424,7 +1424,7 @@
         "Delay": 0,
         "Duration": 300,
         "SkillName": "",
-        "Value": 5
+        "Value": 10
       },
       {
         "AbsoluteValue": true,
@@ -1570,7 +1570,7 @@
         "Delay": 1,
         "Duration": 300,
         "SkillName": "",
-        "Value": 0.10
+        "Value": 0.15
       },
       {
         "AbsoluteValue": true,
@@ -1635,7 +1635,7 @@
         "Delay": 0,
         "Duration": 400,
         "SkillName": "",
-        "Value": 10
+        "Value": 15
       },
       {
         "AbsoluteValue": false,
@@ -1644,7 +1644,7 @@
         "Delay": 0,
         "Duration": 400,
         "SkillName": "",
-        "Value": -0.02
+        "Value": -0.03
       },
       {
         "AbsoluteValue": true,
@@ -3156,6 +3156,454 @@
         "Duration": 60,
         "SkillName": "",
         "Value": 0
+      }
+    ],
+    "rip_it_power": [
+      {
+        "AbsoluteValue": true,
+        "BuffType": "EnergyRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HydrationRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "StaminaRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 0.8
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "MaxStamina",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 20
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Endurance",
+        "Value": 10
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Strength",
+        "Value": 10
+      }
+    ],
+    "rip_it_gforce": [
+      {
+        "AbsoluteValue": true,
+        "BuffType": "EnergyRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HydrationRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "StaminaRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 0.8
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "MaxStamina",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 20
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Endurance",
+        "Value": 10
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Strength",
+        "Value": 10
+      }
+    ],
+    "rip_it_tribute": [
+      {
+        "AbsoluteValue": true,
+        "BuffType": "EnergyRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HydrationRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "StaminaRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 0.8
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "MaxStamina",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 20
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Endurance",
+        "Value": 10
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Strength",
+        "Value": 10
+      }
+    ],
+    "arizona_arnold_palmer": [
+      {
+        "AbsoluteValue": true,
+        "BuffType": "EnergyRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HydrationRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "StaminaRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 0.8
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "MaxStamina",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 20
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Endurance",
+        "Value": 10
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Strength",
+        "Value": 10
+      }
+    ],
+    "ghost_7up": [
+      {
+        "AbsoluteValue": true,
+        "BuffType": "EnergyRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HydrationRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "StaminaRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 0.8
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "MaxStamina",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 20
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Endurance",
+        "Value": 10
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Strength",
+        "Value": 10
+      }
+    ],
+    "stalker_orange": [
+      {
+        "AbsoluteValue": true,
+        "BuffType": "EnergyRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HydrationRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "StaminaRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 0.8
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "MaxStamina",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 20
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Endurance",
+        "Value": 10
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Strength",
+        "Value": 10
+      }
+    ],
+    "monster_strawberry_shot": [
+      {
+        "AbsoluteValue": true,
+        "BuffType": "EnergyRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HydrationRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "StaminaRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 0.8
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "MaxStamina",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 20
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Endurance",
+        "Value": 10
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Strength",
+        "Value": 10
+      }
+    ],
+    "ghost_bubblicious": [
+      {
+        "AbsoluteValue": true,
+        "BuffType": "EnergyRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "HydrationRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 30,
+        "SkillName": "",
+        "Value": 3.0
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "StaminaRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 0.8
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "MaxStamina",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "",
+        "Value": 20
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Endurance",
+        "Value": 10
+      },
+      {
+        "AbsoluteValue": true,
+        "BuffType": "SkillRate",
+        "Chance": 1,
+        "Delay": 0,
+        "Duration": 600,
+        "SkillName": "Strength",
+        "Value": 10
       }
     ]
   }

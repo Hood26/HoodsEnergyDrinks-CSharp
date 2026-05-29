@@ -30,11 +30,11 @@ class ItemCreator
 
             if(config.instant_energy_and_hydration) 
             {
-                tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].effect_toggle ? removeEnergyHydration(buffInfo, name) : [];
+                tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].buff_effect_enable ? removeEnergyHydration(buffInfo, name) : [];
             }
             else 
             {
-                tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].effect_toggle ? buffInfo.buffs[name] : [];
+                tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].buff_effect_enable ? buffInfo.buffs[name] : [];
             }
 
 

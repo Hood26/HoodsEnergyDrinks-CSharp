@@ -179,6 +179,54 @@
             "name": "C4 Starburst Energy Drink [Ultra Rare]",
             "shortName": "C4",
             "desc": "Unlock your best performance, power, and speed with C4 Performance Energy. Every can is packed with 200mg of caffeine and CarnoSyn Beta Alanine for explosive energy you can feel. Made with clinically studied ingredients, ZERO grams of sugar or artificial colors, and carrying the NSF Certified for Sport label, C4 Performance Energy® is the athletes choice for elevating performance."
+        },
+        "rip_it_power": {
+            "_id": "694c6d5568b849f7bb05b7c7",
+            "name": "Rip It Power Energy Drink",
+            "shortName": "Rip It",
+            "desc": "A thunderous sonic boom to take your tastebuds to soaring new heights."
+        },
+        "rip_it_gforce": {
+            "_id": "694c6d5568b849f7bb05b7c8",
+            "name": "Rip It G-Force Energy Drink",
+            "shortName": "Rip It",
+            "desc": "30 Gs of high-octane grape goodness. Get ready to get slammed with flavor."
+        },
+        "rip_it_tribute": {
+            "_id": "694c6d5568b849f7bb05b7c9",
+            "name": "Rip It Tribute Energy Drink",
+            "shortName": "Rip It",
+            "desc": "Tangy lime and citrusy mandarin join forces in a battle-tested brew for the toughest missions."
+        },
+        "arizona_arnold_palmer": {
+            "_id": "694c6d5568b849f7bb05b7ca",
+            "name": "Arizona Arnold Palmer Half & Half Iced Tea Lemonade",
+            "shortName": "Arizona",
+            "desc": "The name Arnold Palmer has legendary roots as an original beverage combination of half iced tea and half lemonade, widely known for its refreshing taste and ability to revive the senses after a competitive round of golf. AriZona and Arnold Palmer have teamed up to bring you two great versions of Arnold Palmer Lite Half and Half. This version combines traditional black tea and lemonade to make a refreshing, great tasting beverage."
+        },
+        "ghost_7up": {
+            "_id": "694c6d5568b849f7bb05b7cb",
+            "name": "Ghost 7-Up Energy Drink",
+            "shortName": "Ghost",
+            "desc": "Light, crisp, and unmistakably refreshing, GHOST x 7UP brings a burst of lemon-lime flavor packed with legendary energy."
+        },
+        "stalker_orange": {
+            "_id": "694c6d5568b849f7bb05b7cc",
+            "name": "Nonstop Stalker Original Energy Drink",
+            "shortName": "Stalker",
+            "desc": "Energy drink originating from the Pripyat region. This is an excellent energy drink consisting of caffeine, taurine and a mixture of rejuvenating vitamins. Just the ticket when you're too tired to push forward!"
+        },
+        "monster_strawberry_shot": {
+            "_id": "694c6d5568b849f7bb05b7cd",
+            "name": "Monster Strawberry Shot Energy Drink",
+            "shortName": "Monster",
+            "desc": "Monster Energy packs a powerful punch but has a smooth easy drinking flavor. Now with a twist - adding sweet strawberry flavor to top-off the legendary taste you know and love. 100% Monster. With a twist."
+        },
+        "ghost_bubblicious": {
+            "_id": "694c6d5568b849f7bb05b7ce",
+            "name": "Ghost Bubblicious Energy Drink",
+            "shortName": "Ghost",
+            "desc": "Bright strawberry and classic bubble gum erupt in this mouthwatering, nostalgic flavor. "
         }
     }
 }

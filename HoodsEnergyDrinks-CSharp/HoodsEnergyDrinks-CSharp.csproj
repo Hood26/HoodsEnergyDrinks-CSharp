@@ -10,7 +10,7 @@
     <!-- The two lines below will set the output path for the binaries -->
     <OutputPath>bin\$(Configuration)\$(ProjectName)\$(AssemblyName)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <ServerModDir Condition = " $(ServerModDir) == '' ">C:\SPT 4.0.4\SPT\user\mods\HoodsEnergyDrinks</ServerModDir>
+    <ServerModDir Condition = " $(ServerModDir) == '' ">Z:\SPT 4.0.11 Gambler\SPT\user\mods\HoodsEnergyDrinks</ServerModDir>
   </PropertyGroup>
   <Target Name="CopyToServer" AfterTargets="PostBuildEvent">
 
