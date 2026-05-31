@@ -18,6 +18,12 @@ Skill Debuffs:
   - Rare energy       = -5 Debuff Skills
   - Ultra-Rare energy = -10 Debuff Skills
 
+Tremor Debuffs:
+  - common energy     = 30 Sec
+  - Uncommon energy   = 60 Sec
+  - Rare energy       = 120 Sec
+  - Ultra-Rare energy = 240 Sec
+
 Spawn Rates:
     - Common(11): 0.06     0.66
     - Uncommon(6): 0.04    0.24
@@ -57,7 +63,9 @@ Energy Drink List:
     - Monster Orange Dreamsicle: (Uncommon) 35k, 40k
         - +1 strength & endurance, +3 search, 15% weight reduction 300 sec (.3 + 10)
     - Monster Ultra Vice Guava: (Rare) 45k, 60k
-        - 3% reduced damage taken, +3 combat & mag drills, +3 Light & Heavy Vests 300 sec (.2 + 15)
+        - 3% reduced damage taken, +3 combat & mag drills, +3 Light & Heavy Vests 400 sec (.2 + 15)
+ X  - Monster Strawberry Shot: (Rare) 55k, 65k
+        - +5 strength & endurance, +5 aim drill & mag drills 400 sec (.4 + 20)
     - Monster Pipeline Punch: (Rare) 60k, 70k 
         - +.4 health regen, +5 aim drills & mag drills, +3 Light & Heavy Vests 400 sec (0.4 + 15)
     - Monster Pacific Punch: (Ultra-Rare) 100k, 120k (Flea-Banned)
@@ -76,6 +84,8 @@ Energy Drink List:
         - +3 covert movement, +3 aim drill & mag drills, +15% weight reduction, 300 sec (.2 + 5)
     - Ghost Strawbango: (Uncommon) 40k, 50k
         - +3 covert movement, +3 strength & endurance, +15% weight reduction, 300 sec (.4 + 10)
+ X  - Ghost Bubblicious (Rare) 60k, 70k 
+        - +5 covert movement, +.4 health regen, +3 Vitality and surgery 400 sec (0.4 + 15)
     - Ghost Peaches: (Rare) 65k, 80k 
         - +5 covert movement, +5 Search, +25% weight reduction, 400 sec (.4 + 15)
     - Ghost Swedish Fish: (Ultra-Rare) 80k, 90k (Flea-Banned)
@@ -87,7 +97,7 @@ Energy Drink List:
         - +1 strength & endurance, 2% reduced damage taken, +1 combat & mag drills 300 sec (0.2 + 5)
  X  - Rip It GForce (Uncommon) 40k, 50k
         - +3 strength & endurance, +15% weight reduction, +3 combat & mag drills (0.4 + 15)
- X  - Rip It Tribute (Ultra-Rare) 100k, 120k (Flea-Banned)
+ X  - Rip It Tribute (Ultra-Rare) 120k, 160k (Flea-Banned)
         -  +10 strength & endurance, 15% reduced damage taken, +10 combat & mag drills (1.0 + 25)
 
 
@@ -123,10 +133,3 @@ Energy Drink List:
         - +1 Search skills, +3% weight reduction 300sec (+30 hydration NO DEBUFFS)
  X  - Arizona Arnold Palmer (Uncommon) 15k, 20k
         - +.2 health regen, +1 Vitality and surgery, +1 Health, +1 Metabolism 300 sec (+30 hydration NO DEBUFFS)
-
-
-
- X  - Ghost Bubblicious
-        - healing energy drink
- X  - Monster Strawberry Shot
-        - high strength and endrance drink. Better version of green monster
