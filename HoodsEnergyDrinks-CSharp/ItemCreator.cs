@@ -27,14 +27,16 @@ class ItemCreator
 
         foreach (var (name, props) in drinks.Items)
         {
+            var currentBuff = config.use_alternate_buffs ? buffInfo.buffs["alternate_buffs"] : buffInfo.buffs[name];
+            var drinkName =  config.use_alternate_buffs ? "alternate_buffs" : name;
 
-            if(config.instant_energy_and_hydration) 
+            if (config.instant_energy_and_hydration && config.use_alternate_buffs) 
             {
-                tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].buff_effect_enable ? removeEnergyHydration(buffInfo, name) : [];
+                tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].buff_effect_enable ? removeEnergyHydration(buffInfo, drinkName) : [];
             }
             else 
             {
-                tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].buff_effect_enable ? buffInfo.buffs[name] : [];
+                tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].buff_effect_enable ? currentBuff : [];
             }
 
 
@@ -57,7 +59,7 @@ class ItemCreator
                     Weight = 0.6,
                     FoodUseTime = 5,
                     StimulatorBuffs = name,
-                    EffectsHealth = config.instant_energy_and_hydration ? setInstantEnergyHydration(buffInfo, name) : [],
+                    EffectsHealth = config.instant_energy_and_hydration ? setInstantEnergyHydration(buffInfo, drinkName) : [],
                     EffectsDamage = [],
                 },
                 ParentId = "5448e8d64bdc2dce718b4568",

@@ -576,6 +576,38 @@
           "shaders",
           "assets/commonassets/physics/physicsmaterials.bundle"
         ]
+      },
+      {
+        "key": "assets/arizona_arnold_palmer.bundle",
+        "dependencyKeys": [
+          "cubemaps",
+          "shaders",
+          "assets/commonassets/physics/physicsmaterials.bundle"
+        ]
+      },
+      {
+        "key": "assets/arizona_arnold_palmer_container.bundle",
+        "dependencyKeys": [
+          "cubemaps",
+          "shaders",
+          "assets/commonassets/physics/physicsmaterials.bundle"
+        ]
+      },
+      {
+        "key": "assets/ghost_bubblicious.bundle",
+        "dependencyKeys": [
+          "cubemaps",
+          "shaders",
+          "assets/commonassets/physics/physicsmaterials.bundle"
+        ]
+      },
+      {
+        "key": "assets/ghost_bubblicious_container.bundle",
+        "dependencyKeys": [
+          "cubemaps",
+          "shaders",
+          "assets/commonassets/physics/physicsmaterials.bundle"
+        ]
       }
     ]
 }
