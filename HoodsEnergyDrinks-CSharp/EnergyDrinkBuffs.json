@@ -199,7 +199,7 @@
         "Delay": 1,
         "Duration": 600,
         "SkillName": "",
-        "Value": 0.4
+        "Value": 0.45
       },
       {
         "AbsoluteValue": true,
@@ -401,7 +401,7 @@
         "Delay": 0,
         "Duration": 600,
         "SkillName": "AimDrills",
-        "Value": 20
+        "Value": 15
       },
       {
         "AbsoluteValue": true,
@@ -410,7 +410,7 @@
         "Delay": 0,
         "Duration": 600,
         "SkillName": "MagDrills",
-        "Value": 20
+        "Value": 15
       },
       {
         "AbsoluteValue": true,
@@ -419,7 +419,7 @@
         "Delay": 600,
         "Duration": 300,
         "SkillName": "Health",
-        "Value": -20
+        "Value": -15
       },
       {
         "AbsoluteValue": true,
@@ -731,7 +731,7 @@
         "Delay": 1,
         "Duration": 300,
         "SkillName": "",
-        "Value": 0.15
+        "Value": 0.10
       },
       {
         "AbsoluteValue": true,
@@ -2757,7 +2757,7 @@
         "AbsoluteValue": true,
         "BuffType": "HealthRate",
         "Chance": 0.20,
-        "Delay": 600,
+        "Delay": 5,
         "Duration": 600,
         "SkillName": "",
         "Value": -999
@@ -3018,7 +3018,7 @@
         "Delay": 0,
         "Duration": 600,
         "SkillName": "Endurance",
-        "Value": 20
+        "Value": 15
       },
       {
         "AbsoluteValue": true,
@@ -3027,7 +3027,7 @@
         "Delay": 0,
         "Duration": 600,
         "SkillName": "Strength",
-        "Value": 20
+        "Value": 15
       },
       {
         "AbsoluteValue": true,
@@ -3036,7 +3036,7 @@
         "Delay": 0,
         "Duration": 600,
         "SkillName": "AimDrills",
-        "Value": 20
+        "Value": 15
       },
       {
         "AbsoluteValue": true,
@@ -3045,7 +3045,7 @@
         "Delay": 0,
         "Duration": 600,
         "SkillName": "MagDrills",
-        "Value": 20
+        "Value": 15
       },
       {
         "AbsoluteValue": false,
@@ -3054,12 +3054,12 @@
         "Delay": 1,
         "Duration": 600,
         "SkillName": "",
-        "Value": 0.45
+        "Value": 0.35
       },
       {
         "AbsoluteValue": true,
         "BuffType": "HealthRate",
-        "Chance": 0.20,
+        "Chance": 0.15,
         "Delay": 5,
         "Duration": 600,
         "SkillName": "",

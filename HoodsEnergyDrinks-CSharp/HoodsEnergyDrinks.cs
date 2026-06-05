@@ -15,7 +15,7 @@ using SPTarkov.Server.Core.Models.Common;
 
 namespace HoodsEnergyDrinks_CSharp;
 
-[Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
+[Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 5)]
 public class HoodsEnergyDrinks(
     ISptLogger<HoodsEnergyDrinks> logger,
     ConfigServer configServer,
@@ -41,7 +41,7 @@ public class HoodsEnergyDrinks(
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
         var configPath = System.IO.Path.GetFullPath(System.IO.Path.Combine(pathToMod, "config"));
         var config = modHelper.GetJsonDataFromFile<ModConfig>(configPath, "config.jsonc");
-        var drinks = modHelper.GetJsonDataFromFile<Drink>(pathToMod, "DrinkInfo.json");
+        var drinks = modHelper.GetJsonDataFromFile<Drink>(pathToMod, "EnergyDrinkInfo.json");
         var tables = db.GetTables();
         var ragfairConfig = configServer.GetConfig<RagfairConfig>();
         var assortCreator = new FluentTraderAssortCreator(databaseService, logger);

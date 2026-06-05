@@ -5,16 +5,15 @@
 
   // Determines whether energy and hydration gains will apply instantly like most foods in Tarkov instead of 30 seconds.
   //   - default is false, I made it this way as the SPT Realism mod applies this to all foods and I like this change.
-  "instant_energy_and_hydration": true,
+  "instant_energy_and_hydration": false,
   // enabling alternative buffs will force all energy drinks to have the same price and buffs.
-  // - This option offers a quick way to make the energy drinks more like regular tarkov items and less overpowering.
-  // - all other config options will still be used
-  "use_alternate_buffs": true,
-  // if enable_alternate_buffs is true energy drinks will use alternate trader price
+  // - This option offers a quick way to make the energy drinks more like regular Tarkov energy drinks and less overpowering.
+  "use_alternate_buffs": false,
+  // if use_alternate_buffs is true energy drinks will use alternate trader price
   "alternate_trader_price": 20000,
-  // if enable_alternate_buffs is true energy drinks will use alternate flea market price
+  // if use_alternate_buffs is true energy drinks will use alternate flea market price
   "alternate_flea_price": 25000,
-  // if enable_alternate_buffs is true energy drinks will use alternate handbook price
+  // if use_alternate_buffs is true energy drinks will use alternate handbook price
   "alternate_handbook_price": 20000,
 
   "drinks": {
@@ -156,13 +155,13 @@
       "loyalty_level": 4,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.015,
-        "dead_scav": 0.015,
-        "jacket": 0.015,
-        "ration_supply_crate": 0.015,
-        "ground_cache": 0.015
+        "duffle_bag": 0.012,
+        "dead_scav": 0.012,
+        "jacket": 0.012,
+        "ration_supply_crate": 0.012,
+        "ground_cache": 0.012
       },
-      "loose_loot_multiplier": 0.015
+      "loose_loot_multiplier": 0.012
     },
     "monster_strawberry_shot": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -177,13 +176,13 @@
       "loyalty_level": 4,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.015,
-        "dead_scav": 0.015,
-        "jacket": 0.015,
-        "ration_supply_crate": 0.015,
-        "ground_cache": 0.015
+        "duffle_bag": 0.012,
+        "dead_scav": 0.012,
+        "jacket": 0.012,
+        "ration_supply_crate": 0.012,
+        "ground_cache": 0.012
       },
-      "loose_loot_multiplier": 0.015
+      "loose_loot_multiplier": 0.012
     },
     "monster_punch": {
       "enable": true,
@@ -196,13 +195,13 @@
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.015,
-        "dead_scav": 0.015,
-        "jacket": 0.015,
-        "ration_supply_crate": 0.015,
-        "ground_cache": 0.015
+        "duffle_bag": 0.012,
+        "dead_scav": 0.012,
+        "jacket": 0.012,
+        "ration_supply_crate": 0.012,
+        "ground_cache": 0.012
       },
-      "loose_loot_multiplier": 0.015
+      "loose_loot_multiplier": 0.012
     },
     "monster_pacific_punch": {
       "enable": true,
@@ -215,13 +214,13 @@
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.004,
+        "dead_scav": 0.004,
+        "jacket": 0.004,
+        "ration_supply_crate": 0.004,
+        "ground_cache": 0.004
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.004
     },
     "monster_doctor": {
       "enable": true,
@@ -234,13 +233,13 @@
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.004,
+        "dead_scav": 0.004,
+        "jacket": 0.004,
+        "ration_supply_crate": 0.004,
+        "ground_cache": 0.004
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.004
     },
     "monster_lemonade": {
       "enable": true,
@@ -253,13 +252,13 @@
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.004,
+        "dead_scav": 0.004,
+        "jacket": 0.004,
+        "ration_supply_crate": 0.004,
+        "ground_cache": 0.004
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.004
     },
     "ghost_blue_raspberry": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -335,13 +334,13 @@
       "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
-        "duffle_bag": 0.015,
-        "dead_scav": 0.015,
-        "jacket": 0.015,
-        "ration_supply_crate": 0.015,
-        "ground_cache": 0.015
+        "duffle_bag": 0.012,
+        "dead_scav": 0.012,
+        "jacket": 0.012,
+        "ration_supply_crate": 0.012,
+        "ground_cache": 0.012
       },
-      "loose_loot_multiplier": 0.015
+      "loose_loot_multiplier": 0.012
     },
     "ghost_peaches": {
       "enable": true,
@@ -354,35 +353,15 @@
       "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
-        "duffle_bag": 0.015,
-        "dead_scav": 0.015,
-        "jacket": 0.015,
-        "ration_supply_crate": 0.015,
-        "ground_cache": 0.015
+        "duffle_bag": 0.012,
+        "dead_scav": 0.012,
+        "jacket": 0.012,
+        "ration_supply_crate": 0.012,
+        "ground_cache": 0.012
       },
-      "loose_loot_multiplier": 0.015
+      "loose_loot_multiplier": 0.012
     },
     "ghost_swedish_fish": {
-      "enable": true,
-      "buff_effect_enable": true,
-      "sold_by_trader": false,
-      "flea_banned": true,
-      "trader_price": 110000,
-      "flea_price": 120000,
-      "handbook_price": 110000,
-      "trader_stock": 2,
-      "loyalty_level": 2,
-      "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
-      },
-      "loose_loot_multiplier": 0.007
-    },
-    "ghost_raspberry_cream": {
-      // Settings for each energy drink can be changed from true, false or numbers.
       "enable": true,
       "buff_effect_enable": true,
       "sold_by_trader": false,
@@ -391,16 +370,36 @@
       "flea_price": 130000,
       "handbook_price": 120000,
       "trader_stock": 2,
+      "loyalty_level": 2,
+      "loot_multipliers": {
+        "duffle_bag": 0.004,
+        "dead_scav": 0.004,
+        "jacket": 0.004,
+        "ration_supply_crate": 0.004,
+        "ground_cache": 0.004
+      },
+      "loose_loot_multiplier": 0.004
+    },
+    "ghost_raspberry_cream": {
+      // Settings for each energy drink can be changed from true, false or numbers.
+      "enable": true,
+      "buff_effect_enable": true,
+      "sold_by_trader": false,
+      "flea_banned": true,
+      "trader_price": 130000,
+      "flea_price": 140000,
+      "handbook_price": 130000,
+      "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.004,
+        "dead_scav": 0.004,
+        "jacket": 0.004,
+        "ration_supply_crate": 0.004,
+        "ground_cache": 0.004
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.004
     },
     "starbucks": {
       "enable": true,
@@ -428,7 +427,7 @@
       "sold_by_trader": false,
       "flea_banned": false,
       "trader_price": 30000,
-      "flea_price": 40000,
+      "flea_price": 35000,
       "handbook_price": 30000,
       "trader_stock": 2,
       "loyalty_level": 2,
@@ -533,13 +532,13 @@
       "loyalty_level": 4,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.015,
-        "dead_scav": 0.015,
-        "jacket": 0.015,
-        "ration_supply_crate": 0.015,
-        "ground_cache": 0.015
+        "duffle_bag": 0.012,
+        "dead_scav": 0.012,
+        "jacket": 0.012,
+        "ration_supply_crate": 0.012,
+        "ground_cache": 0.012
       },
-      "loose_loot_multiplier": 0.015
+      "loose_loot_multiplier": 0.012
     },
     "rockstar": {
       "enable": true,
@@ -552,13 +551,13 @@
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.015,
-        "dead_scav": 0.015,
-        "jacket": 0.015,
-        "ration_supply_crate": 0.015,
-        "ground_cache": 0.015
+        "duffle_bag": 0.012,
+        "dead_scav": 0.012,
+        "jacket": 0.012,
+        "ration_supply_crate": 0.012,
+        "ground_cache": 0.012
       },
-      "loose_loot_multiplier": 0.015
+      "loose_loot_multiplier": 0.012
     },
     "c4_skittles": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -573,13 +572,13 @@
       "loyalty_level": 4,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.015,
-        "dead_scav": 0.015,
-        "jacket": 0.015,
-        "ration_supply_crate": 0.015,
-        "ground_cache": 0.015
+        "duffle_bag": 0.012,
+        "dead_scav": 0.012,
+        "jacket": 0.012,
+        "ration_supply_crate": 0.012,
+        "ground_cache": 0.012
       },
-      "loose_loot_multiplier": 0.015
+      "loose_loot_multiplier": 0.012
     },
     "c4_jolly_rancher": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -594,13 +593,13 @@
       "loyalty_level": 4,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.004,
+        "dead_scav": 0.004,
+        "jacket": 0.004,
+        "ration_supply_crate": 0.004,
+        "ground_cache": 0.004
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.004
     },
     "c4_starburst": {
       "enable": true,
@@ -613,13 +612,13 @@
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.004,
+        "dead_scav": 0.004,
+        "jacket": 0.004,
+        "ration_supply_crate": 0.004,
+        "ground_cache": 0.004
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.004
     },
     "arizona_green_tea": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -718,13 +717,13 @@
       "loyalty_level": 3,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.015,
-        "dead_scav": 0.015,
-        "jacket": 0.015,
-        "ration_supply_crate": 0.015,
-        "ground_cache": 0.015
+        "duffle_bag": 0.012,
+        "dead_scav": 0.012,
+        "jacket": 0.012,
+        "ration_supply_crate": 0.012,
+        "ground_cache": 0.012
       },
-      "loose_loot_multiplier": 0.015
+      "loose_loot_multiplier": 0.012
     },
     "rip_it_tribute": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -739,13 +738,13 @@
       "loyalty_level": 4,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.004,
+        "dead_scav": 0.004,
+        "jacket": 0.004,
+        "ration_supply_crate": 0.004,
+        "ground_cache": 0.004
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.004
     },
     "stalker_orange": {
       // Settings for each energy drink can be changed from true, false or numbers.
@@ -802,13 +801,13 @@
       "loyalty_level": 4,
       "loot_multipliers": {
         // Read the Loot/spawn rates note above to understand what these numbers mean.
-        "duffle_bag": 0.04,
-        "dead_scav": 0.04,
-        "jacket": 0.04,
-        "ration_supply_crate": 0.04,
-        "ground_cache": 0.04
+        "duffle_bag": 0.03,
+        "dead_scav": 0.03,
+        "jacket": 0.03,
+        "ration_supply_crate": 0.03,
+        "ground_cache": 0.03
       },
-      "loose_loot_multiplier": 0.04
+      "loose_loot_multiplier": 0.03
     }
   }
 }

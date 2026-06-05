@@ -22,7 +22,7 @@ class ItemCreator
     public void BuildItems(DatabaseServer db, CustomItemService customItemService, ModHelper modHelper)
     {
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
-        var buffInfo = modHelper.GetJsonDataFromFile<EnergyDrinkBuffs>(pathToMod, "Buffs.json");
+        var buffInfo = modHelper.GetJsonDataFromFile<EnergyDrinkBuffs>(pathToMod, "EnergyDrinkBuffs.json");
         var tableData = db.GetTables();
 
         foreach (var (name, props) in drinks.Items)
