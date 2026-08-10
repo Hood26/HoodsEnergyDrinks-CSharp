@@ -1,23 +1,25 @@
-﻿using SPTarkov.DI.Annotations;
+﻿using SPTarkov.Common.Models.Logging;
+using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Models.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
-using SPTarkov.Server.Core.Models.Utils;
-using SPTarkov.Server.Core.Services;
+using SPTarkov.Server.Core.Models.Spt.Tables;
 
 namespace HoodsEnergyDrinks_CSharp;
 
 /// <summary>
 /// We inject this class into 'AddTraderWithDynamicAssorts' to help us add items to the trader to sell
 /// </summary>
-[Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
+[Injectable(TypePriority = OnLoadOrder.PostLoad + 1)]
 public class FluentTraderAssortCreator(
-    DatabaseService databaseService,
+    TradersTable tradersTable,
     ISptLogger<HoodsEnergyDrinks> logger)
 {
     private readonly List<Item> _itemsToSell = [];
     private readonly Dictionary<string, List<List<BarterScheme>>> _barterScheme = new();
     private readonly Dictionary<string, int> _loyaltyLevel = new();
+
+
 
     public FluentTraderAssortCreator CreateSingleAssortItem(MongoId itemTpl, MongoId? itemId = null)
     {
@@ -152,7 +154,7 @@ public class FluentTraderAssortCreator(
     /// <param name="traderId">Id of trader to add assort to</param>
     public FluentTraderAssortCreator? Export(string traderId)
     {
-        var traderData = databaseService.GetTables().Traders.GetValueOrDefault(traderId);
+        var traderData = tradersTable.GetValueOrDefault(traderId);
 
         var rootItemAddedId = _itemsToSell.FirstOrDefault().Id;
         if (traderData.Assort.Items.Exists(x => x.Id == rootItemAddedId))

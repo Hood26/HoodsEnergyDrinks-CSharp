@@ -1,18 +1,23 @@
 
 using SPTarkov.Server.Core.Models.Spt.Mod;
+using SPTarkov.Server.Web;
 
 namespace HoodsEnergyDrinks_CSharp;
-public record ModMetadata : AbstractModMetadata
+public sealed record ModMetadata : IModMetadata, IModBlazorMetadata
 {
-    public override string Name { get; init; } = "Hoods Energy Drinks";
-    public override string Author { get; init; } = "Hood";
-    public override List<string>? Contributors { get; init; }
-    public override SemanticVersioning.Version Version { get; init; } = new("1.2.0");
-    public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.0");
-    public override List<string>? Incompatibilities { get; init; }
-    public override Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; }
-    public override string? Url { get; init; } = "https://github.com/Hood26/HoodsEnergyDrinks-CSharp/tree/master";
-    public override bool? IsBundleMod { get; init; } = true;
-    public override string? License { get; init; } = "MIT";
-    public override string ModGuid { get; init; } = "com.hood.moreenergydrinks";
+    public string Name { get; init; } = "Hood's More Energy Drinks";
+    public string Author { get; init; } = "Hood";
+    public List<string>? Contributors { get; init; }
+    public SemanticVersioning.Version Version { get; init; } = new("1.2.1");
+    public SemanticVersioning.Range SptVersion { get; init; } = new("~4.1.0");
+    public List<string>? Incompatibilities { get; init; }
+    public Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; }
+    public string? Url { get; init; } = "https://github.com/Hood26/HoodsEnergyDrinks-CSharp/tree/master";
+    public string? License { get; init; } = "MIT";
+    public string ModGuid { get; init; } = "com.hood.moreenergydrinks";
+    public bool HasPrepatcher { get; init; } = false;
+    public string? WWWRootUrl { get; init; }
+    public string? HomePage { get; init; } = "/HoodsMoreEnergyDrinks";
+    public string? HomePageDescription { get; init; } = "Home Page for Hood's More Energy Drinks";
+
 }

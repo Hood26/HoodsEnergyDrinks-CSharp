@@ -1,5 +1,11 @@
+using System.Reflection;
+using SPTarkov.DI.Annotations;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using SPTarkov.Server.Core.DI;
+using SPTarkov.Server.Core.Helpers.Server;
+using SPTarkov.Server.Web.Services;
+using SPTarkov.Server.Web.Models.Configs;
 
 namespace HoodsEnergyDrinks_CSharp;
 
@@ -27,3 +33,44 @@ public class DrinkConfig
     public Dictionary<string, float>? loot_multipliers { get; set; }
     public float loose_loot_multiplier { get; set; }
 }
+
+[Injectable]
+public class ModConfigRegistration : IOnDIConstruct
+{
+    public static async Task OnDIConstructAsync(IServiceCollection serviceCollection, CancellationToken cancellationToken)
+    {
+        var pathToMod = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        var configPath = Path.Combine(pathToMod ?? ".", "config", "config.json");
+
+        if (File.Exists(configPath))
+        {
+            var json = await File.ReadAllTextAsync(configPath, cancellationToken);
+            ModConfig modConfig = JsonSerializer.Deserialize<ModConfig>(json)!;
+            serviceCollection.AddSingleton<ModConfig>(modConfig);
+        }
+        else
+        {
+            throw new InvalidOperationException("[Hoods More Energy Drinks] Config file does not exist! Reinstall this mod to fix this issue!");
+        }
+    }
+}
+
+[Injectable(InjectionType.Singleton)]
+public class MyModConfigEditorProvider(ModConfig config) : IConfigEditorConfigProvider
+{
+    public IEnumerable<ConfigEditorConfigRegistration> GetConfigs()
+    {
+        yield return ConfigEditorConfigRegistration.Create(
+            "com.hood.moreenergydrinks",
+            "Hoods More Energy Drinks Config",
+            config,
+            Path.Combine("user", "mods", "HoodsMoreEnergyDrinks", "config", "config.json")
+        );
+    }
+}
+
+
+
+
+
+

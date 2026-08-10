@@ -1,5 +1,5 @@
 
-using SPTarkov.Server.Core.Models.Eft.Common;
+using SPTarkov.Server.Core.Models.Spt.Tables;
 
 namespace HoodsEnergyDrinks_CSharp;
 

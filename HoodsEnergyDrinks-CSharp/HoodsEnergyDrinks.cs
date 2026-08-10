@@ -1,28 +1,28 @@
 ﻿using System.Reflection;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
-using SPTarkov.Server.Core.Helpers;
-using SPTarkov.Server.Core.Models.Spt.Mod;
-using SPTarkov.Server.Core.Models.Utils;
-using SPTarkov.Server.Core.Servers;
-using SPTarkov.Server.Core.Services;
-using SPTarkov.Server.Core.Utils;
-using SPTarkov.Server.Core.Services.Mod;
 using SPTarkov.Server.Core.Models.Spt.Config;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Eft.Common;
 using SPTarkov.Server.Core.Models.Common;
+using SPTarkov.Server.Core.Services.Modding.Custom;
+using SPTarkov.Common.Models.Logging;
+using SPTarkov.Server.Core.Helpers.Server;
+using SPTarkov.Server.Core.Models.Spt.Tables;
 
 namespace HoodsEnergyDrinks_CSharp;
 
-[Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 5)]
+[Injectable(TypePriority = OnLoadOrder.PostLoad + 5)]
 public class HoodsEnergyDrinks(
+    RagfairConfig ragfairConfig,
     ISptLogger<HoodsEnergyDrinks> logger,
-    ConfigServer configServer,
     CustomItemService customItemService,
     ModHelper modHelper,
-    DatabaseService databaseService,
-    DatabaseServer db
+    TradersTable tradersTable,
+    TemplateTable templateTable,
+    LocationTable locationTable,
+    GlobalTable globalTable,
+    ModConfig config
     )
     : IOnLoad
 {
@@ -36,18 +36,15 @@ public class HoodsEnergyDrinks(
         { "ground_cache", "5d6d2b5486f774785c2ba8ea" }
     };
 
-    public Task OnLoad()
+    public Task OnLoadAsync(CancellationToken cancellationToken)
     {
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
         var configPath = System.IO.Path.GetFullPath(System.IO.Path.Combine(pathToMod, "config"));
-        var config = modHelper.GetJsonDataFromFile<ModConfig>(configPath, "config.jsonc");
         var drinks = modHelper.GetJsonDataFromFile<Drink>(pathToMod, "EnergyDrinkInfo.json");
-        var tables = db.GetTables();
-        var ragfairConfig = configServer.GetConfig<RagfairConfig>();
-        var assortCreator = new FluentTraderAssortCreator(databaseService, logger);
+        var assortCreator = new FluentTraderAssortCreator(tradersTable, logger);
         var traderHelper = new TraderHelper(assortCreator, config, drinks, logger);
         var itemCreator = new ItemCreator(config, drinks);
-        itemCreator.BuildItems(db, customItemService, modHelper);
+        itemCreator.BuildItems(globalTable, customItemService, modHelper);
         traderHelper.addSingleItemsToTrader("54cb57776803fa99248b456e");
 
         string[] maps = [
@@ -66,9 +63,9 @@ public class HoodsEnergyDrinks(
         ];
 
         List<TemplateItem> hallOfFameIds = [
-            tables.Templates.Items["63dbd45917fff4dee40fe16e"], // lvl 1
-            tables.Templates.Items["65424185a57eea37ed6562e9"], // lvl 2
-            tables.Templates.Items["6542435ea57eea37ed6562f0"], // lvl 3
+            templateTable.Items["63dbd45917fff4dee40fe16e"], // lvl 1
+            templateTable.Items["65424185a57eea37ed6562e9"], // lvl 2
+            templateTable.Items["6542435ea57eea37ed6562f0"], // lvl 3
         ];
 
 
@@ -102,8 +99,8 @@ public class HoodsEnergyDrinks(
         MongoId hotRodEnergyDrinkId = "5751496424597720a27126da";
         foreach (var map in maps) 
         {
-            string mapName = tables.Locations.GetMappedKey(map);
-            Location location = tables.Locations.GetDictionary()[mapName];
+            string mapName = locationTable.GetMappedKey(map);
+            Location location = locationTable.GetDictionary()[mapName];
 
             // Loose Loot Insertion
             location.LooseLoot?.AddTransformer(lazyLoadedLooseLoot =>

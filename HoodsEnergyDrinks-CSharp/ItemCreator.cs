@@ -1,10 +1,9 @@
-using SPTarkov.Server.Core.Helpers;
-using SPTarkov.Server.Core.Models.Eft.Common;
+using SPTarkov.Server.Core.Helpers.Server;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Enums;
 using SPTarkov.Server.Core.Models.Spt.Mod;
-using SPTarkov.Server.Core.Servers;
-using SPTarkov.Server.Core.Services.Mod;
+using SPTarkov.Server.Core.Models.Spt.Tables;
+using SPTarkov.Server.Core.Services.Modding.Custom;
 using System.Reflection;
 namespace HoodsEnergyDrinks_CSharp;
 
@@ -19,11 +18,10 @@ class ItemCreator
         this.config = config;
         this.drinks = drinks;
     }
-    public void BuildItems(DatabaseServer db, CustomItemService customItemService, ModHelper modHelper)
+    public void BuildItems(GlobalTable globalTable, CustomItemService customItemService, ModHelper modHelper)
     {
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
         var buffInfo = modHelper.GetJsonDataFromFile<EnergyDrinkBuffs>(pathToMod, "EnergyDrinkBuffs.json");
-        var tableData = db.GetTables();
 
         foreach (var (name, props) in drinks.Items)
         {
@@ -32,11 +30,11 @@ class ItemCreator
 
             if (config.instant_energy_and_hydration && config.use_alternate_buffs) 
             {
-                tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].buff_effect_enable ? removeEnergyHydration(buffInfo, drinkName) : [];
+                globalTable.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].buff_effect_enable ? removeEnergyHydration(buffInfo, drinkName) : [];
             }
             else 
             {
-                tableData.Globals.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].buff_effect_enable ? currentBuff : [];
+                globalTable.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].buff_effect_enable ? currentBuff : [];
             }
 
 
@@ -64,6 +62,7 @@ class ItemCreator
                 },
                 ParentId = "5448e8d64bdc2dce718b4568",
                 NewId = props._id,
+                NewItemName = name,
                 FleaPriceRoubles = config.drinks[name].flea_price,
                 HandbookPriceRoubles = config.drinks[name].handbook_price,
                 HandbookParentId = "5b47574386f77428ca22b335",

@@ -1,3 +1,13 @@
+Fix Energy & Hydration:
+  - Make instant initial gains
+  - keep energy decrease as over-time effect
+
+
+
+
+
+
+
 Common Energy Drinks:
 
     Arizona Green Tea (Sold By Therapist LL1)
@@ -132,13 +142,21 @@ Spawn Rates: OLD
 
     Total chance = 1.1 energy drinks per redbull spawn
 
-Spawn Rates: NEW
+Spawn Rates: 1.2.0
     - Common(12): 0.04     0.48
     - Uncommon(9): 0.03    0.27
     - Rare(9):     0.012   0.108
     - Ultra-Rare(8): 0.004 .032
 
     Total chance = 0.89 energy drinks per redbull spawn
+
+Spawn Rates: 1.2.1
+    - Common(12): 0.06     0.72
+    - Uncommon(9): 0.04    0.36
+    - Rare(9):     0.02   0.18
+    - Ultra-Rare(8): 0.007 .056
+
+    Total chance = 1.316 energy drinks per redbull spawn
 
 Skills:
     1. reduced damage & life regen
