@@ -192,7 +192,7 @@ public class HoodsEnergyDrinks(
             });
         }
 
-        logger.Success("[Hoods Energy Drinks] Successfully added to server!");
+        logger.Success("[Hoods More Energy Drinks] Successfully added to server!");
         return Task.CompletedTask;
     }
 
