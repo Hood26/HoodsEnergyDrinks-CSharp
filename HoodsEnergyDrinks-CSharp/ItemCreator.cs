@@ -28,7 +28,7 @@ class ItemCreator
             var currentBuff = config.use_alternate_buffs ? buffInfo.buffs["alternate_buffs"] : buffInfo.buffs[name];
             var drinkName =  config.use_alternate_buffs ? "alternate_buffs" : name;
 
-            if (config.instant_energy_and_hydration && config.use_alternate_buffs) 
+            if (config.instant_energy_and_hydration) 
             {
                 globalTable.Configuration.Health.Effects.Stimulator.Buffs[name] = config.drinks[name].buff_effect_enable ? removeEnergyHydration(buffInfo, drinkName) : [];
             }

@@ -12,7 +12,7 @@ using SPTarkov.Server.Core.Models.Spt.Tables;
 
 namespace HoodsEnergyDrinks_CSharp;
 
-[Injectable(TypePriority = OnLoadOrder.PostLoad + 5)]
+[Injectable(TypePriority = OnLoadOrder.Preload + 5)]
 public class HoodsEnergyDrinks(
     RagfairConfig ragfairConfig,
     ISptLogger<HoodsEnergyDrinks> logger,
