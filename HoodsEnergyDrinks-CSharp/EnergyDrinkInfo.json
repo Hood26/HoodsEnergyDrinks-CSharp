@@ -2,7 +2,7 @@
    "Items": {
     "monster_blue": {
             "_id": "694c6d5568b849f7bb05b7a9",
-            "name": "Monster Original Lo-Carb Energy Drink [Common]",
+            "name": "Monster Original Blue Lo-Carb Energy Drink [Common]",
             "shortName": "Monster",
             "desc": "The Lo-Carb Monster Energy Drink is a favorite among scavs that have a taste for increased their ability in scavenging faster and staying alert longer in-raid. Monster Energy Lo-Carb packs a powerful punch and has a smooth, easy drinking flavor, but without glucose. Get the big bad Monster buzz you know and love, but with a sweet & salty citrus twist with a fraction of the carbohydrates and only 30 calories per can and with 140mg of Caffeine.\n\nItem added by Hood's More Energy Drinks Mod"
         },
@@ -68,13 +68,13 @@
         },
         "monster_white": {
             "_id": "694c6d5568b849f7bb05b7aa",
-            "name": "Monster Original Lo-Carb Energy Drink [Common]",
+            "name": "Monster Zero Ultra White Energy Drink [Common]",
             "shortName": "Monster",
             "desc": "The light, refreshing citrus flavor of Zero Ultra has broken the rules of flavor. 10 calories, zero sugar, and a full load of our Monster Energy blend to keep the good times rolling.\n\nItem added by Hood's More Energy Drinks Mod"
         },
         "monster_strawberry": {
             "_id": "694c6d5568b849f7bb05b7b5",
-            "name": "Monster Zero-Ultra Strawberry Dreams Energy Drink [Uncommon]",
+            "name": "Monster Zero Ultra Strawberry Dreams Energy Drink [Uncommon]",
             "shortName": "Monster",
             "desc": "Take just one sip and you''ll be crazy for Ultra Strawberry Dreams. Wonderfully sweet, while slightly tart, this easy-drinking Ultra tastes like a dream. Packed with the Monster Energy blend you love, with just 10 calories and zero sugar.\n\nItem added by Hood's More Energy Drinks Mod"
         },
@@ -227,6 +227,18 @@
             "name": "Ghost Bubblicious Energy Drink [Uncommon]",
             "shortName": "Ghost",
             "desc": "Bright strawberry and classic bubble gum erupt in this mouthwatering, nostalgic flavor.\n\nItem added by Hood's More Energy Drinks Mod"
+        },
+        "stalker_red": {
+            "_id": "694c6d5568b849f7bb05b7b1",
+            "name": "Non Stop Stalker Red Limited Edition Energy Drink [Uncommon]",
+            "shortName": "Stalker",
+            "desc": "Energy drink originating from the Pripyat region. This is an excellent energy drink consisting of caffeine, taurine and a mixture of rejuvenating vitamins. Just the ticket when you're too tired to push forward!\n\nItem added by Hood's More Energy Drinks Mod"
+        },
+        "ghost_rootbeer": {
+            "_id": "694c6d5568b849f7bb06b7b3",
+            "name": "Ghost A&W Root Beer Energy Drink [Common]",
+            "shortName": "Ghost",
+            "desc": "GHOST Energy x A&W Root Beer is a limited-edition, zero-sugar energy drink featuring the classic taste of A&W Root Beer combined with 200 mg of natural caffeine.\n\nItem added by Hood's More Energy Drinks Mod"
         }
     }
 }

@@ -22,6 +22,8 @@ class ItemCreator
     {
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
         var buffInfo = modHelper.GetJsonDataFromFile<EnergyDrinkBuffs>(pathToMod, "EnergyDrinkBuffs.json");
+        var localePath = System.IO.Path.GetFullPath(System.IO.Path.Combine(pathToMod, "locales"));
+        var locales = modHelper.GetJsonDataFromFile<Locales>(localePath, "locales.json");
 
         foreach (var (name, props) in drinks.Items)
         {
@@ -75,6 +77,24 @@ class ItemCreator
                             Name = props.name,
                             ShortName = props.shortName,
                             Description = props.desc
+                         }
+                    },
+                    {
+                         "ru",
+                         new LocaleDetails
+                         {
+                             Name = locales.Items["ru"][name].name,
+                             ShortName = props.shortName,
+                             Description = locales.Items["ru"][name].desc,
+                         }
+                    },
+                    {
+                         "ch",
+                         new LocaleDetails
+                         {
+                             Name = locales.Items["ch"][name].name,
+                             ShortName = props.shortName,
+                             Description = locales.Items["ch"][name].desc,
                          }
                     }
                 }

@@ -26,6 +26,8 @@ Common Energy Drinks:
         +1 Strength & Endurance, +5% Weight Reduction
     Ghost Blue Raspberry (Sold By Therapist LL2)
         +1 Covert Movement, +1 Search, +10% Weight Reduction
+    Ghost Rootbeer
+        +1 Covert Movement, +1 Strength & Endurance, +10% Weight Reduction
     Starbucks Double Shot
         +1 Stress Resistance, +1 Strength & Endurance
     Bang Rainbow Unicorn
@@ -34,6 +36,8 @@ Common Energy Drinks:
         +1 Strength & Endurance, +1 Scavenging Skills
     S.T.A.L.K.E.R. Orange Original
         +1 Strength & Endurance, +1 Scavenging Skills
+    S.T.A.L.K.E.R. Red Edition
+        +1 stress resistance, +1 Aim Drills & Mag Drills, +10% weight reduction
 
 Uncommon Energy Drinks:
 
@@ -75,7 +79,7 @@ Rare Energy Drinks:
     Rockstar
         3% Reduced Damage Taken, +5 Strength & Endurance
     C4 Skittles
-        +10 Strength & Endurance, +35% Weight Reduction
+        +10 Strength & Endurance, +25% Weight Reduction
 
 Ultra-Rare Energy Drinks: (Flea-Market Banned. Can only be found in-raid)
 
@@ -88,7 +92,7 @@ Ultra-Rare Energy Drinks: (Flea-Market Banned. Can only be found in-raid)
     Ghost Swedish Fish
         +10 Covert Movement, +10 Strength & Endurance, +10 Scavenging Skills, +35% Weight Reduction
     Ghost Raspberry Cream
-        +10 Covert Movement, +10 Aim Drills & Mag Drills, +10 Scavenging Skills, +45% Weight Reduction
+        +10 Covert Movement, +10 Aim Drills & Mag Drills, +10 Scavenging Skills, +35% Weight Reduction
     Rip It Tribute
         +10 Stress Resistance, +10 Strength & Endurance, +10 Aim Drills & Mag Drills, 5% Reduced Damage Taken
     C4 Jolly Rancher
@@ -158,6 +162,14 @@ Spawn Rates: 1.2.1
 
     Total chance = 1.316 energy drinks per redbull spawn
 
+Spawn Rates: 1.3.0
+    - Common(13):    0.08  1.04   
+    - Uncommon(10):  0.05  0.5
+    - Rare(9):       0.02  0.18 
+    - Ultra-Rare(8): 0.008 0.064
+
+    Total chance = 1.784 energy drinks per redbull spawn
+
 Skills:
     1. reduced damage & life regen
     2. weight reduction
@@ -212,9 +224,11 @@ Energy Drink List:
 
     - Ghost Blue Raspberry: (Common) 25k, 35k
         - +1 covert movement, +1 search +10% weight reduction, 300 sec (0.2 + 5)
+  N - Ghost Rootbeer (Common) 30k, 40k
+        - +1 Covert Movement, +1 Strength & Endurance, +10% Weight Reduction 300 sec (0.3 + 5)
     - Ghost Grape-Cran Energy (Uncommon) 35k, 45k
         - +3 covert movement, +3 search +15% weight reduction, 300 sec (0.2 + 10)
- X  - Ghost 7-Up (Uncommon) 35k, 40k
+ X  - Ghost 7-Up (Uncommon) 40k, 45k
         - +3 covert movement, +3 aim & mag drills, +15% weight reduction, 300 sec (0.2 + 10)
  X  - Ghost Bubblicious (Uncommon) 45k, 50k 
         - +3 covert movement, +0.4 health regen, 15% weight reduction 400 sec (0.2 + 10)
@@ -225,7 +239,7 @@ Energy Drink List:
     - Ghost Swedish Fish: (Ultra-Rare) 120k, 130k (Flea-Banned)
         - +10 covert movement, +10 strength & endurance, +10 Search, +35% weight reduction, 600 sec (1.0 + 25)
     - Ghost Raspberry Cream Energy (Ultra-Rare) 130k, 140k (Flea-Banned)
-        - +10 covert movement, +10 aim skills, +10 mag drills, +10 search +45% weight reduction, 600 sec (0.8 + 25)
+        - +10 covert movement, +10 aim skills, +10 mag drills, +10 search +35% weight reduction, 600 sec (0.8 + 25)
 
 Rip Its offer stress resistance which no other energy drinks provide...
  X  - Rip It Power (Uncommon) 40k, 45k
@@ -247,10 +261,12 @@ Rip Its offer stress resistance which no other energy drinks provide...
     - Stalker Original Energy: (Common) 30k, 35k
         - +1 strength & endurance, +1 scavenging, +10% weight reduction 300 sec (0.3 + 5) 
     - Stalker Orange Energy: (Common) 30k, 35k
-        - +1 strength & endurance, +1 scavenging, +10% weight reduction 300 sec (0.3 + 5) 
+        - +1 strength & endurance, +1 scavenging, +10% weight reduction 300 sec (0.3 + 5)
+  N - Stalker Red Edition (Uncommon) 45k, 50k
+        - +3 stress resistance, +3 strength & endurance, +3 Aim Drills & Mag Drills, +10% weight reduction (0.3 + 10)
     - Rockstar Sugar Free Energy (Uncommon) 45k, 55k
         - +0.4 health regen, +3 strength & endurance, +3 aim & mag drills, 300 sec (0.4 + 10)
-    - Stalker Green Energy: (Rare) 45k, 55k
+    - Stalker Green Energy: (Rare) 45k, 60k
         - +3 strength & endurance, +3 scavenging +15% weight reduction  400 sec (0.6 + 15) 
     - Rockstar Energy: (Rare) 65k 70k
         - +5 strength & endurance, 3% reduced damage taken, 400 sec (0.6 + 20)

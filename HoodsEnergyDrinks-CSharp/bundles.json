@@ -608,6 +608,38 @@
           "shaders",
           "assets/commonassets/physics/physicsmaterials.bundle"
         ]
+      },
+      {
+        "key": "assets/stalker_red.bundle",
+        "dependencyKeys": [
+          "cubemaps",
+          "shaders",
+          "assets/commonassets/physics/physicsmaterials.bundle"
+        ]
+      },
+      {
+        "key": "assets/stalker_red_container.bundle",
+        "dependencyKeys": [
+          "cubemaps",
+          "shaders",
+          "assets/commonassets/physics/physicsmaterials.bundle"
+        ]
+      },
+      {
+        "key": "assets/ghost_rootbeer.bundle",
+        "dependencyKeys": [
+          "cubemaps",
+          "shaders",
+          "assets/commonassets/physics/physicsmaterials.bundle"
+        ]
+      },
+      {
+        "key": "assets/ghost_rootbeer_container.bundle",
+        "dependencyKeys": [
+          "cubemaps",
+          "shaders",
+          "assets/commonassets/physics/physicsmaterials.bundle"
+        ]
       }
     ]
 }

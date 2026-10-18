@@ -3,7 +3,7 @@ using SPTarkov.Server.Core.Models.Spt.Mod;
 using SPTarkov.Server.Web;
 
 namespace HoodsEnergyDrinks_CSharp;
-public sealed record ModMetadata : IModMetadata, IModBlazorMetadata
+public sealed record ModMetadata : IModMetadata
 {
     public string Name { get; init; } = "Hood's More Energy Drinks";
     public string Author { get; init; } = "Hood";
@@ -16,8 +16,5 @@ public sealed record ModMetadata : IModMetadata, IModBlazorMetadata
     public string? License { get; init; } = "MIT";
     public string ModGuid { get; init; } = "com.hood.moreenergydrinks";
     public bool HasPrepatcher { get; init; } = false;
-    public string? WWWRootUrl { get; init; }
-    public string? HomePage { get; init; } = "/HoodsMoreEnergyDrinks";
-    public string? HomePageDescription { get; init; } = "Home Page for Hood's More Energy Drinks";
 
 }

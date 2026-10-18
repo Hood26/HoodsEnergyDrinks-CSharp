@@ -4,7 +4,6 @@
   "alternate_trader_price": 20000,
   "alternate_flea_price": 25000,
   "alternate_handbook_price": 20000,
-
   "drinks": {
     "monster_blue": {
       "enable": true,
@@ -17,13 +16,13 @@
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.08
     },
     "monster_white": {
       "enable": true,
@@ -36,13 +35,13 @@
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.08
     },
     "monster_green": {
       "enable": true,
@@ -55,13 +54,13 @@
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.08
     },
     "monster_strawberry": {
       "enable": true,
@@ -74,13 +73,13 @@
       "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
-        "duffle_bag": 0.04,
-        "dead_scav": 0.04,
-        "jacket": 0.04,
-        "ration_supply_crate": 0.04,
-        "ground_cache": 0.04
+        "duffle_bag": 0.05,
+        "dead_scav": 0.05,
+        "jacket": 0.05,
+        "ration_supply_crate": 0.05,
+        "ground_cache": 0.05
       },
-      "loose_loot_multiplier": 0.04
+      "loose_loot_multiplier": 0.05
     },
     "monster_orange_creamsicle": {
       "enable": true,
@@ -93,13 +92,13 @@
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.04,
-        "dead_scav": 0.04,
-        "jacket": 0.04,
-        "ration_supply_crate": 0.04,
-        "ground_cache": 0.04
+        "duffle_bag": 0.05,
+        "dead_scav": 0.05,
+        "jacket": 0.05,
+        "ration_supply_crate": 0.05,
+        "ground_cache": 0.05
       },
-      "loose_loot_multiplier": 0.04
+      "loose_loot_multiplier": 0.05
     },
     "monster_guava": {
       "enable": true,
@@ -169,13 +168,13 @@
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.008,
+        "dead_scav": 0.008,
+        "jacket": 0.008,
+        "ration_supply_crate": 0.008,
+        "ground_cache": 0.008
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.008
     },
     "monster_doctor": {
       "enable": true,
@@ -188,13 +187,13 @@
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.008,
+        "dead_scav": 0.008,
+        "jacket": 0.008,
+        "ration_supply_crate": 0.008,
+        "ground_cache": 0.008
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.008
     },
     "monster_lemonade": {
       "enable": true,
@@ -207,13 +206,13 @@
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.008,
+        "dead_scav": 0.008,
+        "jacket": 0.008,
+        "ration_supply_crate": 0.008,
+        "ground_cache": 0.008
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.008
     },
     "ghost_blue_raspberry": {
       "enable": true,
@@ -226,13 +225,13 @@
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.08
     },
     "ghost_grape": {
       "enable": true,
@@ -245,32 +244,32 @@
       "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
-        "duffle_bag": 0.04,
-        "dead_scav": 0.04,
-        "jacket": 0.04,
-        "ration_supply_crate": 0.04,
-        "ground_cache": 0.04
+        "duffle_bag": 0.05,
+        "dead_scav": 0.05,
+        "jacket": 0.05,
+        "ration_supply_crate": 0.05,
+        "ground_cache": 0.05
       },
-      "loose_loot_multiplier": 0.04
+      "loose_loot_multiplier": 0.05
     },
     "ghost_7up": {
       "enable": true,
       "buff_effect_enable": true,
       "sold_by_trader": false,
       "flea_banned": false,
-      "trader_price": 35000,
-      "flea_price": 40000,
-      "handbook_price": 35000,
+      "trader_price": 40000,
+      "flea_price": 45000,
+      "handbook_price": 40000,
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
-        "duffle_bag": 0.04,
-        "dead_scav": 0.04,
-        "jacket": 0.04,
-        "ration_supply_crate": 0.04,
-        "ground_cache": 0.04
+        "duffle_bag": 0.05,
+        "dead_scav": 0.05,
+        "jacket": 0.05,
+        "ration_supply_crate": 0.05,
+        "ground_cache": 0.05
       },
-      "loose_loot_multiplier": 0.04
+      "loose_loot_multiplier": 0.05
     },
     "ghost_strawbango": {
       "enable": true,
@@ -321,13 +320,13 @@
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.008,
+        "dead_scav": 0.008,
+        "jacket": 0.008,
+        "ration_supply_crate": 0.008,
+        "ground_cache": 0.008
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.008
     },
     "ghost_raspberry_cream": {
       "enable": true,
@@ -340,13 +339,13 @@
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.008,
+        "dead_scav": 0.008,
+        "jacket": 0.008,
+        "ration_supply_crate": 0.008,
+        "ground_cache": 0.008
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.008
     },
     "starbucks": {
       "enable": true,
@@ -359,13 +358,13 @@
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.08
     },
     "bang_purple_haze": {
       "enable": true,
@@ -378,13 +377,13 @@
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
-        "duffle_bag": 0.04,
-        "dead_scav": 0.04,
-        "jacket": 0.04,
-        "ration_supply_crate": 0.04,
-        "ground_cache": 0.04
+        "duffle_bag": 0.05,
+        "dead_scav": 0.05,
+        "jacket": 0.05,
+        "ration_supply_crate": 0.05,
+        "ground_cache": 0.05
       },
-      "loose_loot_multiplier": 0.04
+      "loose_loot_multiplier": 0.05
     },
     "bang": {
       "enable": true,
@@ -397,13 +396,13 @@
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.08
     },
     "rockstar_sugar_free": {
       "enable": true,
@@ -416,13 +415,13 @@
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
-        "duffle_bag": 0.04,
-        "dead_scav": 0.04,
-        "jacket": 0.04,
-        "ration_supply_crate": 0.04,
-        "ground_cache": 0.04
+        "duffle_bag": 0.05,
+        "dead_scav": 0.05,
+        "jacket": 0.05,
+        "ration_supply_crate": 0.05,
+        "ground_cache": 0.05
       },
-      "loose_loot_multiplier": 0.04
+      "loose_loot_multiplier": 0.05
     },
     "stalker": {
       "enable": true,
@@ -435,13 +434,13 @@
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.08
     },
     "nos": {
       "enable": true,
@@ -454,13 +453,13 @@
       "trader_stock": 2,
       "loyalty_level": 3,
       "loot_multipliers": {
-        "duffle_bag": 0.04,
-        "dead_scav": 0.04,
-        "jacket": 0.04,
-        "ration_supply_crate": 0.04,
-        "ground_cache": 0.04
+        "duffle_bag": 0.05,
+        "dead_scav": 0.05,
+        "jacket": 0.05,
+        "ration_supply_crate": 0.05,
+        "ground_cache": 0.05
       },
-      "loose_loot_multiplier": 0.04
+      "loose_loot_multiplier": 0.05
     },
     "stalker_green": {
       "enable": true,
@@ -468,7 +467,7 @@
       "sold_by_trader": true,
       "flea_banned": false,
       "trader_price": 45000,
-      "flea_price": 55000,
+      "flea_price": 60000,
       "handbook_price": 45000,
       "trader_stock": 2,
       "loyalty_level": 4,
@@ -524,38 +523,38 @@
       "buff_effect_enable": true,
       "sold_by_trader": false,
       "flea_banned": true,
-      "trader_price": 1300000,
+      "trader_price": 130000,
       "flea_price": 140000,
-      "handbook_price": 1300000,
+      "handbook_price": 130000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.008,
+        "dead_scav": 0.008,
+        "jacket": 0.008,
+        "ration_supply_crate": 0.008,
+        "ground_cache": 0.008
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.008
     },
     "c4_starburst": {
       "enable": true,
       "buff_effect_enable": true,
       "sold_by_trader": false,
       "flea_banned": true,
-      "trader_price": 1300000,
+      "trader_price": 130000,
       "flea_price": 140000,
       "handbook_price": 130000,
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.008,
+        "dead_scav": 0.008,
+        "jacket": 0.008,
+        "ration_supply_crate": 0.008,
+        "ground_cache": 0.008
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.008
     },
     "arizona_green_tea": {
       "enable": true,
@@ -568,13 +567,13 @@
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.08
     },
     "arizona_watermelon": {
       "enable": true,
@@ -587,13 +586,13 @@
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.08
     },
     "arizona_mucho_mango": {
       "enable": true,
@@ -606,13 +605,13 @@
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.08
     },
     "rip_it_power": {
       "enable": true,
@@ -625,13 +624,13 @@
       "trader_stock": 2,
       "loyalty_level": 2,
       "loot_multipliers": {
-        "duffle_bag": 0.04,
-        "dead_scav": 0.04,
-        "jacket": 0.04,
-        "ration_supply_crate": 0.04,
-        "ground_cache": 0.04
+        "duffle_bag": 0.05,
+        "dead_scav": 0.05,
+        "jacket": 0.05,
+        "ration_supply_crate": 0.05,
+        "ground_cache": 0.05
       },
-      "loose_loot_multiplier": 0.04
+      "loose_loot_multiplier": 0.05
     },
     "rip_it_gforce": {
       "enable": true,
@@ -663,13 +662,13 @@
       "trader_stock": 2,
       "loyalty_level": 4,
       "loot_multipliers": {
-        "duffle_bag": 0.007,
-        "dead_scav": 0.007,
-        "jacket": 0.007,
-        "ration_supply_crate": 0.007,
-        "ground_cache": 0.007
+        "duffle_bag": 0.008,
+        "dead_scav": 0.008,
+        "jacket": 0.008,
+        "ration_supply_crate": 0.008,
+        "ground_cache": 0.008
       },
-      "loose_loot_multiplier": 0.007
+      "loose_loot_multiplier": 0.008
     },
     "stalker_orange": {
       "enable": true,
@@ -682,13 +681,13 @@
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.08
     },
     "arizona_arnold_palmer": {
       "enable": true,
@@ -701,13 +700,13 @@
       "trader_stock": 2,
       "loyalty_level": 1,
       "loot_multipliers": {
-        "duffle_bag": 0.06,
-        "dead_scav": 0.06,
-        "jacket": 0.06,
-        "ration_supply_crate": 0.06,
-        "ground_cache": 0.06
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
       },
-      "loose_loot_multiplier": 0.06
+      "loose_loot_multiplier": 0.08
     },
     "ghost_bubblicious": {
       "enable": true,
@@ -719,14 +718,52 @@
       "handbook_price": 45000,
       "trader_stock": 2,
       "loyalty_level": 4,
-      "loot_multipliers": {  
-        "duffle_bag": 0.04,
-        "dead_scav": 0.04,
-        "jacket": 0.04,
-        "ration_supply_crate": 0.04,
-        "ground_cache": 0.04
+      "loot_multipliers": {
+        "duffle_bag": 0.05,
+        "dead_scav": 0.05,
+        "jacket": 0.05,
+        "ration_supply_crate": 0.05,
+        "ground_cache": 0.05
       },
-      "loose_loot_multiplier": 0.04
+      "loose_loot_multiplier": 0.05
+    },
+    "stalker_red": {
+      "enable": true,
+      "buff_effect_enable": true,
+      "sold_by_trader": false,
+      "flea_banned": false,
+      "trader_price": 45000,
+      "flea_price": 50000,
+      "handbook_price": 45000,
+      "trader_stock": 2,
+      "loyalty_level": 1,
+      "loot_multipliers": {
+        "duffle_bag": 0.05,
+        "dead_scav": 0.05,
+        "jacket": 0.05,
+        "ration_supply_crate": 0.05,
+        "ground_cache": 0.05
+      },
+      "loose_loot_multiplier": 0.05
+    },
+    "ghost_rootbeer": {
+      "enable": true,
+      "buff_effect_enable": true,
+      "sold_by_trader": false,
+      "flea_banned": false,
+      "trader_price": 35000,
+      "flea_price": 40000,
+      "handbook_price": 35000,
+      "trader_stock": 2,
+      "loyalty_level": 1,
+      "loot_multipliers": {
+        "duffle_bag": 0.08,
+        "dead_scav": 0.08,
+        "jacket": 0.08,
+        "ration_supply_crate": 0.08,
+        "ground_cache": 0.08
+      },
+      "loose_loot_multiplier": 0.08
     }
   }
 }
