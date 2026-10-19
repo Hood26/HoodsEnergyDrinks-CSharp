@@ -87,7 +87,7 @@ public class HoodsEnergyDrinks(
                 {
                     foreach (var filter in slot.Properties.Filters)
                     {
-                        if (filter.Filter.Contains(drink.Value._id))
+                        if (!filter.Filter.Contains(drink.Value._id))
                         {
                             filter.Filter.Add(drink.Value._id);
                         }
